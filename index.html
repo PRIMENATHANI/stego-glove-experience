@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07090c">
+<title>The STEGO Glove Experience</title>
+<meta name="description" content="Put your hand in. Pull on four STEGO gloves as you scroll: Cut Defender Ultra ST-7098, Tacti-Air ST-2055, Shell Series ST-9080 and Barix Vanta ST-2023, then take the right one out for a trial.">
+<link rel="icon" href="assets/stego-logo.svg" type="image/svg+xml">
+<!-- link preview text. If the folder is not /try-on/, change the canonical and og:url lines. -->
+<link rel="canonical" href="https://stegosafety.com/try-on/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STEGO Gloves">
+<meta property="og:title" content="The STEGO Glove Experience">
+<meta property="og:description" content="Put your hand in. Pull on four STEGO gloves from your phone and see what each one is built to stop.">
+<meta property="og:url" content="https://stegosafety.com/try-on/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The STEGO Glove Experience">
+<meta name="twitter:description" content="Put your hand in. Pull on four STEGO gloves from your phone and see what each one is built to stop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hand/bare.webp">
+<link rel="preload" as="image" href="assets/hand/st-7098.webp">
+<link rel="stylesheet" href="css/tryon.css?v=1.4.0">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+<a class="skip" href="#dock">Skip to the glove selector</a>
+
+<div class="scroller" id="scroller">
+  <div class="stage" id="stage" data-chapter="intro">
+
+    <!-- depth layer 0: chapter photography, parallaxed -->
+    <div class="bg" aria-hidden="true">
+      <div class="bg-photo" data-bg="7098" style="background-image:url(assets/bg/st-7098.webp)"></div>
+      <div class="bg-photo" data-bg="2055" style="background-image:url(assets/bg/st-2055.webp)"></div>
+      <div class="bg-photo" data-bg="9080" style="background-image:url(assets/bg/st-9080.webp)"></div>
+      <div class="bg-photo" data-bg="2023" style="background-image:url(assets/bg/st-2023.webp)"></div>
+      <div class="bg-shade"></div>
+      <div class="bg-glow" id="glow"></div>
+      <div class="bg-grid"></div>
+      <div class="bg-number" id="bignum">01</div>
+    </div>
+
+    <header class="top">
+      <a class="brand" href="https://stegosafety.com/" aria-label="STEGO home">
+        <img src="assets/stego-logo.svg" alt="STEGO" width="96" height="40">
+        <span class="brand-sep"></span>
+        <span class="brand-kicker">THE STEGO GLOVE EXPERIENCE</span>
+      </a>
+      <div class="top-right">
+        <a class="top-link" href="https://stegosafety.com/products/">All gloves</a>
+        <img class="tech-logo" id="techLogo" alt="" decoding="async">
+      </div>
+    </header>
+
+    <!-- depth layer 1: the hand -->
+    <div class="hand" id="hand">
+      <canvas id="handCanvas" role="img" aria-label="A right hand, shown pulling on each STEGO glove as you scroll"></canvas>
+      <svg class="callouts" id="callouts" aria-hidden="true"></svg>
+      <div class="fit-status" id="fitStatus"><i></i><span>READY</span></div>
+    </div>
+
+    <!-- depth layer 2: copy -->
+    <div class="copy" id="copy">
+      <div class="copy-inner">
+        <div class="eyebrow"><span class="chapter-no" id="chapterNo">00</span><span class="eyebrow-text" id="eyebrow">STEGO TRY-ON</span></div>
+        <h1 class="title" id="title">Engineered by hazard.<br>Designed for precision.</h1>
+        <p class="lead" id="lead">Four STEGO gloves, pulled onto your hand one after another as you scroll. Experience each glove from the standards it meets to the way it fits.</p>
+        <div class="ratings" id="ratings"></div>
+        <img class="std-icons" id="stdIcons" alt="" style="display:none" decoding="async">
+        <p class="standards" id="standards"></p>
+        <div class="actions" id="actions">
+          <span class="scroll-cue" id="scrollCue"><i></i>SCROLL · STANDARDS TO FIT</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- outro -->
+    <div class="outro" id="outro">
+      <div class="outro-inner">
+        <div class="eyebrow"><span class="eyebrow-text">GLOVE TRIAL PROGRAM</span></div>
+        <h2 class="title">Switch to STEGO gloves.<br><em>Performance you can rely on.</em></h2>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://stegosafety.com/gtp/">Request a glove trial</a>
+          <a class="btn btn-ghost" href="https://stegosafety.com/products/">See all STEGO gloves</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- progress rail -->
+    <div class="rail" aria-hidden="true">
+      <span class="rail-label" id="railTop">00</span>
+      <div class="rail-track"><i id="railFill"></i><b class="tick t1"></b><b class="tick t2"></b><b class="tick t3"></b><b class="tick t4"></b></div>
+      <span class="rail-label">04</span>
+    </div>
+
+    <!-- selector -->
+    <nav class="dock" id="dock" aria-label="Choose a glove">
+      <button class="chip" data-i="0" style="--chip:#2f6fd0"><img src="assets/dock/st-7098.webp" alt=""><span class="chip-text"><b>ST-7098</b><span>Cut Defender Ultra</span></span></button>
+      <button class="chip" data-i="1" style="--chip:#17a39a"><img src="assets/dock/st-2055.webp" alt=""><span class="chip-text"><b>ST-2055</b><span>Tacti-Air</span></span></button>
+      <button class="chip" data-i="2" style="--chip:#e3312f"><img src="assets/dock/st-9080.webp" alt=""><span class="chip-text"><b>ST-9080</b><span>Shell Series</span></span></button>
+      <button class="chip" data-i="3" style="--chip:#e9b92a"><img src="assets/dock/st-2023.webp" alt=""><span class="chip-text"><b>ST-2023</b><span>Barix Vanta</span></span></button>
+    </nav>
+
+    <footer class="foot">
+      <span>HAND PROTECTION ENGINEERED. ACHIEVED.</span>
+      <span class="foot-note">Visual try-on. Not a sizing tool.</span>
+      <span class="foot-copy">© 2026 Stego Technologies Inc. · Try-On v1.4.0</span>
+    </footer>
+
+    <p class="sr-only" id="announce" role="status" aria-live="polite"></p>
+  </div>
+</div>
+
+<!-- after the try-on: STEGO's mission, as on stegosafety.com -->
+<section class="mission" id="mission" aria-labelledby="missionTitle">
+  <div class="mission-inner">
+    <h2 class="mission-title" id="missionTitle">Our mission is to advance performance.</h2>
+    <img class="mission-gloves" src="assets/site/mission-gloves.webp" alt="Five STEGO gloves: impact, chemical, mechanical and cut-resistant models" loading="lazy" decoding="async">
+    <p class="mission-text">Hand protection remains one of the most overlooked areas of occupational safety, despite the hand being the body’s primary point of contact with work.</p>
+    <p class="mission-text">Every product we create is a step toward changing how hand safety is perceived, deployed, and delivered in the field.</p>
+    <p class="mission-sign">Deliberately engineered<br>Performance defined</p>
+    <h3 class="tech-title">Explore STEGO Glove Technologies</h3>
+    <nav class="tech-grid" aria-label="STEGO glove technologies">
+      <a href="https://stegosafety.com/technology/tegx-technology/"><img src="assets/tech/tegx.webp" alt="TEGX Technology" loading="lazy"></a>
+      <a href="https://stegosafety.com/technology/gryx-technology/"><img src="assets/tech/gryx.webp" alt="GRYX Technology" loading="lazy"></a>
+      <a href="https://stegosafety.com/technology/grd-technology/"><img src="assets/tech/shell-grd.webp" alt="SHELL GRD Technology" loading="lazy"></a>
+      <a href="https://stegosafety.com/technology/chemblock-technology/"><img src="assets/tech/chemblock.webp" alt="ChemBlock Technology" loading="lazy"></a>
+      <a href="https://stegosafety.com/technology/kyno-technology/"><img src="assets/tech/kyno.webp" alt="KYNO Technology" loading="lazy"></a>
+      <a href="https://stegosafety.com/technology/essential-technology/"><img src="assets/tech/essential.webp" alt="Essential Technology" loading="lazy"></a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://stegosafety.com/gtp/">Request a glove trial</a>
+      <a class="btn btn-ghost" href="https://stegosafety.com/products/">See all STEGO gloves</a>
+    </div>
+    <p class="mission-foot">Visual try-on. Not a sizing tool. © 2026 Stego Technologies Inc.</p>
+  </div>
+</section>
+
+<dialog class="details" id="details" aria-labelledby="dTitle">
+  <button class="details-close" id="dClose" type="button" aria-label="Close">×</button>
+  <div class="details-grid">
+    <div class="details-visual"><img id="dImage" alt=""></div>
+    <div class="details-body">
+      <div class="eyebrow"><span class="chapter-no" id="dNo">01</span><span class="eyebrow-text" id="dPlatform"></span></div>
+      <h2 class="details-title" id="dTitle"></h2>
+      <p class="details-desc" id="dDesc"></p>
+      <h3>Technologies</h3>
+      <ul class="tech" id="dTech"></ul>
+      <h3>Standards</h3>
+      <img class="std-strip" id="dStdImg" alt="">
+      <dl class="standards-list" id="dStd"></dl>
+      <div class="details-meta" id="dMeta"></div>
+      <div class="actions">
+        <a class="btn btn-primary" id="dLink" href="#" target="_blank" rel="noopener">Visit the product page</a>
+        <a class="btn btn-ghost" href="https://stegosafety.com/gtp/" target="_blank" rel="noopener">Glove trial</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+<noscript><div class="noscript">This try-on needs JavaScript. Explore the gloves at <a href="https://stegosafety.com/products/">stegosafety.com</a>.</div></noscript>
+<script src="js/tryon.js?v=1.4.0" defer></script>
+</body>
+</html>
