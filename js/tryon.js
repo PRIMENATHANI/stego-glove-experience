@@ -1,4 +1,4 @@
-/* STEGO Try-On · scroll-driven glove fitting · v1.4.0 */
+/* STEGO Try-On · scroll-driven glove fitting · v1.4.1 */
 (() => {
 'use strict';
 
@@ -71,7 +71,7 @@ const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,5) chapters · [5,5.8) outro
-const ON_END = 0.28, OFF_START = 0.86, CO_START = 0.30;
+const ON_END = 0.28, OFF_START = 0.86, CO_START = 0.31, CO_STEP = 0.11, CO_FADE = 0.06;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const $ = s => document.querySelector(s);
 const clamp = (v,a=0,b=1) => Math.min(b, Math.max(a, v));
@@ -423,10 +423,10 @@ function layoutCallouts() {
 function updateCallouts(seg) {
   if (!calloutNodes.length) return;
   calloutNodes.forEach((n, i) => {
-    const start = CO_START + i * 0.045;
+    const start = CO_START + i * CO_STEP;
     let a = 0;
     if (seg.phase === 'chapter') {
-      const inA = easeOut(clamp((seg.u - start) / 0.09));
+      const inA = easeOut(clamp((seg.u - start) / CO_FADE));
       const outA = 1 - clamp((seg.u - (OFF_START - 0.06)) / 0.05);
       a = Math.min(inA, outA);
     }
