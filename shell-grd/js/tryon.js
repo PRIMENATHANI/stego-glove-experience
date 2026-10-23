@@ -138,13 +138,12 @@ loadGlove(0);
 const zoomCurve = p => p < 0.35 ? 0.12 * Math.pow(p / 0.35, 2.4) : p < 0.72 ? 0.12 + 0.78 * (1 - Math.pow(1 - (p - 0.35) / 0.37, 3.2)) : 0.90 + 0.10 * ((p - 0.72) / 0.28);
 function renderReveal(seg) {
   const core = REVEAL.querySelector('.reveal-core'), flood = REVEAL.querySelector('.reveal-flood');
-  if (seg.phase !== 'intro' || seg.u < 1) { REVEAL.style.opacity = '0'; REVEAL.style.pointerEvents = 'none'; if (flood) flood.style.opacity = '0'; document.body.classList.remove('revealing'); return; }
-  const v = clamp(seg.u - 1);
+  if (seg.phase !== 'intro' || seg.u >= 1) { REVEAL.style.opacity = '0'; REVEAL.style.pointerEvents = 'none'; if (flood) flood.style.opacity = '0'; document.body.classList.remove('revealing'); return; }
+  const v = clamp(seg.u);
   REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
-  document.body.classList.toggle('revealing', v > 0.3 && v < 0.86);
+  document.body.classList.toggle('revealing', v < 0.86);
   const inA = easeOut(clamp(v / 0.22));
-  REVEAL.querySelectorAll('.reveal-words span').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.05) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
-  const logo = REVEAL.querySelector('.reveal-logo'); if (logo) logo.style.opacity = String(inA);
+  REVEAL.querySelectorAll('.reveal-words > *').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.06) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
   const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
   const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
   const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
@@ -211,7 +210,8 @@ function render() {
   const seg = segment(t);
   const gi = seg.phase === 'chapter' ? seg.i : -1;
   const gp = gi >= 0 ? gloveProgress(seg.u) : { p:0, dir:'bare' };
-  const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(seg.u / 0.55))) : 0;
+  const iu = seg.phase === 'intro' ? (REVEAL ? seg.u - 1 : seg.u) : 1;          // the hazard intro's own clock; negative while the opener runs
+  const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(iu / 0.55))) : 0;
   if (REVEAL) renderReveal(seg);
   const outroDrop = seg.phase === 'outro' ? easeOut(clamp(seg.u / 0.6)) : 0;
 
@@ -219,7 +219,7 @@ function render() {
   const floatY = reduced.matches ? 0 : Math.sin(idle * 0.9) * 3;
   const lift = introLift * window.innerHeight * 0.42 + outroDrop * window.innerHeight * 0.55;
   hand.style.transform = `translate(calc(-50% + ${px * -10}px), ${lift + floatY + py * -6}px)`;
-  hand.style.opacity = String(1 - outroDrop * 0.6);
+  hand.style.opacity = String((1 - outroDrop * 0.6) * (REVEAL ? clamp((iu + 0.12) / 0.14) : 1));   // hidden under the opener
 
   // background parallax: slow drift with t, pointer counter-move
   const drift = t * 1.1;
@@ -359,7 +359,7 @@ function setChapter(seg, gp) {
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
-  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);   // with a reveal the hazard copy is gone before the second unit
+  if (seg.phase === 'intro') cp = Math.min(REVEAL ? clamp((seg.u - 1 + 0.12) / 0.14) : 1, 1 - clamp(((REVEAL ? seg.u - 1 : seg.u) - 0.62) / 0.2));   // hidden under the opener, then the usual fade
   else if (seg.phase === 'chapter') cp = Math.min(clamp((seg.u - 0.04) / 0.16), 1 - clamp((seg.u - (OFF_START + 0.02)) / 0.1));
   if (cp !== copyProgress) {
     copyProgress = cp;
