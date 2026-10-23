@@ -9,50 +9,50 @@ const GLOVES = [
     lead:"Double-dipped premium PVC on an interlock lining, EN ISO 374-1 Type B. SealTrace™ seams block micro-pathways, DryHold™ keeps the inside dry, a sandblast finish keeps the grip in wet, oily work.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["5", "Abrasion"], ["AKL", "Chemicals"], ["CAT III", "CE"]],
     standards:"EN ISO 374-1 Type B AKL · EN 374-5 · EN 388 4121X · CE Cat III",
-    accent:[220, 50, 30], cuff:{ base:"#b8241e", hem:"#b7241e" }, url:"https://stegosafety.com/product/chem-armor-st-1070/",
-    callouts:[ { x:0.55, y:0.12, title:"Sandblast finish", text:"Grip, wet or oily." }, { x:0.6, y:0.4, title:"Double-dipped PVC", text:"Liquids stay out." }, { x:0.32, y:0.48, title:"SealTrace™ seams", text:"No micro-pathways." }, { x:0.5, y:0.76, title:"DryHold™", text:"Dry inside." } ] },
+    accent:[220, 50, 30], cuff:{ base:"#b6231e", hem:"#b4231e" }, url:"https://stegosafety.com/product/chem-armor-st-1070/",
+    callouts:[ { x:0.42, y:0.11, title:"Sandblast finish", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Double-dipped PVC", text:"Liquids stay out." }, { x:0.34, y:0.55, title:"SealTrace™ seams", text:"No micro-pathways." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"2020", name:"Nitri-Armor", platform:"ChemBlock™", category:"CHEMICAL · NITRILE",
     title:"Solvents and sludge.<br><em>Rough grip.</em>",
     lead:"Smooth double-coated nitrile on an anti-microbial cotton liner, EN ISO 374-1 Type A. CoreResist™ keeps the barrier stable through repeated contact; a rough-textured palm keeps the grip in sludge.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["AJKLMO", "Chemicals"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AJKLMO · EN 374-5 · EN 388 4121X · CE Cat III",
-    accent:[40, 110, 70], cuff:{ base:"#2b352d", hem:"#2f382e" },
-    callouts:[ { x:0.55, y:0.12, title:"Rough palm", text:"Grip in sludge." }, { x:0.6, y:0.4, title:"Double nitrile coat", text:"Liquids stay out." }, { x:0.32, y:0.48, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.76, title:"DryHold™", text:"Dry inside." } ] },
+    accent:[40, 110, 70], cuff:{ base:"#2b342c", hem:"#2e372e" },
+    callouts:[ { x:0.42, y:0.11, title:"Rough-textured finish", text:"Grip in sludge." }, { x:0.56, y:0.28, title:"Double nitrile coat", text:"Liquids stay out." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"2018", name:"N'Flock", platform:"ChemBlock™", category:"CHEMICAL · FOOD SAFE",
     title:"Lab bench, wash bay.<br><em>Food safe.</em>",
     lead:"Specialised flock-lined nitrile, EN ISO 374-1 Type A and approved for food contact. CoreResist™ holds the barrier through repeated chemical contact; a raised diamond palm keeps control in wet work.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["JKLNOT", "Chemicals"], ["FOOD", "Contact approved"]],
     standards:"EN ISO 374-1 Type A JKLNOT · EN 374-5 · EN 388 4101X · Food contact · CE Cat III",
-    accent:[60, 170, 160], cuff:{ base:"#41a38c", hem:"#55a48f" },
-    callouts:[ { x:0.55, y:0.12, title:"Diamond grip palm", text:"Control when wet." }, { x:0.6, y:0.4, title:"Nitrile barrier", text:"Type A." }, { x:0.32, y:0.48, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.76, title:"Flock lining", text:"Easy on, easy off." } ] },
+    accent:[60, 170, 160], cuff:{ base:"#409f8a", hem:"#53a18c" },
+    callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Nitrile barrier", text:"Type A." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Flock lining", text:"Easy on, easy off." } ] },
   { code:"8089", name:"Chem Shield", platform:"ChemBlock™", category:"CHEMICAL · NEOPRENE",
     title:"Acids and caustics.<br><em>Two layers.</em>",
     lead:"Neoprene over latex, flock lined, EN ISO 374-1 Type A with virus protection. CoreResist™ for repeated splashes and contact, a quick-entry cuff for fast on and off, a raised diamond palm.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["VIRUS", "EN 374-5"], ["AKLNPT", "Chemicals"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AKLNPT · EN 374-5 Virus · EN 388 3111X · CE Cat III",
-    accent:[40, 130, 220], cuff:{ base:"#dbd51d", hem:"#ddd825" },
-    callouts:[ { x:0.55, y:0.12, title:"Diamond grip palm", text:"Control when wet." }, { x:0.6, y:0.4, title:"Neoprene over latex", text:"Acids and caustics." }, { x:0.32, y:0.48, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.76, title:"Quick-entry cuff", text:"Fast on and off." } ] },
+    accent:[40, 130, 220], cuff:{ base:"#d8d31e", hem:"#dad32c" },
+    callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Neoprene over latex", text:"Acids and caustics." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Quick-entry cuff", text:"Fast on and off." } ] },
   { code:"2022", name:"Barix Armor", platform:"ChemBlock™", category:"CHEMICAL & CUT",
     title:"Chemical and cut.<br><em>In one hand.</em>",
     lead:"ChemBlock™ and TEGX® together: a sandy nitrile barrier, EN ISO 374-1 Type A, over an A4 cut liner. CoreResist™ for the chemistry, DryHold™ inside, a dual-coated palm for wet or dry work.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["A4", "ANSI cut"], ["4", "Abrasion"], ["D", "EN 388 cut"]],
     standards:"EN 388 4X42D · EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 · EN 407 X1XXXX · CE Cat III",
-    accent:[40, 110, 220], cuff:{ base:"#045da6", hem:"#24629a" }, url:"https://stegosafety.com/product/barix-armor-st-2022/",
-    callouts:[ { x:0.55, y:0.12, title:"Sandy nitrile", text:"Grip, wet or dry." }, { x:0.6, y:0.4, title:"Type A barrier", text:"Nine chemical classes." }, { x:0.32, y:0.48, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.76, title:"ChemBlock™ + TEGX®", text:"Chemical and A4 cut." } ] },
+    accent:[40, 110, 220], cuff:{ base:"#045ca3", hem:"#2e618f" }, url:"https://stegosafety.com/product/barix-armor-st-2022/",
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Type A barrier", text:"Nine chemical classes." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.33, y:0.34, title:"ChemBlock™ + TEGX®", text:"Chemical and A4 cut." } ] },
   { code:"2024", name:"Barix Shell", platform:"ChemBlock™", category:"CHEMICAL · CUT · IMPACT",
     title:"Chemical, cut, impact.<br><em>All three.</em>",
     lead:"The tri-hazard glove: a ChemBlock™ barrier, a TEGX® A6 cut liner and SHELL GRD™ ShockShell™ guards in one. For drums, valves and pipe work where a splash and a knock arrive together.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["A6", "ANSI cut"], ["2", "Impact 138"], ["VIRUS", "EN 374-5"]],
     standards:"EN 388 4X42F · EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 Virus · EN 407 X1XXXX · ANSI/ISEA 138 · CE Cat III",
-    accent:[230, 180, 30], cuff:{ base:"#282828", hem:"#6d4630" },
-    callouts:[ { x:0.56, y:0.14, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.62, y:0.4, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.3, y:0.48, title:"Type A barrier", text:"Chemicals out." }, { x:0.52, y:0.76, title:"TEGX® liner", text:"A6 cut underneath." } ] },
+    accent:[230, 180, 30], cuff:{ base:"#282827", hem:"#6f4831" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Type A barrier", text:"Chemicals out." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
   { code:"7505", name:"Vynox Evo", platform:"ChemBlock™", category:"CHEMICAL · BUTYL",
     title:"Ketones, esters.<br><em>No spark.</em>",
     lead:"Heavy-duty butyl for the solvents that eat other gloves, EN ISO 374-1 Type A and anti-static to EN 16350. SolvLock™ keeps the barrier stable under aggressive exposure; FlexFit™ keeps the hand working.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["ABILST", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A ABILST · EN 374-5 · EN 16350:2014 · EN 388 2111X · CE Cat III",
-    accent:[45, 45, 50], cuff:{ base:"#2a2a2c", hem:"#2b2c2d" },
-    callouts:[ { x:0.55, y:0.12, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.6, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.32, y:0.48, title:"Anti-static", text:"No spark." }, { x:0.5, y:0.76, title:"FlexFit™", text:"Moves with the hand." } ] },
+    accent:[45, 45, 50], cuff:{ base:"#29292b", hem:"#29292b" },
+    callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Moves with the hand." } ] },
 ];
 const DETAILS = {
   "1070": { desc:"Chemical resistant gloves, double-dipped in premium PVC on an interlock lining, EN ISO 374-1 Type B. The PVC limits absorption and migration of hazardous liquids during active use; SealTrace™ seam integrity blocks micro-pathways at transition zones; DryHold™ keeps the inside dry; the sandblast finish keeps control in wet, dry and oily chemical environments.",
@@ -88,7 +88,8 @@ const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
-const N = GLOVES.length, T_OUT = 1 + N, T_END = T_OUT + 0.8;
+const REVEAL = (typeof window !== 'undefined' && document.getElementById('reveal')) ? document.getElementById('reveal') : null;
+const I0 = REVEAL ? 2 : 1, N = GLOVES.length, T_OUT = I0 + N, T_END = T_OUT + 0.8;
 (() => { document.documentElement.style.setProperty('--chapters', String(N)); const tr = document.querySelector('.rail-track'); if (tr) { tr.querySelectorAll('b.tick').forEach(b => b.remove()); for (let k = 0; k < N; k++) { const b = document.createElement('b'); b.className = 'tick'; b.style.top = ((k + 0.5) / N * 100) + '%'; tr.appendChild(b); } } const lb = document.querySelectorAll('.rail-label'); if (lb[1]) lb[1].textContent = String(N).padStart(2, '0'); })();
 const ON_END = 0.28, OFF_START = 0.86, CO_START = 0.31, CO_STEP = 0.11, CO_FADE = 0.06;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -124,6 +125,32 @@ load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; reque
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
 loadGlove(0);
 (window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+
+/* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
+   v 0.00–0.22  the mark and the words arrive (small, slow)
+   v 0.26–0.60  crash zoom: the camera bursts through the wordmark on a slow → snap → settle curve, directional blur with the speed
+   v 0.46–0.66  the screen floods with the technology colour, then goes dark
+   v 0.66–0.90  the dark lifts and the first glove is already there */
+const zoomCurve = p => p < 0.35 ? 0.12 * Math.pow(p / 0.35, 2.4) : p < 0.72 ? 0.12 + 0.78 * (1 - Math.pow(1 - (p - 0.35) / 0.37, 3.2)) : 0.90 + 0.10 * ((p - 0.72) / 0.28);
+function renderReveal(seg) {
+  const core = REVEAL.querySelector('.reveal-core'), flood = REVEAL.querySelector('.reveal-flood');
+  if (seg.phase !== 'intro' || seg.u < 1) { REVEAL.style.opacity = '0'; REVEAL.style.pointerEvents = 'none'; if (flood) flood.style.opacity = '0'; document.body.classList.remove('revealing'); return; }
+  const v = clamp(seg.u - 1);
+  REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
+  document.body.classList.toggle('revealing', v > 0.3 && v < 0.86);
+  const inA = easeOut(clamp(v / 0.22));
+  REVEAL.querySelectorAll('.reveal-words span').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.05) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
+  const logo = REVEAL.querySelector('.reveal-logo'); if (logo) logo.style.opacity = String(inA);
+  const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
+  const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
+  const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
+  if (core) { core.style.transform = `scale(${k.toFixed(3)})`; core.style.filter = speed > 0.004 ? `blur(${Math.min(18, speed * 260).toFixed(1)}px)` : 'none'; core.style.opacity = String(1 - clamp((v - 0.58) / 0.08)); }
+  if (flood) {                                                               // colour flood, then dark, then lift
+    const fill = clamp((v - 0.46) / 0.12), dark = clamp((v - 0.60) / 0.08), lift = clamp((v - 0.70) / 0.2);
+    flood.style.opacity = String(Math.max(fill, dark) * (1 - lift));
+    flood.style.background = dark > 0 ? `color-mix(in srgb, rgb(var(--accent-rgb)) ${Math.round((1 - dark) * 100)}%, #07090c)` : 'rgb(var(--accent-rgb))';
+  }
+}
 
 /* ---------- canvas sizing ---------- */
 let W = 0, H = 0, DPR = 1, off = null, offCtx = null;
@@ -162,8 +189,8 @@ function tick(now) {
 
 /* ---------- timeline helpers ---------- */
 function segment(tt) {
-  if (tt < 1) return { phase:'intro', i:-1, u:tt };
-  if (tt < T_OUT) { const i = Math.floor(tt - 1); return { phase:'chapter', i, u:tt - 1 - i }; }
+  if (tt < I0) return { phase:'intro', i:-1, u:tt };
+  if (tt < T_OUT) { const i = Math.floor(tt - I0); return { phase:'chapter', i, u:tt - I0 - i }; }
   return { phase:'outro', i:N, u:clamp((tt - T_OUT) / 0.8) };
 }
 /* how far the glove i is "on": 0 bare → 1 fitted; and the direction */
@@ -181,6 +208,7 @@ function render() {
   const gi = seg.phase === 'chapter' ? seg.i : -1;
   const gp = gi >= 0 ? gloveProgress(seg.u) : { p:0, dir:'bare' };
   const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(seg.u / 0.55))) : 0;
+  if (REVEAL) renderReveal(seg);
   const outroDrop = seg.phase === 'outro' ? easeOut(clamp(seg.u / 0.6)) : 0;
 
   // hand layer transform (parallax + idle float + intro rise)
@@ -206,7 +234,7 @@ function render() {
   updateCallouts(seg);
 
   // rail
-  const fill = clamp((t - 1) / N);
+  const fill = clamp((t - I0) / N);
   $('#railFill').style.transform = `scaleY(${fill})`;
 }
 
@@ -327,7 +355,7 @@ function setChapter(seg, gp) {
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
-  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);
+  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);   // with a reveal the hazard copy is gone before the second unit
   else if (seg.phase === 'chapter') cp = Math.min(clamp((seg.u - 0.04) / 0.16), 1 - clamp((seg.u - (OFF_START + 0.02)) / 0.1));
   if (cp !== copyProgress) {
     copyProgress = cp;
@@ -481,7 +509,7 @@ dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
 function goTo(i) {
-  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : 1 + i + 0.42;
+  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
   window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
 }
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));

@@ -9,7 +9,7 @@
   --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
   --site-display:"NHL Ducks","Barlow Condensed",Arial,sans-serif; --site-body:"Square 721","Barlow",Arial,sans-serif;
   --body:"Barlow",Inter,system-ui,Arial,sans-serif;
-  --chapters:8; --unit:150vh; --hand-h:106vh; --hand-top:8vh; --hand-cx:63%;
+  --chapters:8; --intro-units:2; --unit:150vh; --hand-h:106vh; --hand-top:8vh; --hand-cx:63%;
 }
 *{box-sizing:border-box}
 html{background:#07090c !important;scroll-behavior:auto;overscroll-behavior:none}
@@ -24,7 +24,17 @@ img{display:block}
 .noscript{position:fixed;inset:auto 0 0 0;padding:16px;background:#111;text-align:center;z-index:50}
 .noscript a{text-decoration:underline}
 
-.scroller{position:relative;height:calc(var(--unit) * (var(--chapters, 4) + 1.8) + 100vh)}
+.scroller{position:relative;height:calc(var(--unit) * (var(--chapters, 4) + var(--intro-units, 1) + 0.8) + 100vh)}
+.reveal{position:absolute;inset:0;z-index:8;opacity:0;pointer-events:none;overflow:hidden}
+.revealing .dock,.revealing .rail,.revealing .bar,.revealing header{opacity:0!important;transition:opacity .2s}
+.reveal-core{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;transform-origin:50% 52%;will-change:transform,filter,opacity}
+.reveal-logo{height:min(22vh,160px);max-width:70vw;object-fit:contain;filter:drop-shadow(0 10px 30px rgba(0,0,0,.6))}
+.reveal-words{display:flex;flex-direction:column;align-items:center;gap:2px;font-family:var(--display);font-weight:800;text-transform:uppercase;line-height:.96;letter-spacing:.02em;color:#fff}
+.reveal-words span{display:block;opacity:0;font-size:clamp(28px,6.2vw,76px);will-change:transform,opacity}
+.reveal-words span.ac{color:rgb(var(--accent-rgb))}
+.reveal-flood{position:absolute;inset:0;opacity:0;background:rgb(var(--accent-rgb));pointer-events:none;will-change:opacity}
+@media (max-width:640px){.reveal-logo{height:min(16vh,110px)}.reveal-words span{font-size:clamp(30px,10.5vw,52px)}}
+
 .stage{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden;isolation:isolate}
 
 /* ---------- background depth ---------- */

@@ -20,43 +20,43 @@ const GLOVES = [
     lead:"A6 cut in a glove you forget is on. A CutCage™ TexArn™ liner under a sandy nitrile palm, LiquiBlock™ so oil stays on the part, tactility fine enough for small components.",
     ratings:[["A6", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4544F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[48, 70, 160], cuff:{ base:"#2d3f68", hem:"#4d3c44" }, url:"https://stegosafety.com/product/fortflex-st-2085/",
-    callouts:[ { x:0.55, y:0.12, title:"Sandy nitrile palm", text:"Grip, oily or dry." }, { x:0.6, y:0.4, title:"TexArn™ liner", text:"ANSI A6 cut." }, { x:0.32, y:0.46, title:"LiquiBlock™", text:"Oil stays out." }, { x:0.5, y:0.72, title:"CutCage™", text:"Reinforced where blades hit." } ] },
+    accent:[48, 70, 160], cuff:{ base:"#2c3e66", hem:"#4c3a43" }, url:"https://stegosafety.com/product/fortflex-st-2085/",
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"TexArn™ liner", text:"ANSI A6 cut." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." }, { x:0.33, y:0.34, title:"CutCage™", text:"Reinforced where blades hit." } ] },
   { code:"2080", name:"Xyron Guard", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Blades on the line.<br><em>Air in the glove.</em>",
     lead:"Made for lines where sharp parts pass through hands all shift. ANSI A6 cut, CutCage™ over the contact zones, an AirWeave™ knit that breathes and TruTouch™ tips for the screen.",
     ratings:[["A6", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[60, 90, 200], cuff:{ base:"#52273b", hem:"#5c3d2b" },
-    callouts:[ { x:0.55, y:0.1, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.6, y:0.4, title:"CutCage™", text:"Reinforced contact zones." }, { x:0.32, y:0.46, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.5, y:0.72, title:"Sandy nitrile palm", text:"Grip that lasts." } ] },
+    accent:[60, 90, 200], cuff:{ base:"#51273a", hem:"#5b3b2a" },
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.33, y:0.34, title:"CutCage™", text:"Reinforced contact zones." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
   { code:"2094", name:"Praxor Evo", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"A7 cut.<br><em>Skin-thin.</em>",
     lead:"The highest cut level in the series on a 21-gauge liner you can feel through. NanoArn™ Evo yarn with stretch recovery, DryHold™ inside, a sandy nitrile palm for high-risk work needing fingers.",
     ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[95, 115, 150], cuff:{ base:"#947562", hem:"#655e55" },
-    callouts:[ { x:0.55, y:0.12, title:"Sandy nitrile palm", text:"Controlled grip." }, { x:0.6, y:0.4, title:"NanoArn™ Evo liner", text:"ANSI A7, 21 gauge." }, { x:0.32, y:0.46, title:"DryHold™", text:"Dry inside." }, { x:0.5, y:0.72, title:"Stretch-recovery fit", text:"Holds its shape." } ] },
+    accent:[95, 115, 150], cuff:{ base:"#907362", hem:"#685e54" },
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"NanoArn™ Evo liner", text:"ANSI A7, 21 gauge." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." }, { x:0.5, y:0.6, title:"Stretch-recovery fit", text:"Holds its shape." } ] },
   { code:"2096", name:"Fortmax Oil", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Oil on the blade.<br><em>Still a dry grip.</em>",
     lead:"For wet and oily cut work: a three-quarter nitrile shell over a NanoArn™ A6 liner, LiquiBlock™ to shed the fluid, a sandy palm for grip when the part is slick.",
     ratings:[["A6", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[150, 95, 60], cuff:{ base:"#354564", hem:"#7e555f" },
-    callouts:[ { x:0.55, y:0.12, title:"Sandy nitrile palm", text:"Grip, wet or oily." }, { x:0.6, y:0.4, title:"NanoArn™ liner", text:"ANSI A6 cut." }, { x:0.32, y:0.46, title:"LiquiBlock™", text:"Sheds oil and fluid." }, { x:0.5, y:0.7, title:"3/4 nitrile coat", text:"Liquid off the knuckles." } ] },
+    accent:[150, 95, 60], cuff:{ base:"#314364", hem:"#91625e" },
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"NanoArn™ liner", text:"ANSI A6 cut." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Sheds oil and fluid." }, { x:0.56, y:0.26, title:"3/4 nitrile coat", text:"Liquid off the knuckles." } ] },
   { code:"2098", name:"Super Cut Max", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Sharp and hot.<br><em>Both handled.</em>",
     lead:"Steel sheet, swarf, hot edges. A TexArn™ Max para-aramid liner rated ANSI A7 cut with contact-heat resistance, TruTouch™ fingertips and a sandy nitrile palm for 360° grip.",
     ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["4", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X44F · EN 407:2020 X2XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[120, 140, 60], cuff:{ base:"#585d34", hem:"#543321" }, url:"https://stegosafety.com/product/super-cut-max-st-2098/",
-    callouts:[ { x:0.55, y:0.1, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.6, y:0.4, title:"Para-aramid liner", text:"A7 cut, heat resistant." }, { x:0.32, y:0.46, title:"DryHold™", text:"Dry inside." }, { x:0.5, y:0.72, title:"Sandy nitrile palm", text:"Grip on steel." } ] },
+    accent:[120, 140, 60], cuff:{ base:"#575c34", hem:"#533120" }, url:"https://stegosafety.com/product/super-cut-max-st-2098/",
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.62, y:0.34, title:"Para-aramid liner", text:"A7 cut, heat resistant." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
   { code:"5588", name:"Pyron Arc", platform:"TEGX®", category:"CUT · ARC FLASH",
     title:"Arc flash.<br><em>Cut, too.</em>",
     lead:"For live electrical work with sharp edges in reach. Arc-rated CAT 3 at 9.3 cal/cm², NFPA 70E compliant, a TexArn™ aramid liner rated A4 cut and a foam neoprene palm.",
     ratings:[["A4", "ANSI cut"], ["CAT 3", "Arc rated"], ["4", "Abrasion"], ["D", "EN 388 cut"]],
     standards:"EN 388:2016 3X42D · EN 407:2020 4132XX · ANSI/ISEA 105 · NFPA 70E · ATPV 9.3 cal/cm² · CE Cat III",
-    accent:[210, 220, 40], cuff:{ base:"#cdcf60", hem:"#9e4e31" },
-    callouts:[ { x:0.55, y:0.12, title:"Foam neoprene palm", text:"Grip on cable and tool." }, { x:0.6, y:0.4, title:"Aramid liner", text:"Arc flash, 9.3 cal/cm²." }, { x:0.32, y:0.46, title:"AirWeave™ knit", text:"Cool under the sleeve." }, { x:0.5, y:0.72, title:"LiquiBlock™", text:"Oil stays out." } ] },
+    accent:[210, 220, 40], cuff:{ base:"#caca5e", hem:"#9e5538" },
+    callouts:[ { x:0.42, y:0.11, title:"Foam neoprene coating", text:"Grip on cable and tool." }, { x:0.62, y:0.34, title:"Aramid liner", text:"Arc flash, 9.3 cal/cm²." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool under the sleeve." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
 ];
 const DETAILS = {
   '7098': { desc:'Delivers ANSI A6 cut protection through an advanced TEGX® engineered liner and TexArn™ yarn technology. Built for demanding environments with resistance to cuts, abrasion, tears and fluid exposure, with CutCage™ reinforcement in high-contact zones, 360° stretch ergonomics and touchscreen-ready fingertips.',
@@ -92,7 +92,8 @@ const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
-const N = GLOVES.length, T_OUT = 1 + N, T_END = T_OUT + 0.8;
+const REVEAL = (typeof window !== 'undefined' && document.getElementById('reveal')) ? document.getElementById('reveal') : null;
+const I0 = REVEAL ? 2 : 1, N = GLOVES.length, T_OUT = I0 + N, T_END = T_OUT + 0.8;
 (() => { document.documentElement.style.setProperty('--chapters', String(N)); const tr = document.querySelector('.rail-track'); if (tr) { tr.querySelectorAll('b.tick').forEach(b => b.remove()); for (let k = 0; k < N; k++) { const b = document.createElement('b'); b.className = 'tick'; b.style.top = ((k + 0.5) / N * 100) + '%'; tr.appendChild(b); } } const lb = document.querySelectorAll('.rail-label'); if (lb[1]) lb[1].textContent = String(N).padStart(2, '0'); })();
 const ON_END = 0.28, OFF_START = 0.86, CO_START = 0.31, CO_STEP = 0.11, CO_FADE = 0.06;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -128,6 +129,32 @@ load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; reque
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
 loadGlove(0);
 (window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+
+/* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
+   v 0.00–0.22  the mark and the words arrive (small, slow)
+   v 0.26–0.60  crash zoom: the camera bursts through the wordmark on a slow → snap → settle curve, directional blur with the speed
+   v 0.46–0.66  the screen floods with the technology colour, then goes dark
+   v 0.66–0.90  the dark lifts and the first glove is already there */
+const zoomCurve = p => p < 0.35 ? 0.12 * Math.pow(p / 0.35, 2.4) : p < 0.72 ? 0.12 + 0.78 * (1 - Math.pow(1 - (p - 0.35) / 0.37, 3.2)) : 0.90 + 0.10 * ((p - 0.72) / 0.28);
+function renderReveal(seg) {
+  const core = REVEAL.querySelector('.reveal-core'), flood = REVEAL.querySelector('.reveal-flood');
+  if (seg.phase !== 'intro' || seg.u < 1) { REVEAL.style.opacity = '0'; REVEAL.style.pointerEvents = 'none'; if (flood) flood.style.opacity = '0'; document.body.classList.remove('revealing'); return; }
+  const v = clamp(seg.u - 1);
+  REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
+  document.body.classList.toggle('revealing', v > 0.3 && v < 0.86);
+  const inA = easeOut(clamp(v / 0.22));
+  REVEAL.querySelectorAll('.reveal-words span').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.05) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
+  const logo = REVEAL.querySelector('.reveal-logo'); if (logo) logo.style.opacity = String(inA);
+  const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
+  const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
+  const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
+  if (core) { core.style.transform = `scale(${k.toFixed(3)})`; core.style.filter = speed > 0.004 ? `blur(${Math.min(18, speed * 260).toFixed(1)}px)` : 'none'; core.style.opacity = String(1 - clamp((v - 0.58) / 0.08)); }
+  if (flood) {                                                               // colour flood, then dark, then lift
+    const fill = clamp((v - 0.46) / 0.12), dark = clamp((v - 0.60) / 0.08), lift = clamp((v - 0.70) / 0.2);
+    flood.style.opacity = String(Math.max(fill, dark) * (1 - lift));
+    flood.style.background = dark > 0 ? `color-mix(in srgb, rgb(var(--accent-rgb)) ${Math.round((1 - dark) * 100)}%, #07090c)` : 'rgb(var(--accent-rgb))';
+  }
+}
 
 /* ---------- canvas sizing ---------- */
 let W = 0, H = 0, DPR = 1, off = null, offCtx = null;
@@ -166,8 +193,8 @@ function tick(now) {
 
 /* ---------- timeline helpers ---------- */
 function segment(tt) {
-  if (tt < 1) return { phase:'intro', i:-1, u:tt };
-  if (tt < T_OUT) { const i = Math.floor(tt - 1); return { phase:'chapter', i, u:tt - 1 - i }; }
+  if (tt < I0) return { phase:'intro', i:-1, u:tt };
+  if (tt < T_OUT) { const i = Math.floor(tt - I0); return { phase:'chapter', i, u:tt - I0 - i }; }
   return { phase:'outro', i:N, u:clamp((tt - T_OUT) / 0.8) };
 }
 /* how far the glove i is "on": 0 bare → 1 fitted; and the direction */
@@ -185,6 +212,7 @@ function render() {
   const gi = seg.phase === 'chapter' ? seg.i : -1;
   const gp = gi >= 0 ? gloveProgress(seg.u) : { p:0, dir:'bare' };
   const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(seg.u / 0.55))) : 0;
+  if (REVEAL) renderReveal(seg);
   const outroDrop = seg.phase === 'outro' ? easeOut(clamp(seg.u / 0.6)) : 0;
 
   // hand layer transform (parallax + idle float + intro rise)
@@ -210,7 +238,7 @@ function render() {
   updateCallouts(seg);
 
   // rail
-  const fill = clamp((t - 1) / N);
+  const fill = clamp((t - I0) / N);
   $('#railFill').style.transform = `scaleY(${fill})`;
 }
 
@@ -331,7 +359,7 @@ function setChapter(seg, gp) {
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
-  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);
+  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);   // with a reveal the hazard copy is gone before the second unit
   else if (seg.phase === 'chapter') cp = Math.min(clamp((seg.u - 0.04) / 0.16), 1 - clamp((seg.u - (OFF_START + 0.02)) / 0.1));
   if (cp !== copyProgress) {
     copyProgress = cp;
@@ -485,7 +513,7 @@ dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
 function goTo(i) {
-  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : 1 + i + 0.42;
+  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
   window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
 }
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));

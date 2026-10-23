@@ -9,36 +9,36 @@ const GLOVES = [
     lead:"The workshop glove. A seamless knit liner with a smooth PU palm for dry handling, CoreForm™ structure that keeps its shape and a FlexFit™ contour that moves with the hand.",
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 4131A · ANSI/ISEA 105 · CE Cat II",
-    accent:[120, 125, 135], cuff:{ base:"#3b3c39", hem:"#7b6453" },
-    callouts:[ { x:0.55, y:0.12, title:"Smooth PU palm", text:"Dry grip, fine feel." }, { x:0.6, y:0.4, title:"CoreForm™", text:"Keeps its shape." }, { x:0.32, y:0.46, title:"FlexFit™", text:"Moves with the hand." }, { x:0.5, y:0.74, title:"EdgeLock™ cuff", text:"Stays put." } ] },
+    accent:[120, 125, 135], cuff:{ base:"#3a3b38", hem:"#796253" },
+    callouts:[ { x:0.42, y:0.11, title:"Smooth PU coating", text:"Dry grip, fine feel." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Moves with the hand." }, { x:0.5, y:0.73, title:"EdgeLock™ cuff", text:"Stays put." } ] },
   { code:"6035", name:"Optiflex", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Seen on site.<br><em>Sure on the rail.</em>",
     lead:"High-visibility knit with a latex foam palm that locks onto wet timber, steel and rope. A CoreArn™ liner that will not distort, FlexFit™ shaping for a tired hand late in the shift.",
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 3131X · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[200, 225, 40], cuff:{ base:"#d2e043", hem:"#907433" },
-    callouts:[ { x:0.55, y:0.12, title:"Latex foam palm", text:"Grip on wet timber." }, { x:0.6, y:0.4, title:"Hi-vis knit", text:"Seen in low light." }, { x:0.32, y:0.46, title:"CoreArn™ liner", text:"Holds its shape." }, { x:0.5, y:0.72, title:"FlexFit™", text:"Follows the hand." } ] },
+    accent:[200, 225, 40], cuff:{ base:"#cfdd43", hem:"#8e7232" },
+    callouts:[ { x:0.42, y:0.11, title:"Latex foam coating", text:"Grip on wet timber." }, { x:0.62, y:0.34, title:"Hi-vis knit", text:"Seen in low light." }, { x:0.62, y:0.34, title:"CoreArn™ liner", text:"Holds its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." } ] },
   { code:"6014", name:"Flexilite", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Rough work.<br><em>Light glove.</em>",
     lead:"Crinkle latex over a light seamless knit: the glove for bricks, blocks and general handling where grip matters more than finesse. CoreForm™ keeps the shape, FlexFit™ keeps the fit.",
     ratings:[["3", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 3131X · ANSI/ISEA 105 · CE Cat II",
-    accent:[200, 60, 50], cuff:{ base:"#c5231e", hem:"#792f22" },
-    callouts:[ { x:0.55, y:0.12, title:"Crinkle latex palm", text:"Grip on rough surfaces." }, { x:0.6, y:0.4, title:"Lightweight knit", text:"No bulk." }, { x:0.32, y:0.46, title:"CoreForm™", text:"Keeps its shape." }, { x:0.5, y:0.72, title:"FlexFit™", text:"Follows the hand." } ] },
+    accent:[200, 60, 50], cuff:{ base:"#c2231d", hem:"#762e21" },
+    callouts:[ { x:0.42, y:0.11, title:"Crinkle latex coating", text:"Grip on rough surfaces." }, { x:0.62, y:0.34, title:"Lightweight knit", text:"No bulk." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." } ] },
   { code:"2015", name:"Tactilite", platform:"GRYX™", category:"MECHANICAL · ESD",
     title:"Static-safe.<br><em>Fingertip fine.</em>",
     lead:"For electronics, panels and anything that must not spark. An ESD-safe breathable liner with controlled static dissipation, a micro-foam nitrile palm with 360° tactility, TruTouch™ tips for the screen.",
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
-    accent:[110, 130, 150], cuff:{ base:"#3d3937", hem:"#593f2f" },
-    callouts:[ { x:0.55, y:0.1, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.6, y:0.4, title:"ESD-safe liner", text:"Static drains away." }, { x:0.32, y:0.46, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.5, y:0.72, title:"Micro-foam palm", text:"Light, 360° feel." } ] },
+    accent:[110, 130, 150], cuff:{ base:"#3c3937", hem:"#593d2e" },
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.62, y:0.34, title:"ESD-safe liner", text:"Static drains away." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.42, y:0.11, title:"Micro-foam fingertips", text:"Light, 360° feel." } ] },
   { code:"2050", name:"Tacti-Vanta", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Small parts.<br><em>Big grip.</em>",
     lead:"Ultra-light engineered knit for intricate handling, with a sandy nitrile palm that holds on dry, oily and greasy surfaces. CoreArn™ and FlexHold™ keep the fit through every flex.",
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[40, 60, 150], cuff:{ base:"#1c223a", hem:"#45372e" },
-    callouts:[ { x:0.55, y:0.12, title:"Sandy nitrile palm", text:"Grip, dry or greasy." }, { x:0.6, y:0.4, title:"CoreArn™ liner", text:"Will not distort." }, { x:0.32, y:0.46, title:"FlexHold™", text:"Fit holds under flex." }, { x:0.5, y:0.72, title:"DryHold™", text:"Dry inside." } ] },
+    accent:[40, 60, 150], cuff:{ base:"#1c2139", hem:"#42362e" },
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"CoreArn™ liner", text:"Will not distort." }, { x:0.55, y:0.28, title:"FlexHold™", text:"Fit holds under flex." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:'2055', name:'Tacti-Air', platform:'GRYX™', category:'MECHANICAL & MULTI-PURPOSE',
     title:'Forget it\'s on.<br><em>Until you grip.</em>',
     lead:'The everyday glove. A seamless knit you stop noticing, with a sandy nitrile palm that bites into boxes, tools and strapping. Abrasion 5, puncture 2, cut A1, touchscreen fingertip.',
@@ -55,15 +55,15 @@ const GLOVES = [
     lead:"Fully coated sandy nitrile for wet and oily mechanical work: abrasion 6, ESD-safe, LiquiBlock™ to keep fluid out and TaskFlex™ mapping so a full coat still bends where the hand does.",
     ratings:[["6", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
-    accent:[30, 120, 220], cuff:{ base:"#3b3b3d", hem:"#b4815d" },
-    callouts:[ { x:0.55, y:0.12, title:"Full nitrile coat", text:"Sealed to the cuff." }, { x:0.6, y:0.4, title:"Sandy finish", text:"Grip in fluid." }, { x:0.32, y:0.46, title:"TaskFlex™", text:"Bends at the stress zones." }, { x:0.5, y:0.72, title:"LiquiBlock™", text:"Oil stays out." } ] },
+    accent:[30, 120, 220], cuff:{ base:"#3f3f41", hem:"#ad7b59" },
+    callouts:[ { x:0.56, y:0.26, title:"Full nitrile coat", text:"Sealed to the cuff." }, { x:0.42, y:0.11, title:"Sandy finish", text:"Grip in fluid." }, { x:0.55, y:0.28, title:"TaskFlex™", text:"Bends at the stress zones." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
   { code:"2067", name:"Nitri-Max Thermo", platform:"GRYX™", category:"MECHANICAL · COLD",
     title:"Cold store, oily steel.<br><em>Warm hands.</em>",
     lead:"Winter and cold-store mechanical work: a brushed acrylic terry liner under a full double-dipped sandy nitrile coat, A4 cut, abrasion 6, CoreTherm™ warmth and LiquiBlock™ against oil and water.",
     ratings:[["A4", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["X2X", "EN 511 cold"]],
     standards:"EN 388:2016 4X42D · EN 407:2020 X2XXXX · EN 511:2006 X2X · ANSI/ISEA 105 · CE Cat II",
-    accent:[20, 100, 210], cuff:{ base:"#1d1d1d", hem:"#29221d" }, url:"https://stegosafety.com/product/nitri-max-thermo-st-2067/",
-    callouts:[ { x:0.55, y:0.1, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.6, y:0.4, title:"Double-dipped nitrile", text:"Oil and water out." }, { x:0.32, y:0.46, title:"CoreTherm™ liner", text:"Warm in the cold." }, { x:0.5, y:0.72, title:"TaskFlex™", text:"Bends where you do." } ] },
+    accent:[20, 100, 210], cuff:{ base:"#1c1c1d", hem:"#28211d" }, url:"https://stegosafety.com/product/nitri-max-thermo-st-2067/",
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.56, y:0.26, title:"Double-dipped nitrile", text:"Oil and water out." }, { x:0.62, y:0.34, title:"CoreTherm™ liner", text:"Warm in the cold." }, { x:0.55, y:0.28, title:"TaskFlex™", text:"Bends where you do." } ] },
 ];
 const DETAILS = {
   "7020": { desc:"Flexible mechanical gloves with a seamless knit liner and a smooth PU grip for general handling: reliable resistance to surface wear during tool work, CoreForm™ reinforcement that stabilises the glove shape under mechanical stress, FlexFit™ anatomical shaping and precision grip control through repeated use.",
@@ -103,7 +103,8 @@ const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
-const N = GLOVES.length, T_OUT = 1 + N, T_END = T_OUT + 0.8;
+const REVEAL = (typeof window !== 'undefined' && document.getElementById('reveal')) ? document.getElementById('reveal') : null;
+const I0 = REVEAL ? 2 : 1, N = GLOVES.length, T_OUT = I0 + N, T_END = T_OUT + 0.8;
 (() => { document.documentElement.style.setProperty('--chapters', String(N)); const tr = document.querySelector('.rail-track'); if (tr) { tr.querySelectorAll('b.tick').forEach(b => b.remove()); for (let k = 0; k < N; k++) { const b = document.createElement('b'); b.className = 'tick'; b.style.top = ((k + 0.5) / N * 100) + '%'; tr.appendChild(b); } } const lb = document.querySelectorAll('.rail-label'); if (lb[1]) lb[1].textContent = String(N).padStart(2, '0'); })();
 const ON_END = 0.28, OFF_START = 0.86, CO_START = 0.31, CO_STEP = 0.11, CO_FADE = 0.06;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -139,6 +140,32 @@ load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; reque
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
 loadGlove(0);
 (window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+
+/* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
+   v 0.00–0.22  the mark and the words arrive (small, slow)
+   v 0.26–0.60  crash zoom: the camera bursts through the wordmark on a slow → snap → settle curve, directional blur with the speed
+   v 0.46–0.66  the screen floods with the technology colour, then goes dark
+   v 0.66–0.90  the dark lifts and the first glove is already there */
+const zoomCurve = p => p < 0.35 ? 0.12 * Math.pow(p / 0.35, 2.4) : p < 0.72 ? 0.12 + 0.78 * (1 - Math.pow(1 - (p - 0.35) / 0.37, 3.2)) : 0.90 + 0.10 * ((p - 0.72) / 0.28);
+function renderReveal(seg) {
+  const core = REVEAL.querySelector('.reveal-core'), flood = REVEAL.querySelector('.reveal-flood');
+  if (seg.phase !== 'intro' || seg.u < 1) { REVEAL.style.opacity = '0'; REVEAL.style.pointerEvents = 'none'; if (flood) flood.style.opacity = '0'; document.body.classList.remove('revealing'); return; }
+  const v = clamp(seg.u - 1);
+  REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
+  document.body.classList.toggle('revealing', v > 0.3 && v < 0.86);
+  const inA = easeOut(clamp(v / 0.22));
+  REVEAL.querySelectorAll('.reveal-words span').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.05) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
+  const logo = REVEAL.querySelector('.reveal-logo'); if (logo) logo.style.opacity = String(inA);
+  const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
+  const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
+  const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
+  if (core) { core.style.transform = `scale(${k.toFixed(3)})`; core.style.filter = speed > 0.004 ? `blur(${Math.min(18, speed * 260).toFixed(1)}px)` : 'none'; core.style.opacity = String(1 - clamp((v - 0.58) / 0.08)); }
+  if (flood) {                                                               // colour flood, then dark, then lift
+    const fill = clamp((v - 0.46) / 0.12), dark = clamp((v - 0.60) / 0.08), lift = clamp((v - 0.70) / 0.2);
+    flood.style.opacity = String(Math.max(fill, dark) * (1 - lift));
+    flood.style.background = dark > 0 ? `color-mix(in srgb, rgb(var(--accent-rgb)) ${Math.round((1 - dark) * 100)}%, #07090c)` : 'rgb(var(--accent-rgb))';
+  }
+}
 
 /* ---------- canvas sizing ---------- */
 let W = 0, H = 0, DPR = 1, off = null, offCtx = null;
@@ -177,8 +204,8 @@ function tick(now) {
 
 /* ---------- timeline helpers ---------- */
 function segment(tt) {
-  if (tt < 1) return { phase:'intro', i:-1, u:tt };
-  if (tt < T_OUT) { const i = Math.floor(tt - 1); return { phase:'chapter', i, u:tt - 1 - i }; }
+  if (tt < I0) return { phase:'intro', i:-1, u:tt };
+  if (tt < T_OUT) { const i = Math.floor(tt - I0); return { phase:'chapter', i, u:tt - I0 - i }; }
   return { phase:'outro', i:N, u:clamp((tt - T_OUT) / 0.8) };
 }
 /* how far the glove i is "on": 0 bare → 1 fitted; and the direction */
@@ -196,6 +223,7 @@ function render() {
   const gi = seg.phase === 'chapter' ? seg.i : -1;
   const gp = gi >= 0 ? gloveProgress(seg.u) : { p:0, dir:'bare' };
   const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(seg.u / 0.55))) : 0;
+  if (REVEAL) renderReveal(seg);
   const outroDrop = seg.phase === 'outro' ? easeOut(clamp(seg.u / 0.6)) : 0;
 
   // hand layer transform (parallax + idle float + intro rise)
@@ -221,7 +249,7 @@ function render() {
   updateCallouts(seg);
 
   // rail
-  const fill = clamp((t - 1) / N);
+  const fill = clamp((t - I0) / N);
   $('#railFill').style.transform = `scaleY(${fill})`;
 }
 
@@ -342,7 +370,7 @@ function setChapter(seg, gp) {
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
-  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);
+  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);   // with a reveal the hazard copy is gone before the second unit
   else if (seg.phase === 'chapter') cp = Math.min(clamp((seg.u - 0.04) / 0.16), 1 - clamp((seg.u - (OFF_START + 0.02)) / 0.1));
   if (cp !== copyProgress) {
     copyProgress = cp;
@@ -496,7 +524,7 @@ dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
 function goTo(i) {
-  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : 1 + i + 0.42;
+  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
   window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
 }
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));

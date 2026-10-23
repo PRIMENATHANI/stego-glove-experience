@@ -9,8 +9,8 @@ const GLOVES = [
     lead:"Impact Level 2 over an A6 TEGX® liner, for rig and yard work where hands sit between steel. ShockShell™ TPR on the knuckles, a LiquiBlock™ nitrile palm, hi-vis guards, touchscreen fingertips.",
     ratings:[["2", "Impact 138"], ["A6", "ANSI cut"], ["6", "Abrasion"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[230, 50, 50], cuff:{ base:"#5d5d62", hem:"#574e4e" },
-    callouts:[ { x:0.56, y:0.14, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.62, y:0.38, title:"Hi-vis TPR", text:"Seen in low light." }, { x:0.3, y:0.44, title:"LiquiBlock™ palm", text:"Grip on oily pipe." }, { x:0.52, y:0.7, title:"TEGX® liner", text:"A6 cut underneath." } ] },
+    accent:[230, 50, 50], cuff:{ base:"#5c5c61", hem:"#564d4d" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.4, y:0.18, title:"Hi-vis TPR", text:"Seen in low light." }, { x:0.42, y:0.11, title:"LiquiBlock™ coating", text:"Grip on oily pipe." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
   { code:'9080', name:'Shell Series', platform:'SHELL GRD™', category:'IMPACT & CUT',
     title:'Take the hit.<br><em>Keep working.</em>',
     lead:'Knuckles under ShockShell™ TPR rated ANSI/ISEA 138 Level 2. A 13-gauge TEGX® liner rated A7 cut. FlexSpine™ segments bend with your fingers when you make a fist.',
@@ -27,36 +27,36 @@ const GLOVES = [
     lead:"The fully coated Shell: double-dipped sandy nitrile over an A7 TEGX® liner, Impact Level 2 guards on top. For wet, oily and hydrocarbon work where the hand also takes hits.",
     ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[30, 110, 220], cuff:{ base:"#6c6961", hem:"#4a3830" }, url:"https://stegosafety.com/product/shell-series-st-9070/",
-    callouts:[ { x:0.56, y:0.14, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.62, y:0.38, title:"Full nitrile coat", text:"Hydrocarbons out." }, { x:0.3, y:0.44, title:"Sandy grip", text:"Holds when slick." }, { x:0.52, y:0.7, title:"TEGX® liner", text:"A7 cut underneath." } ] },
+    accent:[30, 110, 220], cuff:{ base:"#6a6760", hem:"#49372f" }, url:"https://stegosafety.com/product/shell-series-st-9070/",
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.56, y:0.26, title:"Full nitrile coat", text:"Hydrocarbons out." }, { x:0.42, y:0.11, title:"Sandy grip", text:"Holds when slick." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A7 cut underneath." } ] },
   { code:"8056", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ANTI-VIBRATION",
     title:"Breakers and grinders.<br><em>Less shake.</em>",
     lead:"The anti-vibration Shell. TorqueGuard™ rubber palm pads dampen the shock and torque from breakers, grinders and impact tools; ShockShell™ guards take the knocks; an A5 cut liner underneath.",
     ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["E", "EN 388 cut"], ["0.86", "Vibration TRM"]],
     standards:"EN 388:2016 4543EP · EN 407:2020 X1XXXX · EN ISO 10819:2013 TRM 0.86 · TRH 0.59 · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[70, 70, 80], cuff:{ base:"#232121", hem:"#21130f" },
-    callouts:[ { x:0.56, y:0.14, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.62, y:0.38, title:"TorqueGuard™ pads", text:"Damp the vibration." }, { x:0.3, y:0.44, title:"Rubber palm pads", text:"Shock stays in the tool." }, { x:0.52, y:0.7, title:"High-cut liner", text:"A5 underneath." } ] },
+    accent:[70, 70, 80], cuff:{ base:"#222020", hem:"#3a2213" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.24, y:0.4, title:"TorqueGuard™", text:"Pads under the palm." }, { x:0.6, y:0.14, title:"Padded fingers", text:"Shock stays in the tool." }, { x:0.62, y:0.36, title:"High-cut liner", text:"A5 underneath." } ] },
   { code:"9050", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH",
     title:"Arc, heat, impact.<br><em>One glove.</em>",
     lead:"Grain goatskin on a TEGX® dual layer, arc-rated CAT 4 at 44 cal/cm². FlexSpine™ TPR across the back, A5 cut, for switchgear, welding bays and heavy lifts where the hazards stack.",
     ratings:[["CAT 4", "Arc rated"], ["2", "Impact 138"], ["A5", "ANSI cut"], ["E", "EN 388 cut"]],
     standards:"EN 388:2016 3X43EP · EN 407:2020 X1XXXX · ANSI/ISEA 105 + 138 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
-    accent:[230, 140, 30], cuff:{ base:"#7d7b86", hem:"#734d38" },
-    callouts:[ { x:0.56, y:0.14, title:"FlexSpine™ guards", text:"Bend with the fingers." }, { x:0.62, y:0.38, title:"Goatskin leather", text:"Heat and wear." }, { x:0.3, y:0.44, title:"TexArn™ layer", text:"A5 cut, arc rated." }, { x:0.52, y:0.7, title:"DryHold™", text:"Dry inside." } ] },
+    accent:[230, 140, 30], cuff:{ base:"#7b7984", hem:"#704c36" },
+    callouts:[ { x:0.63, y:0.17, title:"FlexSpine™ guards", text:"Bend with the fingers." }, { x:0.38, y:0.42, title:"Goatskin leather", text:"Heat and wear." }, { x:0.62, y:0.34, title:"TexArn™ layer", text:"A5 cut, arc rated." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"9085", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · HI-VIS",
     title:"Wet steel.<br><em>Seen and held.</em>",
     lead:"Hi-vis Shell with an anti-slip silicone palm for wet, dry and oily grip, A7 cut, abrasion 6, puncture 5 and ShockShell™ guards. For stone, precast and steel yards after rain.",
     ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[220, 40, 40], cuff:{ base:"#0a0c0e", hem:"#221916" },
-    callouts:[ { x:0.56, y:0.14, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.62, y:0.38, title:"Silicone palm", text:"Grip when wet." }, { x:0.3, y:0.44, title:"Hi-vis back", text:"Seen across the yard." }, { x:0.52, y:0.7, title:"LiquiBlock™", text:"Oil stays out." } ] },
+    accent:[220, 40, 40], cuff:{ base:"#0a0c0e", hem:"#231817" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.42, y:0.11, title:"Silicone grip", text:"Grip when wet." }, { x:0.4, y:0.18, title:"Hi-vis back", text:"Seen across the yard." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
   { code:"9086", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · LEVEL 3",
     title:"Heaviest hits.<br><em>Level 3.</em>",
     lead:"The highest impact rating in the series. Level 3 TPR across knuckles, fingers and the back of the hand, A7 cut, puncture 5, DryHold™ inside, LiquiBlock™ grip for wet and oily work.",
     ratings:[["3", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · ANSI/ISEA 105 + 138 Level 3 · CE Cat II",
-    accent:[210, 220, 40], cuff:{ base:"#161415", hem:"#563523" },
-    callouts:[ { x:0.56, y:0.14, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.62, y:0.38, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.3, y:0.44, title:"High-performance palm", text:"Grip and wear." }, { x:0.52, y:0.7, title:"DryHold™", text:"Dry inside." } ] },
+    accent:[210, 220, 40], cuff:{ base:"#161415", hem:"#553422" },
+    callouts:[ { x:0.55, y:0.27, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.55, y:0.27, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.42, y:0.11, title:"High-performance grip", text:"Grip and wear." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
 ];
 const DETAILS = {
   "9075": { desc:"Impact, cut and oil resistant: a TEGX® TexArn™ A6 liner under ShockShell™ compressive TPR zones that absorb vertical impact energy, a nitrile LiquiBlock™ coating that resists oil and fluid absorption, high-visibility TPR for hand awareness in low light, and touchscreen compatibility.",
@@ -92,7 +92,8 @@ const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
-const N = GLOVES.length, T_OUT = 1 + N, T_END = T_OUT + 0.8;
+const REVEAL = (typeof window !== 'undefined' && document.getElementById('reveal')) ? document.getElementById('reveal') : null;
+const I0 = REVEAL ? 2 : 1, N = GLOVES.length, T_OUT = I0 + N, T_END = T_OUT + 0.8;
 (() => { document.documentElement.style.setProperty('--chapters', String(N)); const tr = document.querySelector('.rail-track'); if (tr) { tr.querySelectorAll('b.tick').forEach(b => b.remove()); for (let k = 0; k < N; k++) { const b = document.createElement('b'); b.className = 'tick'; b.style.top = ((k + 0.5) / N * 100) + '%'; tr.appendChild(b); } } const lb = document.querySelectorAll('.rail-label'); if (lb[1]) lb[1].textContent = String(N).padStart(2, '0'); })();
 const ON_END = 0.28, OFF_START = 0.86, CO_START = 0.31, CO_STEP = 0.11, CO_FADE = 0.06;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
@@ -128,6 +129,32 @@ load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; reque
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
 loadGlove(0);
 (window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+
+/* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
+   v 0.00–0.22  the mark and the words arrive (small, slow)
+   v 0.26–0.60  crash zoom: the camera bursts through the wordmark on a slow → snap → settle curve, directional blur with the speed
+   v 0.46–0.66  the screen floods with the technology colour, then goes dark
+   v 0.66–0.90  the dark lifts and the first glove is already there */
+const zoomCurve = p => p < 0.35 ? 0.12 * Math.pow(p / 0.35, 2.4) : p < 0.72 ? 0.12 + 0.78 * (1 - Math.pow(1 - (p - 0.35) / 0.37, 3.2)) : 0.90 + 0.10 * ((p - 0.72) / 0.28);
+function renderReveal(seg) {
+  const core = REVEAL.querySelector('.reveal-core'), flood = REVEAL.querySelector('.reveal-flood');
+  if (seg.phase !== 'intro' || seg.u < 1) { REVEAL.style.opacity = '0'; REVEAL.style.pointerEvents = 'none'; if (flood) flood.style.opacity = '0'; document.body.classList.remove('revealing'); return; }
+  const v = clamp(seg.u - 1);
+  REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
+  document.body.classList.toggle('revealing', v > 0.3 && v < 0.86);
+  const inA = easeOut(clamp(v / 0.22));
+  REVEAL.querySelectorAll('.reveal-words span').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.05) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
+  const logo = REVEAL.querySelector('.reveal-logo'); if (logo) logo.style.opacity = String(inA);
+  const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
+  const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
+  const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
+  if (core) { core.style.transform = `scale(${k.toFixed(3)})`; core.style.filter = speed > 0.004 ? `blur(${Math.min(18, speed * 260).toFixed(1)}px)` : 'none'; core.style.opacity = String(1 - clamp((v - 0.58) / 0.08)); }
+  if (flood) {                                                               // colour flood, then dark, then lift
+    const fill = clamp((v - 0.46) / 0.12), dark = clamp((v - 0.60) / 0.08), lift = clamp((v - 0.70) / 0.2);
+    flood.style.opacity = String(Math.max(fill, dark) * (1 - lift));
+    flood.style.background = dark > 0 ? `color-mix(in srgb, rgb(var(--accent-rgb)) ${Math.round((1 - dark) * 100)}%, #07090c)` : 'rgb(var(--accent-rgb))';
+  }
+}
 
 /* ---------- canvas sizing ---------- */
 let W = 0, H = 0, DPR = 1, off = null, offCtx = null;
@@ -166,8 +193,8 @@ function tick(now) {
 
 /* ---------- timeline helpers ---------- */
 function segment(tt) {
-  if (tt < 1) return { phase:'intro', i:-1, u:tt };
-  if (tt < T_OUT) { const i = Math.floor(tt - 1); return { phase:'chapter', i, u:tt - 1 - i }; }
+  if (tt < I0) return { phase:'intro', i:-1, u:tt };
+  if (tt < T_OUT) { const i = Math.floor(tt - I0); return { phase:'chapter', i, u:tt - I0 - i }; }
   return { phase:'outro', i:N, u:clamp((tt - T_OUT) / 0.8) };
 }
 /* how far the glove i is "on": 0 bare → 1 fitted; and the direction */
@@ -185,6 +212,7 @@ function render() {
   const gi = seg.phase === 'chapter' ? seg.i : -1;
   const gp = gi >= 0 ? gloveProgress(seg.u) : { p:0, dir:'bare' };
   const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(seg.u / 0.55))) : 0;
+  if (REVEAL) renderReveal(seg);
   const outroDrop = seg.phase === 'outro' ? easeOut(clamp(seg.u / 0.6)) : 0;
 
   // hand layer transform (parallax + idle float + intro rise)
@@ -210,7 +238,7 @@ function render() {
   updateCallouts(seg);
 
   // rail
-  const fill = clamp((t - 1) / N);
+  const fill = clamp((t - I0) / N);
   $('#railFill').style.transform = `scaleY(${fill})`;
 }
 
@@ -331,7 +359,7 @@ function setChapter(seg, gp) {
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
-  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);
+  if (seg.phase === 'intro') cp = 1 - clamp((seg.u - 0.62) / 0.2);   // with a reveal the hazard copy is gone before the second unit
   else if (seg.phase === 'chapter') cp = Math.min(clamp((seg.u - 0.04) / 0.16), 1 - clamp((seg.u - (OFF_START + 0.02)) / 0.1));
   if (cp !== copyProgress) {
     copyProgress = cp;
@@ -485,7 +513,7 @@ dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
 function goTo(i) {
-  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : 1 + i + 0.42;
+  const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
   window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
 }
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));
