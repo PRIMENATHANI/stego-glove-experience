@@ -162,7 +162,7 @@ function renderReveal(seg) {
   if (flood) {                                                               // colour flood, then dark, then lift
     const fill = clamp((v - 0.46) / 0.12), dark = clamp((v - 0.60) / 0.08), lift = clamp((v - 0.70) / 0.2);
     flood.style.opacity = String(Math.max(fill, dark) * (1 - lift));
-    flood.style.background = dark > 0 ? `color-mix(in srgb, rgb(var(--accent-rgb)) ${Math.round((1 - dark) * 100)}%, #07090c)` : 'rgb(var(--accent-rgb))';
+    flood.style.background = dark > 0 ? `color-mix(in srgb, rgb(var(--tech-rgb, var(--accent-rgb))) ${Math.round((1 - dark) * 100)}%, #07090c)` : 'rgb(var(--tech-rgb, var(--accent-rgb)))';
   }
 }
 
