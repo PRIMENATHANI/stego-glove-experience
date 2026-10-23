@@ -55,7 +55,7 @@ const GLOVES = [
     lead:"The highest impact rating in the series. Level 3 TPR across knuckles, fingers and the back of the hand, A7 cut, puncture 5, DryHold™ inside, LiquiBlock™ grip for wet and oily work.",
     ratings:[["3", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · ANSI/ISEA 105 + 138 Level 3 · CE Cat II",
-    accent:[210, 220, 40], cuff:{ base:"#d2916b", hem:"#d08d67" },
+    accent:[210, 220, 40], cuff:{ base:"#131313", hem:"#3d1f13" },
     callouts:[ { x:0.55, y:0.27, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.55, y:0.27, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.42, y:0.11, title:"High-performance grip", text:"Grip and wear." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
 ];
 const DETAILS = {
