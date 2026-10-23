@@ -9,49 +9,49 @@ const GLOVES = [
     lead:"Double-dipped premium PVC on an interlock lining, EN ISO 374-1 Type B. SealTrace™ seams block micro-pathways, DryHold™ keeps the inside dry, a sandblast finish keeps the grip in wet, oily work.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["5", "Abrasion"], ["AKL", "Chemicals"], ["CAT III", "CE"]],
     standards:"EN ISO 374-1 Type B AKL · EN 374-5 · EN 388 4121X · CE Cat III",
-    accent:[220, 50, 30], cuff:{ base:"#b6231e", hem:"#b4231e" }, url:"https://stegosafety.com/product/chem-armor-st-1070/",
+    accent:[220, 50, 30], cuff:{ base:"#d3291f", hem:"#c92e20" }, url:"https://stegosafety.com/product/chem-armor-st-1070/",
     callouts:[ { x:0.42, y:0.11, title:"Sandblast finish", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Double-dipped PVC", text:"Liquids stay out." }, { x:0.34, y:0.55, title:"SealTrace™ seams", text:"No micro-pathways." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"2020", name:"Nitri-Armor", platform:"ChemBlock™", category:"CHEMICAL · NITRILE",
     title:"Solvents and sludge.<br><em>Rough grip.</em>",
     lead:"Smooth double-coated nitrile on an anti-microbial cotton liner, EN ISO 374-1 Type A. CoreResist™ keeps the barrier stable through repeated contact; a rough-textured palm keeps the grip in sludge.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["AJKLMO", "Chemicals"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AJKLMO · EN 374-5 · EN 388 4121X · CE Cat III",
-    accent:[40, 110, 70], cuff:{ base:"#2b342c", hem:"#2e372e" },
+    accent:[40, 110, 70], cuff:{ base:"#2f312e", hem:"#292926" },
     callouts:[ { x:0.42, y:0.11, title:"Rough-textured finish", text:"Grip in sludge." }, { x:0.56, y:0.28, title:"Double nitrile coat", text:"Liquids stay out." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"2018", name:"N'Flock", platform:"ChemBlock™", category:"CHEMICAL · FOOD SAFE",
     title:"Lab bench, wash bay.<br><em>Food safe.</em>",
     lead:"Specialised flock-lined nitrile, EN ISO 374-1 Type A and approved for food contact. CoreResist™ holds the barrier through repeated chemical contact; a raised diamond palm keeps control in wet work.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["JKLNOT", "Chemicals"], ["FOOD", "Contact approved"]],
     standards:"EN ISO 374-1 Type A JKLNOT · EN 374-5 · EN 388 4101X · Food contact · CE Cat III",
-    accent:[60, 170, 160], cuff:{ base:"#409f8a", hem:"#53a18c" },
+    accent:[60, 170, 160], cuff:{ base:"#31a198", hem:"#3ca399" },
     callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Nitrile barrier", text:"Type A." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Flock lining", text:"Easy on, easy off." } ] },
   { code:"8089", name:"Chem Shield", platform:"ChemBlock™", category:"CHEMICAL · NEOPRENE",
     title:"Acids and caustics.<br><em>Two layers.</em>",
     lead:"Neoprene over latex, flock lined, EN ISO 374-1 Type A with virus protection. CoreResist™ for repeated splashes and contact, a quick-entry cuff for fast on and off, a raised diamond palm.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["VIRUS", "EN 374-5"], ["AKLNPT", "Chemicals"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AKLNPT · EN 374-5 Virus · EN 388 3111X · CE Cat III",
-    accent:[40, 130, 220], cuff:{ base:"#d8d31e", hem:"#dad32c" },
+    accent:[40, 130, 220], cuff:{ base:"#cfd414", hem:"#c9cd1c" },
     callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Neoprene over latex", text:"Acids and caustics." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Quick-entry cuff", text:"Fast on and off." } ] },
   { code:"2022", name:"Barix Armor", platform:"ChemBlock™", category:"CHEMICAL & CUT",
     title:"Chemical and cut.<br><em>In one hand.</em>",
     lead:"ChemBlock™ and TEGX® together: a sandy nitrile barrier, EN ISO 374-1 Type A, over an A4 cut liner. CoreResist™ for the chemistry, DryHold™ inside, a dual-coated palm for wet or dry work.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["A4", "ANSI cut"], ["4", "Abrasion"], ["D", "EN 388 cut"]],
     standards:"EN 388 4X42D · EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 · EN 407 X1XXXX · CE Cat III",
-    accent:[40, 110, 220], cuff:{ base:"#045ca3", hem:"#2e618f" }, url:"https://stegosafety.com/product/barix-armor-st-2022/",
+    accent:[40, 110, 220], cuff:{ base:"#1464ae", hem:"#426381" }, url:"https://stegosafety.com/product/barix-armor-st-2022/",
     callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Type A barrier", text:"Nine chemical classes." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.33, y:0.34, title:"ChemBlock™ + TEGX®", text:"Chemical and A4 cut." } ] },
   { code:"2024", name:"Barix Shell", platform:"ChemBlock™", category:"CHEMICAL · CUT · IMPACT",
     title:"Chemical, cut, impact.<br><em>All three.</em>",
     lead:"The tri-hazard glove: a ChemBlock™ barrier, a TEGX® A6 cut liner and SHELL GRD™ ShockShell™ guards in one. For drums, valves and pipe work where a splash and a knock arrive together.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["A6", "ANSI cut"], ["2", "Impact 138"], ["VIRUS", "EN 374-5"]],
     standards:"EN 388 4X42F · EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 Virus · EN 407 X1XXXX · ANSI/ISEA 138 · CE Cat III",
-    accent:[230, 180, 30], cuff:{ base:"#282827", hem:"#6f4831" },
+    accent:[230, 180, 30], cuff:{ base:"#272525", hem:"#2c2523" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Type A barrier", text:"Chemicals out." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
   { code:"7505", name:"Vynox Evo", platform:"ChemBlock™", category:"CHEMICAL · BUTYL",
     title:"Ketones, esters.<br><em>No spark.</em>",
     lead:"Heavy-duty butyl for the solvents that eat other gloves, EN ISO 374-1 Type A and anti-static to EN 16350. SolvLock™ keeps the barrier stable under aggressive exposure; FlexFit™ keeps the hand working.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["ABILST", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A ABILST · EN 374-5 · EN 16350:2014 · EN 388 2111X · CE Cat III",
-    accent:[45, 45, 50], cuff:{ base:"#29292b", hem:"#29292b" },
+    accent:[45, 45, 50], cuff:{ base:"#d18e65", hem:"#cc8961" },
     callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Moves with the hand." } ] },
 ];
 const DETAILS = {
@@ -139,9 +139,9 @@ function renderReveal(seg) {
   REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
   document.body.classList.toggle('revealing', v < 0.86);
   const inA = easeOut(clamp(v / 0.22));
-  REVEAL.querySelectorAll('.reveal-words > *').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.06) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
-  const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
-  const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
+  REVEAL.querySelectorAll('.reveal-words > *').forEach(w => { w.style.opacity = '1'; w.style.transform = 'none'; });
+  const p = clamp((v - 0.20) / 0.40), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
+  const k = 1 + z * 22;                                     // scale: settles at 1, bursts to ~23×
   const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
   if (core) { core.style.transform = `scale(${k.toFixed(3)})`; core.style.filter = speed > 0.004 ? `blur(${Math.min(18, speed * 260).toFixed(1)}px)` : 'none'; core.style.opacity = String(1 - clamp((v - 0.58) / 0.08)); }
   if (flood) {                                                               // colour flood, then dark, then lift

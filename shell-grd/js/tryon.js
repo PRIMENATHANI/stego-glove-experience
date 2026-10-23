@@ -9,7 +9,7 @@ const GLOVES = [
     lead:"Impact Level 2 over an A6 TEGX® liner, for rig and yard work where hands sit between steel. ShockShell™ TPR on the knuckles, a LiquiBlock™ nitrile palm, hi-vis guards, touchscreen fingertips.",
     ratings:[["2", "Impact 138"], ["A6", "ANSI cut"], ["6", "Abrasion"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[230, 50, 50], cuff:{ base:"#5c5c61", hem:"#564d4d" },
+    accent:[230, 50, 50], cuff:{ base:"#d69367", hem:"#d59064" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.4, y:0.18, title:"Hi-vis TPR", text:"Seen in low light." }, { x:0.42, y:0.11, title:"LiquiBlock™ coating", text:"Grip on oily pipe." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
   { code:'9080', name:'Shell Series', platform:'SHELL GRD™', category:'IMPACT & CUT',
     title:'Take the hit.<br><em>Keep working.</em>',
@@ -34,7 +34,7 @@ const GLOVES = [
     lead:"The anti-vibration Shell. TorqueGuard™ rubber palm pads dampen the shock and torque from breakers, grinders and impact tools; ShockShell™ guards take the knocks; an A5 cut liner underneath.",
     ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["E", "EN 388 cut"], ["0.86", "Vibration TRM"]],
     standards:"EN 388:2016 4543EP · EN 407:2020 X1XXXX · EN ISO 10819:2013 TRM 0.86 · TRH 0.59 · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[70, 70, 80], cuff:{ base:"#222020", hem:"#3a2213" },
+    accent:[70, 70, 80], cuff:{ base:"#201c1b", hem:"#130c09" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.24, y:0.4, title:"TorqueGuard™", text:"Pads under the palm." }, { x:0.6, y:0.14, title:"Padded fingers", text:"Shock stays in the tool." }, { x:0.62, y:0.36, title:"High-cut liner", text:"A5 underneath." } ] },
   { code:"9050", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH",
     title:"Arc, heat, impact.<br><em>One glove.</em>",
@@ -55,7 +55,7 @@ const GLOVES = [
     lead:"The highest impact rating in the series. Level 3 TPR across knuckles, fingers and the back of the hand, A7 cut, puncture 5, DryHold™ inside, LiquiBlock™ grip for wet and oily work.",
     ratings:[["3", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · ANSI/ISEA 105 + 138 Level 3 · CE Cat II",
-    accent:[210, 220, 40], cuff:{ base:"#161415", hem:"#553422" },
+    accent:[210, 220, 40], cuff:{ base:"#d2916b", hem:"#d08d67" },
     callouts:[ { x:0.55, y:0.27, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.55, y:0.27, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.42, y:0.11, title:"High-performance grip", text:"Grip and wear." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
 ];
 const DETAILS = {
@@ -143,9 +143,9 @@ function renderReveal(seg) {
   REVEAL.style.opacity = v < 0.9 ? '1' : String(1 - clamp((v - 0.9) / 0.1));
   document.body.classList.toggle('revealing', v < 0.86);
   const inA = easeOut(clamp(v / 0.22));
-  REVEAL.querySelectorAll('.reveal-words > *').forEach((w, i) => { const a = easeOut(clamp((v - 0.04 - i * 0.06) / 0.12)); w.style.opacity = String(a); w.style.transform = `translateY(${(1 - a) * 26}px)`; });
-  const p = clamp((v - 0.26) / 0.34), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
-  const k = 0.92 + 0.08 * inA + z * 22;                                     // scale: settles at 1, bursts to ~23×
+  REVEAL.querySelectorAll('.reveal-words > *').forEach(w => { w.style.opacity = '1'; w.style.transform = 'none'; });
+  const p = clamp((v - 0.20) / 0.40), z = zoomCurve(p);                       // 0 → 1 over the zoom window, snapping in the middle
+  const k = 1 + z * 22;                                     // scale: settles at 1, bursts to ~23×
   const speed = p <= 0 || p >= 1 ? 0 : Math.max(0, zoomCurve(Math.min(1, p + 0.02)) - zoomCurve(Math.max(0, p - 0.02)));
   if (core) { core.style.transform = `scale(${k.toFixed(3)})`; core.style.filter = speed > 0.004 ? `blur(${Math.min(18, speed * 260).toFixed(1)}px)` : 'none'; core.style.opacity = String(1 - clamp((v - 0.58) / 0.08)); }
   if (flood) {                                                               // colour flood, then dark, then lift
