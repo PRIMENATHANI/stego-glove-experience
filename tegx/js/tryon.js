@@ -4,6 +4,27 @@
 
 /* ---------- content (ratings verified against the STEGO sell sheets, 2024-25) ---------- */
 const GLOVES = [
+  { code:"7095", name:"Cut Defender-I", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Sharp enough to cut.<br><em>Light enough to forget.</em>",
+    lead:"The entry cut glove: ANSI A4 on a TexArn™ liner, a smooth PU palm for dry handling, EdgeLock™ at the cuff so it keeps its shape wash after wash.",
+    ratings:[["A4", "ANSI cut"], ["6", "Abrasion"], ["3", "Puncture"], ["D", "EN 388 cut"]],
+    standards:"EN 388:2016 4443D · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[150, 155, 160], cuff:{ base:"#6c6758", hem:"#af643a" },
+    callouts:[ { x:0.42, y:0.11, title:"Smooth PU coating", text:"Dry grip, fine feel." }, { x:0.62, y:0.34, title:"TexArn™ liner", text:"ANSI A4 cut." }, { x:0.38, y:0.42, title:"Breathable knit", text:"Light all shift." }, { x:0.5, y:0.73, title:"EdgeLock™ cuff", text:"Holds its shape." } ] },
+  { code:"7096", name:"Cut Defender-II", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Sharp components.<br><em>Steady hands.</em>",
+    lead:"A6 cut on the same TexArn™ liner, with a rough PU palm that holds on dry parts and FlexFit™ shaping that follows the hand through repeated handling.",
+    ratings:[["A6", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X43F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[90, 95, 105], cuff:{ base:"#646463", hem:"#2f1810" },
+    callouts:[ { x:0.42, y:0.11, title:"Rough PU coating", text:"Grip on dry parts." }, { x:0.62, y:0.34, title:"TexArn™ liner", text:"ANSI A6 cut." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." }, { x:0.5, y:0.73, title:"Knit cuff", text:"Snug at the wrist." } ] },
+  { code:"7097", name:"Cut Defender-III", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Sharp and slick.<br><em>Held anyway.</em>",
+    lead:"The Cut Defender for oily parts: A6 cut, an enhanced TexArn™ liner and a sandy nitrile palm with LiquiBlock™ that keeps the fluid on the part, not in the glove.",
+    ratings:[["A6", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X44F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[70, 75, 85], cuff:{ base:"#2f2e2b", hem:"#73523d" },
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"TexArn™ liner", text:"ANSI A6 cut." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." }, { x:0.33, y:0.34, title:"Secure grip", text:"Controlled handling." } ] },
   { code:'7098', name:'Cut Defender Ultra', platform:'TEGX®', category:'CUT & PUNCTURE',
     title:'Sharp work.<br><em>Steady hands.</em>',
     lead:'Feels like a knit glove. Underneath, a TEGX® TexArn™ liner rated ANSI A6 cut, CutCage™ reinforcement where blades bite, and a microfoam nitrile palm that holds parts without the slip.',
@@ -22,6 +43,13 @@ const GLOVES = [
     standards:"EN 388:2016 4544F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
     accent:[48, 70, 160], cuff:{ base:"#2c3e66", hem:"#4c3a43" }, url:"https://stegosafety.com/product/fortflex-st-2085/",
     callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"TexArn™ liner", text:"ANSI A6 cut." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." }, { x:0.33, y:0.34, title:"CutCage™", text:"Reinforced where blades hit." } ] },
+  { code:"2095", name:"Fortmax", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Blade in one hand.<br><em>Feel in the other.</em>",
+    lead:"A6 cut on a high-mobility NanoArn™ liner, double-dipped LiquiBlock™ palm for tactile work around oil, DryHold™ inside so the hand stays dry through a long shift.",
+    ratings:[["A6", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[125, 85, 65], cuff:{ base:"#2c2420", hem:"#120a05" },
+    callouts:[ { x:0.42, y:0.11, title:"Double-dipped palm", text:"Tactile in oil." }, { x:0.62, y:0.34, title:"NanoArn™ liner", text:"ANSI A6, high mobility." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." }, { x:0.55, y:0.28, title:"Ergonomic contour", text:"Less fatigue." } ] },
   { code:"2080", name:"Xyron Guard", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Blades on the line.<br><em>Air in the glove.</em>",
     lead:"Made for lines where sharp parts pass through hands all shift. ANSI A6 cut, CutCage™ over the contact zones, an AirWeave™ knit that breathes and TruTouch™ tips for the screen.",
@@ -29,6 +57,34 @@ const GLOVES = [
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
     accent:[60, 90, 200], cuff:{ base:"#51273a", hem:"#5b3b2a" },
     callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.33, y:0.34, title:"CutCage™", text:"Reinforced contact zones." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
+  { code:"2091", name:"Xyron Max", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"A7 cut.<br><em>18-gauge feel.</em>",
+    lead:"Next-generation cut protection on an ultra-fine 18-gauge liner: FlexSkin™ for tactility, AirWeave™ to stay cool, a foam nitrile palm that outlasts the task.",
+    ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[120, 195, 60], cuff:{ base:"#413421", hem:"#966748" },
+    callouts:[ { x:0.42, y:0.11, title:"Foam nitrile coating", text:"Grip, long service." }, { x:0.62, y:0.34, title:"18-gauge liner", text:"ANSI A7 cut." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.33, y:0.34, title:"FlexSkin™", text:"Thin, tactile." } ] },
+  { code:"2092", name:"Xyron Ultra", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Razor edges.<br><em>Fingertip precision.</em>",
+    lead:"Ultra NanoArn™ built for razor-edge contact: A7 cut on an 18-gauge liner, TensionForm™ for a fit that recovers, TruTouch™ tips for the screen, a sandy nitrile palm.",
+    ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[200, 55, 50], cuff:{ base:"#542f25", hem:"#a57452" },
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.62, y:0.34, title:"Ultra NanoArn™ liner", text:"ANSI A7 cut." }, { x:0.55, y:0.28, title:"TensionForm™", text:"Fit that recovers." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
+  { code:"2093", name:"Praxor Neo", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Repeated edges.<br><em>Skin-like liner.</em>",
+    lead:"A 21-gauge NanoArn™ Neo liner you can feel through, rated A6 cut, AirWeave™ to breathe, a sandy nitrile palm for precise, confident handling of sharp parts.",
+    ratings:[["A6", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[60, 145, 215], cuff:{ base:"#395c3c", hem:"#765036" },
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"NanoArn™ Neo liner", text:"ANSI A6, 21 gauge." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.33, y:0.34, title:"Precision grip", text:"Secure, exact." } ] },
+  { code:"2078", name:"Xyron Neo", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Light cut risk.<br><em>Dotted grip.</em>",
+    lead:"A3 cut for lighter sharp work: CutCage™ over the contact zones, a nitrile foam dotted palm for dry and light-oil grip, TruTouch™ tips, an AirWeave™ liner that breathes.",
+    ratings:[["A3", "ANSI cut"], ["4", "Abrasion"], ["4", "Puncture"], ["C", "EN 388 cut"]],
+    standards:"EN 388:2016 4X43C · ANSI/ISEA 105 · CE Cat II",
+    accent:[150, 205, 60], cuff:{ base:"#627233", hem:"#70452c" }, url:"https://stegosafety.com/product/xyron-neo-st-2078/",
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.33, y:0.34, title:"CutCage™", text:"Reinforced contact zones." }, { x:0.42, y:0.11, title:"Nitrile foam dots", text:"Dry and light-oil grip." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." } ] },
   { code:"2094", name:"Praxor Evo", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"A7 cut.<br><em>Skin-thin.</em>",
     lead:"The highest cut level in the series on a 21-gauge liner you can feel through. NanoArn™ Evo yarn with stretch recovery, DryHold™ inside, a sandy nitrile palm for high-risk work needing fingers.",
@@ -36,6 +92,13 @@ const GLOVES = [
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
     accent:[95, 115, 150], cuff:{ base:"#907362", hem:"#685e54" },
     callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"NanoArn™ Evo liner", text:"ANSI A7, 21 gauge." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." }, { x:0.5, y:0.6, title:"Stretch-recovery fit", text:"Holds its shape." } ] },
+  { code:"2086", name:"Fort Flex Oil", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"Sharp, heavy, wet.<br><em>All three.</em>",
+    lead:"Heavy handling where fluid and blades meet: A6 cut on a CutCage™ TexArn™ liner, a 3/4 double-dipped LiquiBlock™ coat, TruTouch™ tips, an extended cuff over the wrist.",
+    ratings:[["A6", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4544F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[70, 80, 130], cuff:{ base:"#535361", hem:"#b2a297" }, url:"https://stegosafety.com/product/fortflex-oil-st-2086/",
+    callouts:[ { x:0.56, y:0.26, title:"3/4 double-dipped coat", text:"Liquid off the knuckles." }, { x:0.62, y:0.34, title:"TexArn™ liner", text:"ANSI A6 cut." }, { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.5, y:0.73, title:"Extended cuff", text:"Covers the wrist." } ] },
   { code:"2096", name:"Fortmax Oil", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Oil on the blade.<br><em>Still a dry grip.</em>",
     lead:"For wet and oily cut work: a three-quarter nitrile shell over a NanoArn™ A6 liner, LiquiBlock™ to shed the fluid, a sandy palm for grip when the part is slick.",
@@ -43,6 +106,20 @@ const GLOVES = [
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
     accent:[150, 95, 60], cuff:{ base:"#314364", hem:"#91625e" },
     callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"NanoArn™ liner", text:"ANSI A6 cut." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Sheds oil and fluid." }, { x:0.56, y:0.26, title:"3/4 nitrile coat", text:"Liquid off the knuckles." } ] },
+  { code:"2097", name:"Xyron Ultra Oil", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"A7 cut in oil.<br><em>Still thin.</em>",
+    lead:"An 18-gauge high-mobility carbon liner rated A7 under a 3/4 dual nitrile coat: FlexSkin™ tactility, TruTouch™ tips, a sandy palm that grips wet, dry and oily parts.",
+    ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[170, 60, 60], cuff:{ base:"#563029", hem:"#82593e" },
+    callouts:[ { x:0.56, y:0.26, title:"3/4 dual nitrile coat", text:"Liquid off the knuckles." }, { x:0.62, y:0.34, title:"18-gauge carbon liner", text:"ANSI A7 cut." }, { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.42, y:0.11, title:"Sandy palm", text:"Grip in oil." } ] },
+  { code:"6050", name:"Super Cut", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"A7 aramid.<br><em>Crinkle grip.</em>",
+    lead:"A para-aramid TexArn™ liner rated A7 cut with contact-heat resistance, DryHold™ inside, and a crinkle latex palm that bites into dry, wet and oily surfaces.",
+    ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["5", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 3X44F · EN 407:2020 X2XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[45, 110, 215], cuff:{ base:"#999e82", hem:"#122764" },
+    callouts:[ { x:0.42, y:0.11, title:"Crinkle latex coating", text:"Bites into the surface." }, { x:0.62, y:0.34, title:"Para-aramid liner", text:"A7 cut, heat resistant." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." }, { x:0.33, y:0.34, title:"TexArn™ core", text:"Structure of the cut rating." } ] },
   { code:"2098", name:"Super Cut Max", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Sharp and hot.<br><em>Both handled.</em>",
     lead:"Steel sheet, swarf, hot edges. A TexArn™ Max para-aramid liner rated ANSI A7 cut with contact-heat resistance, TruTouch™ fingertips and a sandy nitrile palm for 360° grip.",
@@ -50,6 +127,13 @@ const GLOVES = [
     standards:"EN 388:2016 4X44F · EN 407:2020 X2XXXX · ANSI/ISEA 105 · CE Cat II",
     accent:[120, 140, 60], cuff:{ base:"#575c34", hem:"#533120" }, url:"https://stegosafety.com/product/super-cut-max-st-2098/",
     callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.62, y:0.34, title:"Para-aramid liner", text:"A7 cut, heat resistant." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
+  { code:"2099", name:"Super Cut Vanta", platform:"TEGX®", category:"CUT & PUNCTURE",
+    title:"A9 cut.<br><em>The ceiling.</em>",
+    lead:"The highest cut rating in the range on a fine-gauge NanoArn™ CutCage™ liner: ANSI A9 for relentless sharp-material handling, FlexSkin™ and FlexFit™ so it still moves like a glove.",
+    ratings:[["A9", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[230, 115, 40], cuff:{ base:"#57382a", hem:"#7c563f" },
+    callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.62, y:0.34, title:"NanoArn™ liner", text:"ANSI A9 cut." }, { x:0.33, y:0.34, title:"CutCage™", text:"Reinforced where blades hit." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." } ] },
   { code:"5588", name:"Pyron Arc", platform:"TEGX®", category:"CUT · ARC FLASH",
     title:"Arc flash.<br><em>Cut, too.</em>",
     lead:"For live electrical work with sharp edges in reach. Arc-rated CAT 3 at 9.3 cal/cm², NFPA 70E compliant, a TexArn™ aramid liner rated A4 cut and a foam neoprene palm.",
@@ -57,8 +141,41 @@ const GLOVES = [
     standards:"EN 388:2016 3X42D · EN 407:2020 4132XX · ANSI/ISEA 105 · NFPA 70E · ATPV 9.3 cal/cm² · CE Cat III",
     accent:[210, 220, 40], cuff:{ base:"#caca5e", hem:"#9e5538" },
     callouts:[ { x:0.42, y:0.11, title:"Foam neoprene coating", text:"Grip on cable and tool." }, { x:0.62, y:0.34, title:"Aramid liner", text:"Arc flash, 9.3 cal/cm²." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool under the sleeve." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
+  { code:"5589", name:"Pyron Volt", platform:"TEGX®", category:"CUT · ARC FLASH",
+    title:"Arc flash, 13 cal.<br><em>A5 cut.</em>",
+    lead:"Live electrical work with sharper edges: arc-rated CAT 2 at 13 cal/cm², NFPA 70E compliant, a TexArn™ para-aramid liner rated A5 cut, AirWeave™ knit, a sandy neoprene palm.",
+    ratings:[["A5", "ANSI cut"], ["CAT 2", "Arc rated"], ["6", "Abrasion"], ["E", "EN 388 cut"]],
+    standards:"EN 388:2016 4X42E · EN 407:2020 X2XXXX · ANSI/ISEA 105 · NFPA 70E · ATPV 13 cal/cm² · CE Cat III",
+    accent:[155, 200, 60], cuff:{ base:"#808e4d", hem:"#222c16" }, url:"https://stegosafety.com/product/pyron-volt-st-5589/",
+    callouts:[ { x:0.42, y:0.11, title:"Sandy neoprene coating", text:"Grip on cable and tool." }, { x:0.62, y:0.34, title:"Para-aramid liner", text:"Arc flash, 13 cal/cm²." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool under the sleeve." }, { x:0.33, y:0.34, title:"TexArn™ core", text:"A5 cut, tear resistant." } ] },
+  { code:"4510", name:"Ambiflex Super Cut", platform:"TEGX®", category:"CUT · FOOD SAFE",
+    title:"Knives all day.<br><em>Either hand.</em>",
+    lead:"The food-processing liner: ambidextrous, uncoated, antimicrobial, rated A7 cut on a seamless TexArn™ CutCage™ knit. Worn alone or under a disposable glove.",
+    ratings:[["A7", "ANSI cut"], ["3", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
+    standards:"EN 388:2016 444XF · ANSI/ISEA 105 · CE Cat II",
+    accent:[140, 170, 200], cuff:{ base:"#798aa1", hem:"#b89075" },
+    callouts:[ { x:0.62, y:0.34, title:"TexArn™ CutCage™ liner", text:"ANSI A7 cut." }, { x:0.42, y:0.11, title:"Uncoated knit", text:"Wears under a disposable." }, { x:0.33, y:0.34, title:"Ambidextrous", text:"Either hand." }, { x:0.5, y:0.73, title:"Antimicrobial", text:"Hygiene, no odour." } ] },
+  { code:"6075", name:"Cut Defender Thermo", platform:"TEGX®", category:"CUT · COLD",
+    title:"Cold and sharp.<br><em>Warm and covered.</em>",
+    lead:"Winter cut work: a TexArn™ hybrid liner rated A6 over brushed acrylic terry, CoreTherm™ warmth, a 3/4 sandy nitrile coat against wet and oil, hi-vis so the hand is seen.",
+    ratings:[["A6", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["121", "EN 511 cold"]],
+    standards:"EN 388:2016 4X44F · EN 407:2020 X2XXXX · EN 511:2006 121 · ANSI/ISEA 105 · CE Cat II",
+    accent:[40, 125, 210], cuff:{ base:"#7b6f5c", hem:"#906a4a" },
+    callouts:[ { x:0.56, y:0.26, title:"3/4 sandy nitrile coat", text:"Wet and oil out." }, { x:0.62, y:0.34, title:"TexArn™ hybrid liner", text:"ANSI A6 cut." }, { x:0.5, y:0.66, title:"CoreTherm™", text:"Warm in the cold." }, { x:0.38, y:0.42, title:"Hi-vis knit", text:"Seen in low light." } ] },
 ];
 const DETAILS = {
+  "7095": { desc:"Cut-resistant protection that guards against lacerations while supporting safe, consistent performance. A TexArn™ blended high-strength yarn core forms the structural foundation of cut resistance, EdgeLock™ reinforced cuff construction holds shape and resists fraying, and the lightweight breathable liner delivers lasting comfort over extended wear.",
+    tech:[["TEGX® platform", "Cut-protection system of the Cut Defender series."], ["TexArn™", "Blended high-strength yarn core forming the structural foundation of cut resistance."], ["EdgeLock™", "Reinforced cuff construction that holds shape, resists fraying and supports long-term durability."], ["Smooth PU", "Polyurethane palm for dry handling with fine tactility."]],
+    std:[["ANSI/ISEA 105", "Cut A4 · Abrasion 6 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4443D"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "HPPE blend cut liner, seamless"], ["Coating", "Polyurethane (PU) palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "7096": { desc:"Advanced cut-resistant gloves: ANSI A6 and EN 388 cut F on a seamless TexArn™ liner with a rough PU coating. Cut Safety Design protects hands during demanding tasks involving sharp components, FlexFit™ anatomical shaping follows natural hand movement for a stable fit, and the textured palm keeps steady handling through repeated use.",
+    tech:[["TEGX® platform", "Cut-protection system of the Cut Defender series."], ["TexArn™", "Blended high-strength yarn core forming the structural foundation of cut resistance."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement for stable fit and controlled motion."], ["Rough PU", "Textured polyurethane palm for grip reliability in dry handling."]],
+    std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 6 · Puncture 4 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X43F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "HPPE blend cut liner, seamless"], ["Coating", "Textured polyurethane (PU) palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "7097": { desc:"Advanced cut-resistant gloves with ANSI A6 and EN 388 cut F on an enhanced TexArn™ liner under a sandy nitrile coating. Sharp Handling Protection delivers reliable cut resistance through repeated movements and daily operations, LiquiBlock™ resists oil and fluid absorption while keeping grip, and the Secure Grip Design supports controlled handling in routine and repetitive tasks.",
+    tech:[["TEGX® platform", "Cut-protection system of the Cut Defender series."], ["TexArn™", "Blended high-strength yarn core forming the structural foundation of cut resistance."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["Sandy nitrile", "Textured palm for grip in wet, dry and oily handling."]],
+    std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 6 · Puncture 4 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X44F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "HPPE blend cut liner, enhanced"], ["Coating", "Sandy nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   '7098': { desc:'Delivers ANSI A6 cut protection through an advanced TEGX® engineered liner and TexArn™ yarn technology. Built for demanding environments with resistance to cuts, abrasion, tears and fluid exposure, with CutCage™ reinforcement in high-contact zones, 360° stretch ergonomics and touchscreen-ready fingertips.',
     tech:[['TEGX® liner','High-tenacity HPPE blend cut liner.'],['TexArn™','Blended high-strength yarn core forming the structural foundation of cut resistance.'],['CutCage™','Reinforcement in the zones where blades make contact.'],['TruTouch™','Fingertip zones for precise handling and touchscreen use.'],['Microfoam nitrile','Breathable palm coating with grip in dry and light-oil conditions.'],['Precision Flex','Breathable comfort and reduced perspiration for precise handling.']],
     std:[['ANSI/ISEA 105','Cut A6 · Abrasion 6 · Puncture 4 · Dexterity 5'],['EN 388:2016+A1:2018','4X44F'],['EN 407:2020','X1XXXX'],['EN ISO 21420:2020','CE · Category II']],
@@ -67,28 +184,76 @@ const DETAILS = {
     tech:[["TEGX® platform", "Cut-protection system of the Fort series."], ["TexArn™", "Blended high-strength yarn core forming the structural foundation of cut resistance."], ["CutCage™", "Reinforcement framework in the zones where cutting force concentrates."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."]],
     std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 6 · Puncture 4 · Dexterity 5"], ["EN 388:2016+A1:2018", "4544F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "CutCage™ TexArn™ HPPE blend"], ["Coating", "Sandy nitrile"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2095": { desc:"High-mobility NanoArn™ liner with A6 cut and EN 388 cut F protection and a double-dipped LiquiBlock™ palm for tactile sensitivity. Cut-resistant protection guards against lacerations, NanoArn™ adds strength and structural consistency without losing dexterity, DryHold™ keeps the inside dry and reduces slippage, and the ergonomic hand contour reduces fatigue in all-day wear.",
+    tech:[["TEGX® platform", "Cut-protection system of the Fort series."], ["NanoArn™", "Lightweight reinforcement layer that adds strength and structural consistency while keeping dexterity."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["LiquiBlock™", "Double-dipped liquid-repellent palm that resists oil and fluid absorption."]],
+    std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "High-mobility carbon blend"], ["Coating", "Sandy nitrile, double-dipped palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2080": { desc:"Advanced cut protection with reliable grip, flexibility and comfort. A high-cut blend liner rated ANSI A6 with CutCage™ reinforcement over the critical contact zones, a breathable close-fit AirWeave™ knit, TruTouch™ fingertips and a sandy nitrile palm that extends glove life.",
     tech:[["TEGX® platform", "Cut-protection system behind the Xyron series."], ["CutCage™", "Reinforcement framework protecting critical contact zones against cutting forces."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."]],
     std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "High-cut HPPE blend, close fit"], ["Coating", "Sandy nitrile"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2091": { desc:"Next-generation cut-protection gloves with A7 cut and EN 388 cut F on an ultra-fine 18-gauge liner. An ultra-light seamless liner gives comfort, breathability and stretch recovery for all-day wear, FlexSkin™ adds flexibility and tactility, AirWeave™ promotes airflow and thermal regulation, and the high-performance foam nitrile palm improves grip and extends service life.",
+    tech:[["TEGX® platform", "Cut-protection system of the Xyron series."], ["FlexSkin™", "Ultra-fine gauge layer enhancing flexibility, tactility and dexterity in cut-resistant gloves."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["Foam nitrile", "High-performance palm coating that improves grip and extends service life."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "High-mobility carbon blend, 18 gauge"], ["Coating", "Foam nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2092": { desc:"Next-generation cut-protection gloves with A7 cut and EN 388 cut F on an ultra-fine 18-gauge liner. Ultra NanoArn™ is built to endure razor-edge contact in high-risk tasks, TensionForm™ regulates stretch and recovery for a consistent fit, TruTouch™ fingertip zones give precise handling and touchscreen use, and the precision-fit liner with sandy nitrile keeps airflow and lasting comfort.",
+    tech:[["TEGX® platform", "Cut-protection system of the Xyron series."], ["Ultra NanoArn™", "Fine-gauge cut-protection yarn for maximum cut resistance in high-risk tasks."], ["TensionForm™", "Tension-control architecture that regulates stretch and recovery for consistent fit and reduced fatigue."], ["TruTouch™", "Fingertip zones for precise handling, tactile clarity and touchscreen interaction."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "High-mobility carbon blend, 18 gauge"], ["Coating", "Sandy nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2093": { desc:"Skin-like cut-protection gloves with A6 cut and abrasion 5 on a 21-gauge liner with a sandy nitrile grip. NanoArn™ Neo shields hands from repeated laceration exposure and sharp-edge hazards, the ultra-light seamless liner gives comfort, breathability and stretch recovery, AirWeave™ promotes airflow, and the Precision Grip Design enables confident handling with secure grip control.",
+    tech:[["TEGX® platform", "Cut-protection system of the Praxor series."], ["NanoArn™ Neo", "Cut-protection yarn in a skin-like 21-gauge liner."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["Sandy nitrile", "Precision grip coating for secure control."]],
+    std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "High-mobility carbon blend, 21 gauge"], ["Coating", "Sandy nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2078": { desc:"Engineered for tasks involving cut hazards, this glove protects hands while maintaining grip, dexterity and comfort. The CutCage™ framework reinforces key contact zones for cut resistance, the nitrile foam dotted grip improves handling in dry and light-oily conditions, TruTouch™ fingertips deliver precise tactile control with touchscreen compatibility, and the AirWeave™ liner keeps airflow for lasting comfort.",
+    tech:[["TEGX® platform", "Cut-protection system of the Xyron series."], ["CutCage™", "Reinforcement framework protecting critical contact zones against cutting forces."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."], ["AirWeave™", "Lightweight breathable knit that promotes airflow."], ["FlexFit™", "Ergonomic fit that supports natural hand movement and reduces fatigue."]],
+    std:[["ANSI/ISEA 105", "Cut A3 · Abrasion 4 · Puncture 4"], ["EN 388:2016+A1:2018", "4X43C"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "TexArn™ HPPE blend"], ["Coating", "Foam nitrile, dotted palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2094": { desc:"Next-generation cut protection: a skin-like 21-gauge NanoArn™ Evo liner rated ANSI A7 with precision-fit stretch recovery, for high-risk tasks that still need fine handling. DryHold™ moisture wicking keeps the inside dry; the sandy nitrile palm gives controlled grip through repetitive work.",
     tech:[["TEGX® platform", "Cut-protection system of the Praxor series."], ["NanoArn™ Evo", "High-performance cut-protection yarn in a 21-gauge liner with stretch recovery."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["Agility-driven liner", "Airflow and continuous comfort in intensive work."]],
     std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "NanoArn™ Evo, 21 gauge"], ["Coating", "Sandy nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2086": { desc:"High-strength CutCage™ TexArn™ liner with ANSI A6 and cut F protection and sandy nitrile LiquiBlock™ technology, for heavy-duty mechanical applications where heavy handling and fluid exposure occur together. The 3/4 double-dipped coating helps prevent liquid penetration while keeping grip, flexibility and touchscreen compatibility; the extended cuff adds wrist coverage.",
+    tech:[["TEGX® platform", "Cut-protection system of the Fort series."], ["TexArn™", "Blended high-strength yarn core forming the structural foundation of cut resistance."], ["CutCage™", "Reinforcement framework protecting critical contact zones against cutting forces."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."]],
+    std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 6 · Puncture 4 · Dexterity 5"], ["EN 388:2016+A1:2018", "4544F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Engineered TexArn™ HPPE blend"], ["Coating", "Sandy nitrile, 3/4 double-dipped"], ["Cuff", "Extended elastic knit wrist"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2096": { desc:"Engineered NanoArn™ advanced cut resistance with a smooth three-quarter nitrile coating: ANSI A6 and EN 388 cut F for intense sharp-material handling in wet, dry and oily conditions. NanoArn™ adds strength without bulk, LiquiBlock™ resists oil and fluid absorption, and the sandy palm keeps the grip.",
     tech:[["TEGX® platform", "Cut-protection system of the Fort series."], ["NanoArn™", "Lightweight reinforcement layer that adds strength and structural consistency while keeping dexterity."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["3/4 nitrile coating", "Liquid resistance over the knuckles with a sandy palm grip."]],
     std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "NanoArn™ HPPE blend"], ["Coating", "3/4 smooth nitrile, sandy palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2097": { desc:"Advanced-engineered cut and oil resistant gloves: an 18-gauge high-mobility carbon liner with 3/4 dual nitrile. The Industrial Protection Design delivers cut and liquid protection for prolonged use, FlexSkin™ keeps flexibility and tactility, TruTouch™ fingertips give precise handling and touchscreen use, and the 3/4 nitrile coating is a liquid-resistant barrier with sandy palm grip in wet, dry and oily conditions.",
+    tech:[["TEGX® platform", "Cut-protection system of the Xyron series."], ["FlexSkin™", "Ultra-fine gauge layer enhancing flexibility, tactility and dexterity in cut-resistant gloves."], ["TruTouch™", "Fingertip zones for precise handling, tactile clarity and touchscreen interaction."], ["3/4 nitrile coating", "Liquid-resistant barrier with sandy palm grip in wet, dry and oily conditions."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "NanoArn™ high-mobility carbon blend, 18 gauge"], ["Coating", "3/4 dual nitrile, sandy palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "6050": { desc:"Advanced A7 and cut F protection with a TEGX® TexArn™ para-aramid liner and crinkle latex. The para-aramid liner provides reliable laceration protection for safe and consistent task performance, TexArn™ forms the structural foundation of cut resistance, DryHold™ keeps the inside dry and reduces slippage, and the crinkle latex palm enhances traction and control in dry, wet and oily conditions.",
+    tech:[["TEGX® platform", "Cut-protection system of the Super Cut series."], ["TexArn™ para-aramid", "Blended high-strength yarn core with inherent heat resistance."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["Crinkle latex", "Grip coating for traction and control in dry, wet and oily conditions."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 5 · Puncture 5 · Dexterity 5"], ["EN 388:2016+A1:2018", "3X44F"], ["EN 407:2020", "X2XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "TEGX® aramid blend"], ["Coating", "Crinkled latex palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2098": { desc:"Exceptional cut protection for sharp-edge hazards in high-risk industrial work. The TexArn™ Max para-aramid liner carries ANSI A7 and EN 388 cut F with inherent resistance to high temperatures; TruTouch™ fingertips keep precision and touchscreen use; the sandy nitrile coating gives breathable 360° tactility and grip.",
     tech:[["TEGX® platform", "Cut-protection system of the Super Cut series."], ["TexArn™ Max", "Para-aramid liner with inherent cut resistance and heat protection."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."], ["DryHold™", "Moisture-wicking system that keeps the inside dry."], ["CutCage™", "Reinforcement framework in the zones where cutting force concentrates."]],
     std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 5 · Puncture 4 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X44F"], ["EN 407:2020", "X2XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "TexArn™ Max para-aramid blend"], ["Coating", "Sandy nitrile"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2099": { desc:"Ultimate cut-protection gloves with ANSI A9 cut and abrasion 5: a next-generation NanoArn™ CutCage™ liner with sandy nitrile. Extreme Cut Protection withstands sharp-edge hazards in high-risk industrial environments, the fine-gauge NanoArn™ glove gives maximum cut protection through relentless handling of aggressive sharp materials, FlexSkin™ keeps airflow and agility, and FlexFit™ shaping follows natural hand movement.",
+    tech:[["TEGX® platform", "Cut-protection system of the Super Cut series."], ["NanoArn™", "Fine-gauge cut-protection yarn for maximum super-cut protection."], ["CutCage™", "Reinforcement framework in the zones where cutting force concentrates."], ["FlexSkin™", "Agility-driven liner with sandy nitrile coating for airflow and continuous comfort."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."]],
+    std:[["ANSI/ISEA 105", "Cut A9 · Abrasion 5 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "High-mobility carbon blend, fine gauge"], ["Coating", "Sandy nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "5588": { desc:"Multi-hazard specialised cut gloves, arc-rated CAT 3 with an ATPV of 9.3 cal/cm² and NFPA 70E compliant. The TEGX® TexArn™ aramid-blend liner withstands arc flash exposure and carries ANSI A4 cut; an AirWeave™ knit keeps airflow and thermal regulation; the foam neoprene palm gives grip and lasting comfort.",
     tech:[["TEGX® platform", "Cut-protection system with arc-rated construction."], ["TexArn™", "Blended high-strength aramid yarn core forming the structural foundation of cut resistance."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption."]],
     std:[["ANSI/ISEA 105", "Cut A4 · Abrasion 4 · Puncture 3 · Dexterity 5"], ["Arc rating", "NFPA 70E · CAT 3 · ATPV 9.3 cal/cm²"], ["EN 388:2016+A1:2018", "3X42D"], ["EN 407:2020", "4132XX"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Liner", "TexArn™ aramid blend"], ["Coating", "Foam neoprene palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "5589": { desc:"Multi-hazard specialised cut gloves, arc-rated CAT 2 with an ATPV of 13 cal/cm² and NFPA 70E compliant. The TEGX® technology liner withstands arc flash exposure with lasting protection and stability, the advanced TexArn™ blended yarn gives outstanding cut, abrasion and tear resistance, AirWeave™ keeps airflow and thermal regulation, and the premium para-aramid liner carries extreme cut resistance.",
+    tech:[["TEGX® platform", "Cut-protection system with arc-rated construction."], ["TexArn™", "Blended high-strength aramid yarn core forming the structural foundation of cut resistance."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["Sandy neoprene", "Foam neoprene palm for grip on cable and tools."]],
+    std:[["ANSI/ISEA 105", "Cut A5 · Abrasion 6 · Puncture 2 · Dexterity 5"], ["Arc rating", "NFPA 70E · CAT 2 · ATPV 13 cal/cm²"], ["EN 388:2016+A1:2018", "4X42E"], ["EN 407:2020", "X2XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Liner", "TEGX® para-aramid blend"], ["Coating", "Foam neoprene palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "4510": { desc:"Ambidextrous cut gloves with ANSI A7 and cut F protection on a seamless TexArn™ CutCage™ liner. The ultra-high-performance liner gives reliable cut and laceration protection for food processing and packaging, Food-Safe Cut Protection supports hygiene compliance, and the antimicrobial ambidextrous liner helps maintain hygiene, control odours and support food safety.",
+    tech:[["TEGX® platform", "Cut-protection system of the Super Cut series."], ["TexArn™", "Blended high-strength yarn core forming the structural foundation of cut resistance."], ["CutCage™", "Reinforcement framework in the zones where cutting force concentrates."], ["Antimicrobial liner", "Hygiene and odour control for food environments."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 3 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "444XF"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "HPPE reinforced blend, seamless, ambidextrous"], ["Coating", "Uncoated"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pc / polybag · 100 pcs / carton"]] },
+  "6075": { desc:"Specialised hi-vis thermo cut gloves: a cut liner with brushed acrylic terry and a 3/4 sandy nitrile coating. Dual-Layer Thermal Defense combines a high-performance shell with a brushed lining for warmth retention, the TexArn™ hybrid winter design delivers strength, thermal stability and cut protection in the cold, CoreTherm™ insulation retains warmth without restricting mobility, and the 3/4 dip gives layered liquid resistance with confident grip.",
+    tech:[["TEGX® platform", "Cut-protection system of the Cut Defender series."], ["TexArn™", "Hybrid winter design with high strength, thermal stability and cut protection."], ["CoreTherm™", "Integrated insulation layer that retains warmth without restricting mobility."], ["3/4 sandy nitrile", "Layered liquid resistance with confident grip in wet, dry and oily work."]],
+    std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 6 · Puncture 4"], ["EN 388:2016+A1:2018", "4X44F"], ["EN 407:2020", "X2XXXX"], ["EN 511:2006", "121"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "HPPE + brushed acrylic terry"], ["Coating", "Sandy nitrile, 3/4, smooth under"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
 };
-const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'Seven TEGX® cut gloves, pulled onto your hand one after another as you scroll. Blades, glass, sheet metal, arc flash: the hazard changes, the liner holds.' };
+const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'All twenty-two TEGX® cut-resistant gloves, pulled onto your hand one after another as you scroll, in the order of the catalogue. Blades, glass, sheet metal, arc flash: the hazard changes, the liner holds.' };
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
@@ -113,8 +278,9 @@ const stage = $('#stage'), scroller = $('#scroller'), hand = $('#hand'), canvas 
 const copy = $('#copy'), outro = $('#outro'), glow = $('#glow'), bignum = $('#bignum');
 const fitStatus = $('#fitStatus'), fitLabel = fitStatus.querySelector('span');
 const chips = [...document.querySelectorAll('.chip')];
+const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLORE.querySelectorAll('.explore-card')] : [];
 const techLogo = $('#techLogo');
-const TECH_LOGO = { '7098':'tegx', '2085':'tegx', '2080':'tegx', '2094':'tegx', '2096':'tegx', '2098':'tegx', '5588':'tegx' };
+const TECH_LOGO = { '7095':'tegx', '7096':'tegx', '7097':'tegx', '7098':'tegx', '2085':'tegx', '2095':'tegx', '2080':'tegx', '2091':'tegx', '2092':'tegx', '2093':'tegx', '2078':'tegx', '2094':'tegx', '2086':'tegx', '2096':'tegx', '2097':'tegx', '6050':'tegx', '2098':'tegx', '2099':'tegx', '5588':'tegx', '5589':'tegx', '4510':'tegx', '6075':'tegx' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
@@ -127,8 +293,13 @@ const ready = { bare:false, glove:Array(GLOVES.length).fill(false) };
 fetch('assets/hand/extents.json').then(r => r.json()).then(j => { EXT = j; requestRender(); });
 load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; requestRender(); });
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
-loadGlove(0);
-(window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+const bgNear = ch => {                                   // series pages: bg photos carry data-src / data-src-m and load near the chapter
+  const m = window.innerWidth <= 900;
+  bgs.forEach((b, i) => { const s = m ? (b.dataset.srcM || b.dataset.src) : b.dataset.src; if (!s) return;
+    if (Math.abs(i - Math.max(0, ch)) <= 1) { if (b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } } });
+};
+const loadNear = ch => { for (let k = Math.max(0, ch - 1); k <= Math.min(N - 1, Math.max(0, ch) + 2); k++) loadGlove(k); bgNear(ch); };
+loadNear(0);
 
 /* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
    v 0.00–0.22  the mark and the words arrive (small, slow)
@@ -164,8 +335,18 @@ function size() {
   canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR);
   off = off || document.createElement('canvas'); off.width = canvas.width; off.height = canvas.height; offCtx = off.getContext('2d');
   unitPx = window.innerHeight * (window.innerWidth <= 640 ? 1.2 : window.innerWidth <= 900 ? 1.3 : 1.5);
-  layoutCallouts();
+  layoutCallouts(); fitCopy();
   requestRender(true);
+}
+// desktop: a long title (series pages) steps down until the buttons clear the dock; no-op when the copy already fits (the live page)
+function fitCopy() {
+  const c = $('#copy'), d = $('#dock'), t = $('#title'); if (!c || !d || !t) return;
+  t.style.fontSize = '';
+  if (!EXPLORE || window.innerWidth <= 900) return;                 // series pages only: the live page is never touched
+  const dr = d.getBoundingClientRect(), right = Math.max(0, ...[...$('#actions').children, ...$('#ratings').children].map(e => e.getBoundingClientRect().right));
+  if (right < dr.left) return;                                      // a short dock that clears the copy column
+  const low = () => c.getBoundingClientRect().top + (c.clientHeight + c.firstElementChild.offsetHeight) / 2 > dr.top - 16;
+  for (let fs = parseFloat(getComputedStyle(t).fontSize); low() && fs > 48; ) { fs -= 4; t.style.fontSize = fs + 'px'; }
 }
 let unitPx = 1;
 
@@ -329,6 +510,10 @@ function setChapter(seg, gp) {
     const rgb = g ? g.accent : [63,120,224];
     document.documentElement.style.setProperty('--accent-rgb', rgb.join(','));
     chips.forEach((c, i) => c.classList.toggle('on', i === ch));
+    const dock = $('#dock'), chip = chips[ch];                          // a long dock (series pages) follows the lit chip; no-op when every chip fits
+    if (dock && chip && dock.scrollWidth > dock.clientWidth + 1) dock.scrollTo({ left: chip.offsetLeft - (dock.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' });
+    loadNear(ch); cards.forEach((c, i) => c.classList.toggle('on', i === ch));
+    if (EXPLORE && !deepLinking) { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) history.replaceState(null, '', want || location.pathname + location.search); }
     bignum.textContent = String(Math.max(1, ch + 1)).padStart(2, '0');
     $('#railTop').textContent = String(Math.max(0, ch + 1)).padStart(2, '0');
     if (g) { techLogo.src = `assets/tech/${TECH_LOGO[g.code]}.webp`; techLogo.alt = `${g.platform} technology`; techLogo.classList.add('on'); }
@@ -356,6 +541,7 @@ function setChapter(seg, gp) {
     } else {
       calloutLayer.innerHTML = '';
     }
+    fitCopy();
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
@@ -512,10 +698,16 @@ $('#dClose').addEventListener('click', () => dlg.close());
 dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
-function goTo(i) {
+function goTo(i, instant) {
   const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
-  window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
+  if (i >= 0 && i < N) loadGlove(i);
+  window.scrollTo({ top: tt * unitPx, behavior: (instant || reduced.matches) ? 'instant' : 'smooth' });
+  if (instant) { target = t = clamp(tt, 0, T_END); requestRender(true); }
 }
+/* deep link: #st-7098 (or #7098) lands on that glove, opener skipped; the explore cards and the product-page buttons use it */
+const hashIndex = () => { const m = /^#(?:st-)?(\d{4})$/i.exec(location.hash || ''); return m ? GLOVES.findIndex(g => g.code === m[1]) : -1; };
+let deepLinking = false;
+window.addEventListener('hashchange', () => { const i = hashIndex(); if (i >= 0) goTo(i); });
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));
 window.addEventListener('keydown', e => {
   if (e.target !== document.body) return;
@@ -533,7 +725,9 @@ document.addEventListener('pointerleave', () => { aimX = aimY = 0; requestRender
 
 /* ---------- boot ---------- */
 window.addEventListener('scroll', onScroll, { passive:true });
-window.addEventListener('resize', () => { size(); onScroll(); });
+window.addEventListener('resize', () => { size(); onScroll(); bgNear(currentChapter); });
 reduced.addEventListener?.('change', () => requestRender(true));
-size(); onScroll(); requestRender(true);
+size();
+{ const i = hashIndex(); if (i >= 0) { deepLinking = true; if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; goTo(i, true); requestAnimationFrame(() => requestAnimationFrame(() => { deepLinking = false; })); } }
+onScroll(); requestRender(true);
 })();

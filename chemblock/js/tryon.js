@@ -11,6 +11,27 @@ const GLOVES = [
     standards:"EN ISO 374-1 Type B AKL · EN 374-5 · EN 388 4121X · CE Cat III",
     accent:[220, 50, 30], cuff:{ base:"#d3291f", hem:"#c92e20" }, url:"https://stegosafety.com/product/chem-armor-st-1070/",
     callouts:[ { x:0.42, y:0.11, title:"Sandblast finish", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Double-dipped PVC", text:"Liquids stay out." }, { x:0.34, y:0.55, title:"SealTrace™ seams", text:"No micro-pathways." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
+  { code:"1080", name:"Optichem Grip", platform:"ChemBlock™", category:"CHEMICAL · PVC",
+    title:"Acids and caustics.<br><em>Grip kept.</em>",
+    lead:"Triple-dipped soft PVC on an interlock lining: EN ISO 374-1 Type B, SealTrace™ seams against ingress, a textured non-slip finish that holds in oils, greases, acids and caustics.",
+    ratings:[["TYPE B", "EN ISO 374-1"], ["AJK", "Chemicals"], ["4", "Abrasion"], ["5", "Dexterity"]],
+    standards:"EN ISO 374-1 Type B AJK · EN 374-5 · EN 388 4121A · ANSI/ISEA 105 · CE Cat III",
+    accent:[80, 75, 200], cuff:{ base:"#465eb0", hem:"#455eb0" },
+    callouts:[ { x:0.56, y:0.28, title:"Soft PVC barrier", text:"Stays supple under chemicals." }, { x:0.62, y:0.4, title:"SealTrace™ seams", text:"No ingress at the joins." }, { x:0.42, y:0.11, title:"Textured finish", text:"Grip in oils and acids." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
+  { code:"1085", name:"Optichem Thermo", platform:"ChemBlock™", category:"CHEMICAL · PVC · COLD",
+    title:"Chemicals in the cold.<br><em>Insulated PVC.</em>",
+    lead:"The Optichem with a dual thermal lining: triple-dipped soft PVC, EN ISO 374-1 Type B, CoreTherm™ warmth to EN 511, SealTrace™ seams and a textured finish for wet grip.",
+    ratings:[["TYPE B", "EN ISO 374-1"], ["AJK", "Chemicals"], ["121", "EN 511 cold"], ["5", "Dexterity"]],
+    standards:"EN ISO 374-1 Type B AJK · EN 374-5 · EN 388 4121A · EN 511:2006 121 · ANSI/ISEA 105 · CE Cat III",
+    accent:[45, 125, 225], cuff:{ base:"#2682a9", hem:"#e7b60b" }, url:"https://stegosafety.com/product/optichem-thermo-st-1085/",
+    callouts:[ { x:0.56, y:0.28, title:"Insulated PVC barrier", text:"Chemicals and cold." }, { x:0.62, y:0.4, title:"CoreTherm™ lining", text:"Warm inside." }, { x:0.42, y:0.11, title:"Textured finish", text:"Wet grip." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
+  { code:"2018", name:"N'Flock", platform:"ChemBlock™", category:"CHEMICAL · FOOD SAFE",
+    title:"Lab bench, wash bay.<br><em>Food safe.</em>",
+    lead:"Specialised flock-lined nitrile, EN ISO 374-1 Type A and approved for food contact. CoreResist™ holds the barrier through repeated chemical contact; a raised diamond palm keeps control in wet work.",
+    ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["JKLNOT", "Chemicals"], ["FOOD", "Contact"]],
+    standards:"EN ISO 374-1 Type A JKLNOT · EN 374-5 · EN 388 4101X · Food contact · CE Cat III",
+    accent:[60, 170, 160], cuff:{ base:"#31a198", hem:"#3ca399" },
+    callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Nitrile barrier", text:"Type A." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Flock lining", text:"Easy on, easy off." } ] },
   { code:"2020", name:"Nitri-Armor", platform:"ChemBlock™", category:"CHEMICAL · NITRILE",
     title:"Solvents and sludge.<br><em>Rough grip.</em>",
     lead:"Smooth double-coated nitrile on an anti-microbial cotton liner, EN ISO 374-1 Type A. CoreResist™ keeps the barrier stable through repeated contact; a rough-textured palm keeps the grip in sludge.",
@@ -18,13 +39,6 @@ const GLOVES = [
     standards:"EN ISO 374-1 Type A AJKLMO · EN 374-5 · EN 388 4121X · CE Cat III",
     accent:[40, 110, 70], cuff:{ base:"#2f312e", hem:"#292926" },
     callouts:[ { x:0.42, y:0.11, title:"Rough-textured finish", text:"Grip in sludge." }, { x:0.56, y:0.28, title:"Double nitrile coat", text:"Liquids stay out." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
-  { code:"2018", name:"N'Flock", platform:"ChemBlock™", category:"CHEMICAL · FOOD SAFE",
-    title:"Lab bench, wash bay.<br><em>Food safe.</em>",
-    lead:"Specialised flock-lined nitrile, EN ISO 374-1 Type A and approved for food contact. CoreResist™ holds the barrier through repeated chemical contact; a raised diamond palm keeps control in wet work.",
-    ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["JKLNOT", "Chemicals"], ["FOOD", "Contact approved"]],
-    standards:"EN ISO 374-1 Type A JKLNOT · EN 374-5 · EN 388 4101X · Food contact · CE Cat III",
-    accent:[60, 170, 160], cuff:{ base:"#31a198", hem:"#3ca399" },
-    callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Nitrile barrier", text:"Type A." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Flock lining", text:"Easy on, easy off." } ] },
   { code:"8089", name:"Chem Shield", platform:"ChemBlock™", category:"CHEMICAL · NEOPRENE",
     title:"Acids and caustics.<br><em>Two layers.</em>",
     lead:"Neoprene over latex, flock lined, EN ISO 374-1 Type A with virus protection. CoreResist™ for repeated splashes and contact, a quick-entry cuff for fast on and off, a raised diamond palm.",
@@ -32,6 +46,13 @@ const GLOVES = [
     standards:"EN ISO 374-1 Type A AKLNPT · EN 374-5 Virus · EN 388 3111X · CE Cat III",
     accent:[40, 130, 220], cuff:{ base:"#cfd414", hem:"#c9cd1c" },
     callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Neoprene over latex", text:"Acids and caustics." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Quick-entry cuff", text:"Fast on and off." } ] },
+  { code:"2021", name:"Barix Grip", platform:"ChemBlock™", category:"CHEMICAL · NITRILE",
+    title:"Solvents, repeatedly.<br><em>Grip every time.</em>",
+    lead:"Fully double-coated nitrile on a nylon knit: EN ISO 374-1 Type A across nine chemical groups, CoreResist™ against degradation through repeated contact, a sandy finish for grip in wet and oil.",
+    ratings:[["TYPE A", "EN ISO 374-1"], ["9", "Chemicals"], ["4", "Abrasion"], ["A1", "ANSI cut"]],
+    standards:"EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 · EN 388 4121A · EN 407 X1XXXX · ANSI/ISEA 105 · CE Cat III",
+    accent:[40, 110, 210], cuff:{ base:"#055aa6", hem:"#6c5d5d" },
+    callouts:[ { x:0.56, y:0.28, title:"Double nitrile coat", text:"Sealed over the knit." }, { x:0.62, y:0.4, title:"CoreResist™", text:"No degradation on repeat." }, { x:0.42, y:0.11, title:"Sandy finish", text:"Grip wet, dry, oily." }, { x:0.5, y:0.73, title:"Blue gauntlet cuff", text:"Past the wrist." } ] },
   { code:"2022", name:"Barix Armor", platform:"ChemBlock™", category:"CHEMICAL & CUT",
     title:"Chemical and cut.<br><em>In one hand.</em>",
     lead:"ChemBlock™ and TEGX® together: a sandy nitrile barrier, EN ISO 374-1 Type A, over an A4 cut liner. CoreResist™ for the chemistry, DryHold™ inside, a dual-coated palm for wet or dry work.",
@@ -39,52 +60,112 @@ const GLOVES = [
     standards:"EN 388 4X42D · EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 · EN 407 X1XXXX · CE Cat III",
     accent:[40, 110, 220], cuff:{ base:"#1464ae", hem:"#426381" }, url:"https://stegosafety.com/product/barix-armor-st-2022/",
     callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Type A barrier", text:"Nine chemical classes." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.33, y:0.34, title:"ChemBlock™ + TEGX®", text:"Chemical and A4 cut." } ] },
+  { code:'2023', name:'Barix Vanta', platform:'ChemBlock™', category:'CHEMICAL & CUT',
+    title:'Splash, solvent,<br><em>sharp edge.</em>',
+    lead:'A full sandy nitrile barrier over a TEGX® A6 cut liner. EN ISO 374-1 Type A, EN 374-5 virus, and a gauntlet over the wrist and forearm, where a splash lands first.',
+    ratings:[['TYPE A','EN ISO 374-1'],['A6','ANSI cut'],['VIRUS','EN 374-5'],['4','Abrasion']],
+    standards:'EN 388 4X42F · EN ISO 374-1 Type A · EN 374-5 Virus · EN 407 X1XXXX · CE Cat III',
+    accent:[233,185,42], cuff:{ base:'#101113', hem:'#2a2c30' },
+    callouts:[
+      { x:0.55, y:0.12, title:'Sandy nitrile', text:'Grip, wet or dry.' },
+      { x:0.60, y:0.38, title:'SolvLock™', text:'Stable in solvents.' },
+      { x:0.30, y:0.44, title:'DryHold™', text:'Dry inside.' },
+      { x:0.50, y:0.74, title:'ChemBlock™ + TEGX®', text:'Chemical and cut protection.' } ] },
   { code:"2024", name:"Barix Shell", platform:"ChemBlock™", category:"CHEMICAL · CUT · IMPACT",
     title:"Chemical, cut, impact.<br><em>All three.</em>",
     lead:"The tri-hazard glove: a ChemBlock™ barrier, a TEGX® A6 cut liner and SHELL GRD™ ShockShell™ guards in one. For drums, valves and pipe work where a splash and a knock arrive together.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["A6", "ANSI cut"], ["2", "Impact 138"], ["VIRUS", "EN 374-5"]],
     standards:"EN 388 4X42F · EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 Virus · EN 407 X1XXXX · ANSI/ISEA 138 · CE Cat III",
     accent:[230, 180, 30], cuff:{ base:"#272525", hem:"#2c2523" },
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Type A barrier", text:"Chemicals out." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.34, y:0.55, title:"Type A barrier", text:"Chemicals out." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
+  { code:"7500", name:"Vynox Neo", platform:"ChemBlock™", category:"CHEMICAL · BUTYL",
+    title:"Ketones, esters, aldehydes.<br><em>Anti-static butyl.</em>",
+    lead:"Robust butyl for the chemicals that attack nitrile: EN ISO 374-1 Type A, virus rated, anti-static to EN 16350, Permex™ slowing permeation through the glove, FlexFit™ in the hand.",
+    ratings:[["TYPE A", "EN ISO 374-1"], ["AKLMNP", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
+    standards:"EN ISO 374-1 Type A AKLMNP · EN 374-5 Virus · EN 16350:2014 · EN 388 2111X · CE Cat III",
+    accent:[60, 60, 70], cuff:{ base:"#242422", hem:"#9c684a" }, url:"https://stegosafety.com/product/vynox-neo-st-7500/",
+    callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"Permex™", text:"Slows permeation." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"7505", name:"Vynox Evo", platform:"ChemBlock™", category:"CHEMICAL · BUTYL",
     title:"Ketones, esters.<br><em>No spark.</em>",
     lead:"Heavy-duty butyl for the solvents that eat other gloves, EN ISO 374-1 Type A and anti-static to EN 16350. SolvLock™ keeps the barrier stable under aggressive exposure; FlexFit™ keeps the hand working.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["ABILST", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A ABILST · EN 374-5 · EN 16350:2014 · EN 388 2111X · CE Cat III",
     accent:[45, 45, 50], cuff:{ base:"#d18e65", hem:"#cc8961" },
-    callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Moves with the hand." } ] },
+    callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Moves with the hand." } ] },
+  { code:"7510", name:"Vynox Ultra", platform:"ChemBlock™", category:"CHEMICAL · VITON® OVER BUTYL",
+    title:"Hydrocarbons, strong acids.<br><em>Viton® outside.</em>",
+    lead:"Viton® over butyl for the hardest exposures: maximum resistance to hydrocarbons and concentrated mineral acids, CoreResist™ against breakdown, a seamless immersion-built barrier, 14 inches long.",
+    ratings:[["TYPE B", "EN ISO 374-1"], ["DFL", "Chemicals"], ["VIRUS", "EN 374-5"], ["5", "Dexterity"]],
+    standards:"EN ISO 374-1 Type B DFL · EN 374-5 Virus · EN 388 1010X · CE Cat III",
+    accent:[50, 50, 60], cuff:{ base:"#28272a", hem:"#322d28" },
+    callouts:[ { x:0.56, y:0.28, title:"Viton® over butyl", text:"Hydrocarbons and acids." }, { x:0.62, y:0.4, title:"CoreResist™", text:"No breakdown on repeat." }, { x:0.42, y:0.11, title:"Immersion built", text:"Seamless barrier." }, { x:0.5, y:0.73, title:"14-inch gauntlet", text:"Forearm covered." } ] },
+  { code:"5530", name:"Vynox Shield", platform:"ChemBlock™", category:"CHEMICAL · NEOPRENE",
+    title:"Acids, caustics, solvents.<br><em>Diamond grip.</em>",
+    lead:"Enhanced neoprene, flock lined, with a diamond grip: EN ISO 374-1 Type A across six groups, virus rated, SealTrace™ seams and a supple build that stays flexible through repeated handling.",
+    ratings:[["TYPE A", "EN ISO 374-1"], ["BKLOPT", "Chemicals"], ["VIRUS", "EN 374-5"], ["5", "Dexterity"]],
+    standards:"EN ISO 374-1 Type A BKLOPT · EN 374-5 Virus · EN 388 2111X · CE Cat III",
+    accent:[70, 70, 80], cuff:{ base:"#1e1e1e", hem:"#1c1c1c" }, url:"https://stegosafety.com/product/vynox-shield-st-5530/",
+    callouts:[ { x:0.56, y:0.28, title:"Neoprene shield", text:"Acids, caustics, solvents." }, { x:0.62, y:0.4, title:"SealTrace™ seams", text:"No ingress at the joins." }, { x:0.42, y:0.11, title:"Diamond grip", text:"Holds when wet." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
 ];
 const DETAILS = {
   "1070": { desc:"Chemical resistant gloves, double-dipped in premium PVC on an interlock lining, EN ISO 374-1 Type B. The PVC limits absorption and migration of hazardous liquids during active use; SealTrace™ seam integrity blocks micro-pathways at transition zones; DryHold™ keeps the inside dry; the sandblast finish keeps control in wet, dry and oily chemical environments.",
     tech:[["ChemBlock™ platform", "Chemical-barrier system of the Chem series."], ["SealTrace™", "Seam integrity system that blocks micro-pathways and prevents chemical ingress at transition zones."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["Sandblast finish", "Control in wet, dry and oily chemical environments."]],
     std:[["EN ISO 374-1:2016+A1:2018", "Type B · AKL"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4121X"], ["ANSI/ISEA 105", "Abrasion 5"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Shell", "Premium PVC, double-dipped"], ["Lining", "Interlock"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
-  "2020": { desc:"Chemical resistant gloves in double-coated nitrile on an anti-microbial cotton liner, EN ISO 374-1 Type A. Smooth nitrile resists absorption and migration of hazardous liquids; CoreResist™ material stabilisation prevents degradation through repeated chemical contact; DryHold™ keeps the inside dry; the rough-textured palm gives anti-slip grip in wet, dry and oily chemical environments.",
-    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Nitri-Armor series."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["Rough-textured palm", "Anti-slip grip in wet, dry and oily chemical environments."]],
-    std:[["EN ISO 374-1:2016+A1:2018", "Type A · AJKLMO"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4121X"], ["ANSI/ISEA 105", "Abrasion 4 · Puncture 1 · Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
-    meta:[["Shell", "Nitrile, double coated"], ["Liner", "Anti-microbial cotton"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 120 prs / carton"]] },
+  "1080": { desc:"Triple-dipped chemical-resistant gloves in soft PVC with an interlock lining. The soft PVC coating keeps shape and usability under chemical stress without becoming rigid or fragile, SealTrace™ seam integrity blocks micro-pathways to prevent chemical ingress at transition zones in continuous liquid exposure, FlexFit™ shaping follows the hand, and the textured non-slip finish keeps grip in oils, greases, acids and caustics while protecting against chemical and biological hazards.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Optichem series."], ["SealTrace™", "Seam integrity system that blocks micro-pathways to prevent chemical ingress at transition zones."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Soft PVC", "Triple-dipped barrier that stays supple under chemical stress."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type B · AJK"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4121A"], ["ANSI/ISEA 105", "Abrasion 4 · Puncture 1 · Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Liner", "Cotton interlock knit"], ["Coating", "Soft PVC, triple-dipped"], ["Sizes", "9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag"]] },
+  "1085": { desc:"Triple-dipped chemical-resistant gloves in soft PVC with a dual thermal lining. The flexible insulated PVC gloves deliver chemical protection, cold resistance and enhanced wet-grip performance, SealTrace™ seam integrity blocks micro-pathways against chemical ingress in continuous liquid exposure, CoreTherm™ insulation retains warmth without restricting mobility, and the textured non-slip finish keeps grip stability in oils, greases, acids and caustics.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Optichem series."], ["SealTrace™", "Seam integrity system that blocks micro-pathways to prevent chemical ingress at transition zones."], ["CoreTherm™", "Integrated insulation layer that retains warmth without restricting mobility."], ["Soft PVC", "Triple-dipped barrier that stays supple in the cold."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type B · AJK"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4121A"], ["EN 511:2006", "121"], ["ANSI/ISEA 105", "Cut A1 · Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Liner", "Brushed acrylic and cotton, dual thermal"], ["Coating", "Soft PVC, triple-dipped"], ["Sizes", "8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "2018": { desc:"Specialised nitrile chemical gloves, flock lined with a raised diamond grip, EN ISO 374-1 Type A and approved for food contact. An enhanced chemical barrier keeps protection through repeated exposure cycles; CoreResist™ prevents degradation; the raised diamond palm keeps control in wet, dry and oily chemical environments.",
     tech:[["ChemBlock™ platform", "Chemical-barrier system of the N'Flock series."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["Food contact approved", "Supports hygiene control and safe handling."], ["Raised diamond palm", "Control in wet, dry and oily chemical environments."]],
     std:[["EN ISO 374-1:2016+A1:2018", "Type A · JKLNOT"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4101X"], ["ANSI/ISEA 105", "Abrasion 4 · Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III · Food contact"]],
     meta:[["Shell", "Specialised nitrile"], ["Lining", "Flock"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 120 prs / carton"]] },
+  "2020": { desc:"Chemical resistant gloves in double-coated nitrile on an anti-microbial cotton liner, EN ISO 374-1 Type A. Smooth nitrile resists absorption and migration of hazardous liquids; CoreResist™ material stabilisation prevents degradation through repeated chemical contact; DryHold™ keeps the inside dry; the rough-textured palm gives anti-slip grip in wet, dry and oily chemical environments.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Nitri-Armor series."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["Rough-textured palm", "Anti-slip grip in wet, dry and oily chemical environments."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type A · AJKLMO"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4121X"], ["ANSI/ISEA 105", "Abrasion 4 · Puncture 1 · Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Nitrile, double coated"], ["Liner", "Anti-microbial cotton"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 120 prs / carton"]] },
   "8089": { desc:"Neoprene-latex chemical resistant gloves, flock lined with a raised diamond grip, EN ISO 374-1 Type A and EN 374-5 virus. Protective integrity through splashes, contact and routine chemical handling; CoreResist™ against degradation; a flock-lined quick-entry cuff for fast donning and doffing; a raised diamond palm for grip and handling accuracy.",
     tech:[["ChemBlock™ platform", "Chemical-barrier system of the Chem Shield series."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["Quick-entry cuff", "Flock-lined cuff for fast donning and doffing."], ["Raised diamond palm", "Consistent grip and handling accuracy in repetitive chemical operations."]],
     std:[["EN ISO 374-1:2016+A1:2018", "Type A · AKLNPT"], ["EN 374-5:2016", "Virus"], ["EN 388:2016+A1:2018", "3111X"], ["ANSI/ISEA 105", "Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Shell", "Neoprene over latex"], ["Lining", "Flock"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 120 prs / carton"]] },
+  "2021": { desc:"Chemical-resistant gloves in double-coated nitrile over a nylon knit liner. ChemBlock® protection delivers high abrasion resistance and dexterity while reducing hand fatigue, CoreResist™ material stabilisation prevents degradation through repeated chemical contact, FlexFit™ shaping follows natural hand movement, and the fully double-coated nitrile gives superior grip in dry, wet and oily applications.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Barix series."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Double-coated nitrile", "Flat nitrile sealed under a sandy nitrile grip."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type A · AJKLMNOPT"], ["EN 374-5:2016", "Micro-organisms"], ["EN 388:2016+A1:2018", "4121A"], ["EN 407:2020", "X1XXXX"], ["ANSI/ISEA 105", "Cut A1 · Abrasion 4 · Puncture 2 · Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Liner", "Nylon knit"], ["Coating", "Flat nitrile under sandy nitrile, fully coated"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 72 prs / carton"]] },
   "2022": { desc:"Enhanced A4 cut chemical resistant gloves with a nitrile sandy grip. ChemBlock™ and TEGX® together deliver cut, abrasion and chemical resistance with dexterity; CoreResist™ prevents degradation through repeated chemical contact; DryHold™ keeps the inside dry; the dual-coated sandy nitrile palm keeps control in wet, oily and dry handling.",
     tech:[["ChemBlock™ platform", "Chemical-barrier system of the Barix series."], ["TEGX® liner", "Cut-resistant liner rated ANSI A4."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["SolvLock™", "Solvent-resistant polymer structure that keeps the barrier stable under aggressive exposure."]],
     std:[["ANSI/ISEA 105", "Cut A4 · Abrasion 4 · Puncture 3 · Dexterity 5"], ["EN 388:2016+A1:2018", "4X42D"], ["EN ISO 374-1:2016+A1:2018", "Type A · AJKLMNOPT"], ["EN 374-5:2016", "Micro-organisms"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Liner", "TEGX® cut-resistant blend"], ["Coating", "Sandy nitrile, dual coated"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 72 prs / carton"]] },
+  '2023': { desc:'High-performance chemical and cut resistant glove for high-risk applications. A TEGX® cut-resistant liner under a full sandy nitrile coating protects against blades, abrasion, solvents and hazardous liquids; the textured palm keeps a secure grip in wet, oily and dry conditions, and the gauntlet extends cover past the wrist.',
+    tech:[['ChemBlock™ platform','Chemical-barrier system of the Barix series.'],['SolvLock™','Solvent-resistant polymer structure that keeps the barrier stable under aggressive exposure.'],['CoreResist™','Coating durability over the cut liner.'],['DryHold™','Moisture-wicking system that keeps the inside dry and reduces slippage.'],['TEGX® liner','High-mobility carbon blend cut liner, ANSI A6.'],['Sandy nitrile','Fully coated textured barrier for wet, oily and dry precision handling.']],
+    std:[['ANSI/ISEA 105','Cut A6 · Abrasion 4 · Puncture 2 · Dexterity 5'],['EN 388:2016+A1:2018','4X42F'],['EN ISO 374-1:2016+A1:2018','Type A · AJKLMNOPT'],['EN 374-5:2016','Virus'],['EN 407:2020','X1XXXX'],['EN ISO 21420:2020','CE · Category III']],
+    meta:[['Liner','High-mobility carbon blend'],['Coating','Sandy nitrile, fully coated'],['Sizes','8/M · 9/L · 10/XL · 11/2XL'],['Packing','1 pr / polybag · 72 prs / carton']] },
   "2024": { desc:"Multi-hazard protection: chemical, cut and impact in one glove. A tri-hazard system of ChemBlock®, TEGX® and SHELL® GRD for demanding conditions; CoreResist™ against degradation through repeated chemical contact; ShockShell™ TPR zones that absorb vertical impact; a fully coated sandy nitrile palm for control in wet, oily and dry precision handling.",
     tech:[["ChemBlock™ platform", "Chemical-barrier system of the Barix series."], ["TEGX® liner", "Cut-resistant liner rated ANSI A6."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."]],
     std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 4 · Puncture 2 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X42F"], ["EN ISO 374-1:2016+A1:2018", "Type A · AJKLMNOPT"], ["EN 374-5:2016", "Virus"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Liner", "TEGX® cut-resistant blend"], ["Coating", "Sandy nitrile, fully coated, TPR guards"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 72 prs / carton"]] },
+  "7500": { desc:"Chemical-protective butyl gloves with an advanced anti-static formula. Robust butyl delivers enhanced resistance to hazardous chemicals including aldehydes, ketones and esters, Permex™ molecular resistance slows chemical permeation through the glove structure, FlexFit™ shaping follows natural hand movement, and the advanced butyl polymer gives maximum resistance in highly corrosive chemical environments.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Vynox series."], ["Permex™", "Molecular resistance framework that slows chemical permeation through the glove structure."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Anti-static", "Electrostatic properties to EN 16350."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type A · AKLMNP"], ["EN 374-5:2016", "Virus"], ["EN 16350:2014", "Electrostatic properties"], ["EN 388:2016+A1:2018", "2111X"], ["ANSI/ISEA 105", "Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Butyl rubber, anti-static"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "7505": { desc:"Heavy-duty butyl chemical protection, anti-static. Enhanced butyl delivers sustained chemical resistance, abrasion protection, flexibility and grip control through prolonged exposure to hazardous chemicals; SolvLock™ keeps the barrier stable under aggressive exposure; FlexFit™ anatomical shaping follows the hand; durable construction resists material breakdown in extended wear.",
     tech:[["ChemBlock™ platform", "Chemical-barrier system of the Vynox series."], ["SolvLock™", "Solvent-resistant polymer structure that keeps the barrier stable under aggressive exposure."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Anti-static", "Electrostatic properties to EN 16350."]],
     std:[["EN ISO 374-1:2016+A1:2018", "Type A · ABILST"], ["EN 374-5:2016", "Micro-organisms"], ["EN 16350:2014", "Electrostatic properties"], ["EN 388:2016+A1:2018", "2111X"], ["ANSI/ISEA 105", "Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Shell", "Heavy-duty butyl"], ["Sizes", "9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag"]] },
+  "7510": { desc:"Extreme-protection chemical gloves in Viton® over butyl. The Viton® butyl hybrid gives maximum resistance to hydrocarbons and concentrated mineral acids, CoreResist™ material stabilisation prevents degradation through repeated chemical contact, the industrial immersion construction creates a seamless chemical barrier, and the comfort-focused build keeps flexibility for fatigue-free handling.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Vynox series."], ["CoreResist™", "Material stabilisation technology preventing degradation during repeated chemical contact."], ["Permex™", "Molecular resistance framework that slows chemical permeation through the glove structure."], ["Viton® over butyl", "Dual-polymer barrier for hydrocarbons and concentrated acids."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type B · DFL"], ["EN 374-5:2016", "Virus"], ["EN 388:2016+A1:2018", "1010X"], ["ANSI/ISEA 105", "Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Butyl rubber with Viton™ outer"], ["Length", "14 in"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 120 prs / carton"]] },
+  "5530": { desc:"Chemical-resistant gloves in enhanced neoprene, flock lined, with a diamond grip. The advanced neoprene shield gives reliable resistance to acids, caustics, solvents and oils, SealTrace™ seam integrity blocks micro-pathways to prevent chemical ingress at transition zones in continuous liquid exposure, FlexFit™ shaping follows the hand, and the supple chemical-resistant construction keeps flexibility, structural integrity and comfort through repeated chemical handling.",
+    tech:[["ChemBlock™ platform", "Chemical-barrier system of the Vynox series."], ["SealTrace™", "Seam integrity system that blocks micro-pathways to prevent chemical ingress at transition zones."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Permex™", "Molecular resistance framework that slows chemical permeation through the glove structure."]],
+    std:[["EN ISO 374-1:2016+A1:2018", "Type A · BKLOPT"], ["EN 374-5:2016", "Virus"], ["EN 388:2016+A1:2018", "2111X"], ["ANSI/ISEA 105", "Dexterity 5"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Enhanced neoprene"], ["Liner", "Cotton flock"], ["Palm", "Diamond pattern grip"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 72 prs / carton"]] },
 };
-const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'Seven ChemBlock™ chemical gloves, pulled onto your hand one after another as you scroll. Acids, solvents, oils and the splash you did not plan for: the barrier holds, the grip stays.' };
+const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'All fourteen ChemBlock™ chemical gloves, pulled onto your hand one after another as you scroll, in the order of the catalogue. Acids, solvents, oils, caustics: the splash stays on the outside.' };
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
@@ -109,8 +190,9 @@ const stage = $('#stage'), scroller = $('#scroller'), hand = $('#hand'), canvas 
 const copy = $('#copy'), outro = $('#outro'), glow = $('#glow'), bignum = $('#bignum');
 const fitStatus = $('#fitStatus'), fitLabel = fitStatus.querySelector('span');
 const chips = [...document.querySelectorAll('.chip')];
+const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLORE.querySelectorAll('.explore-card')] : [];
 const techLogo = $('#techLogo');
-const TECH_LOGO = { '1070':'chemblock', '2020':'chemblock', '2018':'chemblock', '8089':'chemblock', '2022':'chemblock', '2024':'chemblock', '7505':'chemblock' };
+const TECH_LOGO = { '1070':'chemblock', '1080':'chemblock', '1085':'chemblock', '2018':'chemblock', '2020':'chemblock', '8089':'chemblock', '2021':'chemblock', '2022':'chemblock', '2023':'chemblock', '2024':'chemblock', '7500':'chemblock', '7505':'chemblock', '7510':'chemblock', '5530':'chemblock' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
@@ -123,8 +205,13 @@ const ready = { bare:false, glove:Array(GLOVES.length).fill(false) };
 fetch('assets/hand/extents.json').then(r => r.json()).then(j => { EXT = j; requestRender(); });
 load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; requestRender(); });
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
-loadGlove(0);
-(window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+const bgNear = ch => {                                   // series pages: bg photos carry data-src / data-src-m and load near the chapter
+  const m = window.innerWidth <= 900;
+  bgs.forEach((b, i) => { const s = m ? (b.dataset.srcM || b.dataset.src) : b.dataset.src; if (!s) return;
+    if (Math.abs(i - Math.max(0, ch)) <= 1) { if (b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } } });
+};
+const loadNear = ch => { for (let k = Math.max(0, ch - 1); k <= Math.min(N - 1, Math.max(0, ch) + 2); k++) loadGlove(k); bgNear(ch); };
+loadNear(0);
 
 /* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
    v 0.00–0.22  the mark and the words arrive (small, slow)
@@ -160,8 +247,18 @@ function size() {
   canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR);
   off = off || document.createElement('canvas'); off.width = canvas.width; off.height = canvas.height; offCtx = off.getContext('2d');
   unitPx = window.innerHeight * (window.innerWidth <= 640 ? 1.2 : window.innerWidth <= 900 ? 1.3 : 1.5);
-  layoutCallouts();
+  layoutCallouts(); fitCopy();
   requestRender(true);
+}
+// desktop: a long title (series pages) steps down until the buttons clear the dock; no-op when the copy already fits (the live page)
+function fitCopy() {
+  const c = $('#copy'), d = $('#dock'), t = $('#title'); if (!c || !d || !t) return;
+  t.style.fontSize = '';
+  if (!EXPLORE || window.innerWidth <= 900) return;                 // series pages only: the live page is never touched
+  const dr = d.getBoundingClientRect(), right = Math.max(0, ...[...$('#actions').children, ...$('#ratings').children].map(e => e.getBoundingClientRect().right));
+  if (right < dr.left) return;                                      // a short dock that clears the copy column
+  const low = () => c.getBoundingClientRect().top + (c.clientHeight + c.firstElementChild.offsetHeight) / 2 > dr.top - 16;
+  for (let fs = parseFloat(getComputedStyle(t).fontSize); low() && fs > 48; ) { fs -= 4; t.style.fontSize = fs + 'px'; }
 }
 let unitPx = 1;
 
@@ -325,6 +422,10 @@ function setChapter(seg, gp) {
     const rgb = g ? g.accent : [63,120,224];
     document.documentElement.style.setProperty('--accent-rgb', rgb.join(','));
     chips.forEach((c, i) => c.classList.toggle('on', i === ch));
+    const dock = $('#dock'), chip = chips[ch];                          // a long dock (series pages) follows the lit chip; no-op when every chip fits
+    if (dock && chip && dock.scrollWidth > dock.clientWidth + 1) dock.scrollTo({ left: chip.offsetLeft - (dock.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' });
+    loadNear(ch); cards.forEach((c, i) => c.classList.toggle('on', i === ch));
+    if (EXPLORE && !deepLinking) { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) history.replaceState(null, '', want || location.pathname + location.search); }
     bignum.textContent = String(Math.max(1, ch + 1)).padStart(2, '0');
     $('#railTop').textContent = String(Math.max(0, ch + 1)).padStart(2, '0');
     if (g) { techLogo.src = `assets/tech/${TECH_LOGO[g.code]}.webp`; techLogo.alt = `${g.platform} technology`; techLogo.classList.add('on'); }
@@ -352,6 +453,7 @@ function setChapter(seg, gp) {
     } else {
       calloutLayer.innerHTML = '';
     }
+    fitCopy();
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
@@ -508,10 +610,16 @@ $('#dClose').addEventListener('click', () => dlg.close());
 dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
-function goTo(i) {
+function goTo(i, instant) {
   const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
-  window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
+  if (i >= 0 && i < N) loadGlove(i);
+  window.scrollTo({ top: tt * unitPx, behavior: (instant || reduced.matches) ? 'instant' : 'smooth' });
+  if (instant) { target = t = clamp(tt, 0, T_END); requestRender(true); }
 }
+/* deep link: #st-7098 (or #7098) lands on that glove, opener skipped; the explore cards and the product-page buttons use it */
+const hashIndex = () => { const m = /^#(?:st-)?(\d{4})$/i.exec(location.hash || ''); return m ? GLOVES.findIndex(g => g.code === m[1]) : -1; };
+let deepLinking = false;
+window.addEventListener('hashchange', () => { const i = hashIndex(); if (i >= 0) goTo(i); });
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));
 window.addEventListener('keydown', e => {
   if (e.target !== document.body) return;
@@ -529,7 +637,9 @@ document.addEventListener('pointerleave', () => { aimX = aimY = 0; requestRender
 
 /* ---------- boot ---------- */
 window.addEventListener('scroll', onScroll, { passive:true });
-window.addEventListener('resize', () => { size(); onScroll(); });
+window.addEventListener('resize', () => { size(); onScroll(); bgNear(currentChapter); });
 reduced.addEventListener?.('change', () => requestRender(true));
-size(); onScroll(); requestRender(true);
+size();
+{ const i = hashIndex(); if (i >= 0) { deepLinking = true; if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; goTo(i, true); requestAnimationFrame(() => requestAnimationFrame(() => { deepLinking = false; })); } }
+onScroll(); requestRender(true);
 })();

@@ -10,21 +10,42 @@ const GLOVES = [
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 4131A · ANSI/ISEA 105 · CE Cat II",
     accent:[120, 125, 135], cuff:{ base:"#3a3b38", hem:"#796253" },
-    callouts:[ { x:0.42, y:0.11, title:"Smooth PU coating", text:"Dry grip, fine feel." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Moves with the hand." }, { x:0.5, y:0.73, title:"EdgeLock™ cuff", text:"Stays put." } ] },
+    callouts:[ { x:0.42, y:0.11, title:"Smooth PU coating", text:"Dry grip, fine feel." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Moves with the hand." }, { x:0.5, y:0.73, title:"EdgeLock™ cuff", text:"Stays put." } ] },
+  { code:"7040", name:"Optimax Carbon", platform:"GRYX™", category:"MECHANICAL · ESD",
+    title:"Static-sensitive parts.<br><em>Plain good grip.</em>",
+    lead:"The Optimax for electronics and assembly: ESD-rated with controlled static dissipation, a smooth PU palm, CoreForm™ structure and FlexFit™ shaping for a stable fit all day.",
+    ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
+    standards:"EN 388:2016 4131A · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
+    accent:[70, 75, 85], cuff:{ base:"#2f2526", hem:"#362f29" },
+    callouts:[ { x:0.42, y:0.11, title:"Smooth PU coating", text:"Dry grip, fine feel." }, { x:0.62, y:0.34, title:"ESD knit", text:"Static drains away." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.5, y:0.73, title:"FlexFit™", text:"Follows the hand." } ] },
   { code:"6035", name:"Optiflex", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Seen on site.<br><em>Sure on the rail.</em>",
     lead:"High-visibility knit with a latex foam palm that locks onto wet timber, steel and rope. A CoreArn™ liner that will not distort, FlexFit™ shaping for a tired hand late in the shift.",
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 3131X · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
     accent:[200, 225, 40], cuff:{ base:"#cfdd43", hem:"#8e7232" },
-    callouts:[ { x:0.42, y:0.11, title:"Latex foam coating", text:"Grip on wet timber." }, { x:0.62, y:0.34, title:"Hi-vis knit", text:"Seen in low light." }, { x:0.62, y:0.34, title:"CoreArn™ liner", text:"Holds its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." } ] },
+    callouts:[ { x:0.42, y:0.11, title:"Latex foam coating", text:"Grip on wet timber." }, { x:0.38, y:0.42, title:"Hi-vis knit", text:"Seen in low light." }, { x:0.62, y:0.34, title:"CoreArn™ liner", text:"Holds its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." } ] },
+  { code:"1040", name:"Opticore Grip", platform:"GRYX™", category:"MECHANICAL · GENERAL HANDLING",
+    title:"Clean work.<br><em>Dotted grip.</em>",
+    lead:"The light handling glove for packing and assembly: a lint-free seamless liner, PVC dots on the palm for grip and control, a knit wrist that keeps the debris out.",
+    ratings:[["2", "Abrasion"], ["1", "EN cut"], ["4", "Tear"], ["A1", "ANSI cut"]],
+    standards:"EN 388:2016 214XX · ANSI/ISEA 105 · CE Cat II",
+    accent:[40, 80, 190], cuff:{ base:"#d53e45", hem:"#7d2d1b" }, url:"https://stegosafety.com/product/optilite-core-grip-st-1040/",
+    callouts:[ { x:0.42, y:0.11, title:"PVC dot palm", text:"Grip and control." }, { x:0.62, y:0.34, title:"Lint-free liner", text:"Clean packaging." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." }, { x:0.5, y:0.73, title:"Knit wrist", text:"Keeps debris out." } ] },
   { code:"6014", name:"Flexilite", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Rough work.<br><em>Light glove.</em>",
     lead:"Crinkle latex over a light seamless knit: the glove for bricks, blocks and general handling where grip matters more than finesse. CoreForm™ keeps the shape, FlexFit™ keeps the fit.",
     ratings:[["3", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 3131X · ANSI/ISEA 105 · CE Cat II",
     accent:[200, 60, 50], cuff:{ base:"#c2231d", hem:"#762e21" },
-    callouts:[ { x:0.42, y:0.11, title:"Crinkle latex coating", text:"Grip on rough surfaces." }, { x:0.62, y:0.34, title:"Lightweight knit", text:"No bulk." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." } ] },
+    callouts:[ { x:0.42, y:0.11, title:"Crinkle latex coating", text:"Grip on rough surfaces." }, { x:0.62, y:0.34, title:"Lightweight knit", text:"No bulk." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Follows the hand." } ] },
+  { code:"6015", name:"Flexi-Viz", platform:"GRYX™", category:"MECHANICAL · HI-VIS",
+    title:"Rough materials.<br><em>Seen on site.</em>",
+    lead:"Heavy-duty grip in a hi-vis knit: crinkle latex that bites into block, timber and steel, TaskFlex™ mapped where the hand bends, AirWeave™ so it breathes under load.",
+    ratings:[["4", "Abrasion"], ["3", "Puncture"], ["A2", "ANSI cut"], ["5", "Dexterity"]],
+    standards:"EN 388:2016 3242X · ANSI/ISEA 105 · CE Cat II",
+    accent:[240, 160, 30], cuff:{ base:"#c5c222", hem:"#7e261a" }, url:"https://stegosafety.com/product/flexi-viz-st-6015/",
+    callouts:[ { x:0.42, y:0.11, title:"Crinkle latex coating", text:"Grip on rough surfaces." }, { x:0.62, y:0.34, title:"Hi-vis knit", text:"Seen in low light." }, { x:0.55, y:0.28, title:"TaskFlex™", text:"Bends at the stress zones." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool under load." } ] },
   { code:"2015", name:"Tactilite", platform:"GRYX™", category:"MECHANICAL · ESD",
     title:"Static-safe.<br><em>Fingertip fine.</em>",
     lead:"For electronics, panels and anything that must not spark. An ESD-safe breathable liner with controlled static dissipation, a micro-foam nitrile palm with 360° tactility, TruTouch™ tips for the screen.",
@@ -32,6 +53,20 @@ const GLOVES = [
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
     accent:[110, 130, 150], cuff:{ base:"#3c3937", hem:"#593d2e" },
     callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.62, y:0.34, title:"ESD-safe liner", text:"Static drains away." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." }, { x:0.42, y:0.11, title:"Micro-foam fingertips", text:"Light, 360° feel." } ] },
+  { code:"2060", name:"Tactimax", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
+    title:"Abrasion 6.<br><em>Breathes all round.</em>",
+    lead:"High-performance mechanical glove with 360° breathability: a seamless anti-skid knit rated abrasion 6, micro-foam nitrile grip, FlexHold™ so the fit holds through every flex.",
+    ratings:[["6", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
+    standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[130, 136, 145], cuff:{ base:"#575759", hem:"#3b2d23" },
+    callouts:[ { x:0.42, y:0.11, title:"Micro-foam nitrile", text:"Grip, light feel." }, { x:0.62, y:0.34, title:"Anti-skid knit", text:"Abrasion 6." }, { x:0.55, y:0.28, title:"FlexHold™", text:"Fit holds under flex." }, { x:0.38, y:0.42, title:"360° breathable", text:"Cool all shift." } ] },
+  { code:"2025", name:"Tactiflex", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
+    title:"Tools and materials.<br><em>Cushioned grip.</em>",
+    lead:"Advanced ergonomics for constant tool contact: abrasion 5 on a light breathable knit, a dimpled foam nitrile palm whose micro-texture adds grip and cushioning, FlexFit™ shaping.",
+    ratings:[["5", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
+    standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
+    accent:[45, 65, 135], cuff:{ base:"#263051", hem:"#613f3b" },
+    callouts:[ { x:0.42, y:0.11, title:"Dimpled foam nitrile", text:"Grip with cushioning." }, { x:0.62, y:0.34, title:"Breathable knit", text:"Light all shift." }, { x:0.55, y:0.28, title:"FlexFit™", text:"Follows the hand." }, { x:0.33, y:0.34, title:"Micro-texture", text:"Precision handling." } ] },
   { code:"2050", name:"Tacti-Vanta", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Small parts.<br><em>Big grip.</em>",
     lead:"Ultra-light engineered knit for intricate handling, with a sandy nitrile palm that holds on dry, oily and greasy surfaces. CoreArn™ and FlexHold™ keep the fit through every flex.",
@@ -50,38 +85,79 @@ const GLOVES = [
       { x:0.62, y:0.38, title:'CoreArn™ liner', text:'Keeps its shape.' },
       { x:0.30, y:0.40, title:'Sandy nitrile palm', text:'Grip, dry or oily.' },
       { x:0.50, y:0.65, title:'Ergonomic contour', text:'Comfortable all day.' } ] },
+  { code:"2065", name:"Nitrile Foam Grip Air", platform:"GRYX™", category:"MECHANICAL · ESD · 3/4 COATED",
+    title:"Oil on the part.<br><em>Dry in the glove.</em>",
+    lead:"Double-dipped 3/4 nitrile for greasy components: LiquiBlock™ keeps oil and hydrocarbons out, a sandy palm grips, AirWeave™ breathes, and the build is ESD-safe.",
+    ratings:[["6", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
+    standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
+    accent:[50, 125, 225], cuff:{ base:"#5c5c5d", hem:"#754e35" },
+    callouts:[ { x:0.56, y:0.26, title:"3/4 double-dipped coat", text:"Liquid off the knuckles." }, { x:0.42, y:0.11, title:"Sandy nitrile palm", text:"Grip on greasy parts." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." } ] },
   { code:"2066", name:"Nitri-Max", platform:"GRYX™", category:"MECHANICAL · FULLY COATED",
     title:"Wet, oily,<br><em>fully sealed.</em>",
     lead:"Fully coated sandy nitrile for wet and oily mechanical work: abrasion 6, ESD-safe, LiquiBlock™ to keep fluid out and TaskFlex™ mapping so a full coat still bends where the hand does.",
     ratings:[["6", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
     accent:[30, 120, 220], cuff:{ base:"#3f3f41", hem:"#ad7b59" },
-    callouts:[ { x:0.56, y:0.26, title:"Full nitrile coat", text:"Sealed to the cuff." }, { x:0.42, y:0.11, title:"Sandy finish", text:"Grip in fluid." }, { x:0.55, y:0.28, title:"TaskFlex™", text:"Bends at the stress zones." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
+    callouts:[ { x:0.56, y:0.26, title:"Full nitrile coat", text:"Sealed to the cuff." }, { x:0.42, y:0.11, title:"Sandy finish", text:"Grip in fluid." }, { x:0.33, y:0.34, title:"TaskFlex™", text:"Bends at the stress zones." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
+  { code:"6030", name:"Flexi-Viz Thermo", platform:"GRYX™", category:"MECHANICAL · COLD · HI-VIS",
+    title:"Cold yard.<br><em>Warm grip.</em>",
+    lead:"The winter site glove: a brushed acrylic terry liner with CoreTherm™ warmth, a foam latex palm that holds in wet, dry and cold, hi-vis so the hand is seen in the dark.",
+    ratings:[["3", "Abrasion"], ["3", "Puncture"], ["A1", "ANSI cut"], ["22X", "EN 511 cold"]],
+    standards:"EN 388:2016 3X42X · EN 407:2020 X2XXXX · EN 511:2006 22X · ANSI/ISEA 105 · CE Cat II",
+    accent:[235, 205, 30], cuff:{ base:"#2a2b1e", hem:"#a6765a" },
+    callouts:[ { x:0.42, y:0.11, title:"Foam latex coating", text:"Grip in wet and cold." }, { x:0.62, y:0.34, title:"Brushed terry liner", text:"Warm inside." }, { x:0.5, y:0.66, title:"CoreTherm™", text:"Holds the warmth." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." } ] },
+  { code:"2075", name:"Tacti-Viz Thermo", platform:"GRYX™", category:"MECHANICAL · COLD · HI-VIS",
+    title:"Cold and oily.<br><em>Warm and dry.</em>",
+    lead:"A hi-vis thermal glove for cold, wet mechanical work: brushed acrylic terry inside, a 3/4 sandy nitrile coat with LiquiBlock™ outside, abrasion 6, A3 cut, TaskFlex™ where it bends.",
+    ratings:[["A3", "ANSI cut"], ["6", "Abrasion"], ["3", "Puncture"], ["X2X", "EN 511 cold"]],
+    standards:"EN 388:2016 4X42B · EN 407:2020 X2XXXX · EN 511:2006 X2X · ANSI/ISEA 105 · CE Cat II",
+    accent:[195, 235, 40], cuff:{ base:"#b4e31f", hem:"#603d27" },
+    callouts:[ { x:0.56, y:0.26, title:"3/4 sandy nitrile coat", text:"Wet and oil out." }, { x:0.62, y:0.34, title:"Brushed terry liner", text:"Warm inside." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." }, { x:0.33, y:0.34, title:"TaskFlex™", text:"Bends at the stress zones." } ] },
   { code:"2067", name:"Nitri-Max Thermo", platform:"GRYX™", category:"MECHANICAL · COLD",
     title:"Cold store, oily steel.<br><em>Warm hands.</em>",
     lead:"Winter and cold-store mechanical work: a brushed acrylic terry liner under a full double-dipped sandy nitrile coat, A4 cut, abrasion 6, CoreTherm™ warmth and LiquiBlock™ against oil and water.",
     ratings:[["A4", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["X2X", "EN 511 cold"]],
     standards:"EN 388:2016 4X42D · EN 407:2020 X2XXXX · EN 511:2006 X2X · ANSI/ISEA 105 · CE Cat II",
     accent:[20, 100, 210], cuff:{ base:"#1c1c1d", hem:"#28211d" }, url:"https://stegosafety.com/product/nitri-max-thermo-st-2067/",
-    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.56, y:0.26, title:"Double-dipped nitrile", text:"Oil and water out." }, { x:0.62, y:0.34, title:"CoreTherm™ liner", text:"Warm in the cold." }, { x:0.55, y:0.28, title:"TaskFlex™", text:"Bends where you do." } ] },
+    callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.56, y:0.26, title:"Double-dipped nitrile", text:"Oil and water out." }, { x:0.62, y:0.34, title:"CoreTherm™ liner", text:"Warm in the cold." }, { x:0.33, y:0.34, title:"TaskFlex™", text:"Bends where you do." } ] },
 ];
 const DETAILS = {
   "7020": { desc:"Flexible mechanical gloves with a seamless knit liner and a smooth PU grip for general handling: reliable resistance to surface wear during tool work, CoreForm™ reinforcement that stabilises the glove shape under mechanical stress, FlexFit™ anatomical shaping and precision grip control through repeated use.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Optimax series."], ["CoreForm™", "Structural reinforcement that stabilises glove shape and resists collapse under mechanical stress."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["EdgeLock™", "Reinforced cuff construction that holds shape and resists fraying."]],
     std:[["ANSI/ISEA 105", "Abrasion 4 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "Seamless knit"], ["Coating", "Smooth PU palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "7040": { desc:"ESD-rated mechanical gloves with a seamless knit liner and a PU-coated palm. The ESD General Handling Design gives ergonomic fit, dexterity and controlled static dissipation for electronics assembly and general handling, CoreForm™ stabilises the glove shape and resists collapse under mechanical stress, FlexFit™ follows natural hand movement, and the palm keeps steady handling and tactile confidence.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Optimax series."], ["ESD-safe liner", "Controlled static dissipation to EN 16350."], ["CoreForm™", "Structural reinforcement that stabilises glove shape and resists collapse under mechanical stress."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."]],
+    std:[["ANSI/ISEA 105", "Abrasion 4 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 16350:2014", "Electrostatic properties"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Polyester / spandex, seamless, ESD"], ["Coating", "Smooth polyurethane (PU) palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "6035": { desc:"Premium high-visibility gloves with latex microsurface technology for grip, dexterity and handling control. A lightweight liner without bulk, CoreArn™ reinforcement that resists distortion and material fatigue, FlexFit™ anatomical shaping and a latex foam coating for grip confidence and less hand fatigue.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Optiflex series."], ["CoreArn™", "Reinforced liner framework that resists distortion and material fatigue over extended use."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Latex microsurface", "Foam latex coating with superior grip and reduced fatigue."]],
     std:[["ANSI/ISEA 105", "Abrasion 4 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "3131X"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "Lightweight hi-vis knit"], ["Coating", "Latex foam palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "1040": { desc:"Mechanical handling gloves with a seamless liner and PVC dots on the palm. The PVC dot palm coating enhances grip, control and dexterity for general handling, FlexFit™ anatomical shaping follows natural hand movement, the lint-free construction minimises particulate contamination in clean packaging environments, and the knit wrist keeps out dirt and debris with a snug fit.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Optimax series."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["EdgeLock™", "Reinforced knit wrist that holds shape and keeps debris out."], ["PVC dots", "Palm dots for grip, control and dexterity."]],
+    std:[["ANSI/ISEA 105", "Cut A1"], ["EN 388:2016+A1:2018", "214XX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Polyester / spandex, seamless, lint-free"], ["Coating", "PVC dots, palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "6014": { desc:"Lightweight, flexible mechanical gloves with a high-resistance crinkle latex grip. Reliable resistance to surface wear and material breakdown during tool work, CoreForm™ structural reinforcement that resists collapse under mechanical stress, FlexFit™ anatomical shaping and a liner that stays comfortable without bulk.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Flexilite series."], ["CoreForm™", "Structural reinforcement that stabilises glove shape and resists collapse under mechanical stress."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement."], ["Crinkle latex", "High-resistance grip coating for rough handling."]],
     std:[["ANSI/ISEA 105", "Abrasion 3 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "3131X"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "Seamless knit, lightweight"], ["Coating", "Crinkle latex palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "6015": { desc:"Hi-vis seamless mechanical gloves with heavy-duty grip and abrasion resistance from a crinkle latex palm coating. Mechanical Work Protection gives durable resistance to wear, friction and repeated physical stress, TaskFlex™ maps flexibility to the stress zones for controlled movement and less bunching, AirWeave™ promotes airflow and thermal regulation, and the Secure Grip Design supports controlled handling in general mechanical and material-handling tasks.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Flexi series."], ["TaskFlex™", "Mapped flexibility system aligned to stress zones for controlled movement and reduced bunching."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["Crinkle latex", "High-resistance grip coating for rough materials."]],
+    std:[["ANSI/ISEA 105", "Abrasion 4 · Puncture 3 · Cut A2 · Dexterity 5"], ["EN 388:2016+A1:2018", "3242X"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Polyester, seamless, hi-vis"], ["Coating", "Crinkled latex palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2015": { desc:"Anti-static mechanical gloves with an ultra-lightweight liner and micro-foam coating. The ESD-safe breathable liner reduces heat build-up while giving controlled static dissipation for long tasks; FlexHold™ limits over-flex and preserves the grip structure; AirWeave™ keeps airflow; the micro-foam nitrile palm gives lightweight breathability with 360° tactility.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Tacti series."], ["ESD-safe liner", "Controlled static dissipation to EN 16350."], ["FlexHold™", "Stability-focused construction that limits over-flex and preserves fit and grip structure."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."]],
     std:[["ANSI/ISEA 105", "Abrasion 4 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 407:2020", "X1XXXX"], ["EN 16350:2014", "Electrostatic properties"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "Ultra-lightweight ESD knit"], ["Coating", "Micro-foam nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2060": { desc:"High-performance mechanical gloves with 360° breathable construction and a micro-foam nitrile grip. Mechanical Work Protection withstands abrasion and tearing through continuous use, FlexHold™ limits over-flex and preserves fit and grip structure, the seamless anti-skid knit delivers high abrasion resistance with maximum comfort, and the Secure Grip Design supports controlled handling in mechanical and material-handling tasks.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Tacti series."], ["FlexHold™", "Stability-focused construction that limits over-flex and preserves fit and grip structure."], ["Anti-skid knit", "Seamless high-abrasion liner with 360° breathability."], ["Micro-foam nitrile", "Light grip coating with tactile control."]],
+    std:[["ANSI/ISEA 105", "Abrasion 6 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Nylon / spandex, seamless"], ["Coating", "Micro-foam nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "2025": { desc:"Mechanical gloves with advanced ergonomics: a seamless knit liner and a dimpled foam nitrile palm rated ANSI abrasion 5. Heavy Handling Protection resists abrasion and tearing from constant contact with tools and materials, FlexFit™ follows natural hand movement for a stable fit, the lightweight liner stays breathable through extended work, and the micro-textured pattern adds grip, durability and cushioning for precision handling.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Tacti series."], ["FlexFit™", "Anatomical shaping engineered to follow natural hand movement for stable fit and controlled motion."], ["Micro-textured palm", "Dimpled foam nitrile for grip, durability and cushioning."], ["Breathable liner", "Lightweight seamless knit for extended mechanical work."]],
+    std:[["ANSI/ISEA 105", "Abrasion 5 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Nylon / spandex, seamless"], ["Coating", "Foam nitrile, dimpled palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2050": { desc:"Ultra-lightweight advanced multi-purpose glove with a sandy nitrile coating for tactility, dexterity and grip. The engineered knit gives tactile sensitivity and flexibility for intricate handling with reliable abrasion resistance; CoreArn™ and FlexHold™ keep shape and grip through repeated flex and load; AirWeave™ and DryHold™ keep the hand cool and dry.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Tacti series."], ["CoreArn™", "Reinforced liner framework that resists distortion and material fatigue over extended use."], ["FlexHold™", "Stability-focused construction that limits over-flex and preserves fit and grip structure."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["DryHold™", "Internal moisture control that wicks sweat and keeps hand positioning stable."]],
     std:[["ANSI/ISEA 105", "Abrasion 4 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
@@ -90,16 +166,28 @@ const DETAILS = {
     tech:[['GRYX™ platform','Mechanical-protection system behind the Tacti series.'],['CoreArn™','Reinforced liner framework that resists distortion and material fatigue.'],['TruTouch™','Fingertip zones for precise handling and touchscreen use.'],['DryHold™','Moisture-wicking liner that keeps hands dry.'],['Sandy nitrile palm','Secure grip in dry, oily and light-wet conditions.'],['FlexHold™','Keeps the glove\'s shape, fit and grip stability through the shift.']],
     std:[['ANSI/ISEA 105','Abrasion 5 · Puncture 2 · Cut A1 · Dexterity 5'],['EN 388:2016+A1:2018','4132X'],['EN 407:2020','X1XXXX'],['EN ISO 21420:2020','CE · Category II']],
     meta:[['Liner','Polyester / spandex, seamless knit'],['Coating','Sandy nitrile'],['Sizes','7/S · 8/M · 9/L · 10/XL · 11/2XL'],['Packing','1 pr / polybag · 144 prs / carton']] },
+  "2065": { desc:"ANSI 6-abrasion, ESD-compliant double-dipped 3/4 nitrile coated glove for enhanced oil and liquid resistance. Double nitrile construction shields hands from oils, greases, hydrocarbons and liquid penetration; the sandy nitrile surface gives secure grip on wet and greasy components; LiquiBlock™ resists fluid absorption, AirWeave™ keeps airflow, and CoreForm™ with TaskFlex™ keep the shape and controlled movement.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Nitri series."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["AirWeave™", "Breathable knit structure that promotes airflow and thermal regulation."], ["CoreForm™", "Structural reinforcement that stabilises glove shape under mechanical stress."], ["TaskFlex™", "Mapped flexibility system aligned to stress zones."]],
+    std:[["ANSI/ISEA 105", "Abrasion 6 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 407:2020", "X1XXXX"], ["EN 16350:2014", "Electrostatic properties"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Anti-static nylon / spandex, seamless"], ["Coating", "Sandy nitrile over smooth nitrile, 3/4"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
   "2066": { desc:"ANSI 6-abrasion, ESD-compliant mechanical gloves, fully coated in sandy nitrile for enhanced liquid protection. Stable handling and control in wet, dry and oily conditions; TaskFlex™ mapped flexibility aligned to the stress zones; LiquiBlock™ against oil and fluid absorption; an ESD-safe build that withstands abrasion and tearing in continuous use.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Nitri series."], ["TaskFlex™", "Mapped flexibility system aligned to stress zones for controlled movement and reduced bunching."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["ESD-safe", "Electrostatic properties to EN 16350 and EN 1149-2."]],
     std:[["ANSI/ISEA 105", "Abrasion 6 · Puncture 2 · Cut A1 · Dexterity 5"], ["EN 388:2016+A1:2018", "4131A"], ["EN 407:2020", "X1XXXX"], ["EN 16350:2014 · EN 1149-2", "Electrostatic properties"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "Seamless knit"], ["Coating", "Sandy nitrile, fully coated"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
+  "6030": { desc:"Hi-vis seamless thermal gloves with a soft brushed acrylic terry liner and a latex foam grip. The integrated glove design enhances grip ergonomics, tactility and temperature regulation, CoreForm™ stabilises the glove shape under mechanical stress, CoreTherm™ insulation retains warmth without restricting mobility, and the foam latex palm delivers grip confidence in wet, dry and cold conditions.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Flexi series."], ["CoreTherm™", "Integrated insulation layer that retains warmth without restricting mobility."], ["CoreForm™", "Structural reinforcement that stabilises glove shape and resists collapse under mechanical stress."], ["Foam latex", "Grip coating for wet, dry and cold conditions."]],
+    std:[["ANSI/ISEA 105", "Abrasion 3 · Puncture 3 · Cut A1"], ["EN 388:2016+A1:2018", "3X42X"], ["EN 407:2020", "X2XXXX"], ["EN 511:2006", "22X"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Brushed acrylic terry, spandex inner"], ["Coating", "Foam latex palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "2075": { desc:"ANSI 6-abrasion hi-vis thermal gloves with a soft brushed acrylic terry liner and a 3/4 sandy nitrile coating. The dual-layer brushed acrylic liner holds warmth and moisture control in cold conditions, TaskFlex™ maps flexibility to the stress zones, LiquiBlock™ resists oil and fluid absorption while keeping grip, and the 3/4 nitrile sandy thermo build gives abrasion and cut resistance with protection against liquid permeation.",
+    tech:[["GRYX™ platform", "Mechanical-protection system behind the Tacti series."], ["TaskFlex™", "Mapped flexibility system aligned to stress zones for controlled movement and reduced bunching."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["CoreTherm™", "Integrated insulation layer that retains warmth without restricting mobility."]],
+    std:[["ANSI/ISEA 105", "Cut A3 · Abrasion 6 · Puncture 3"], ["EN 388:2016+A1:2018", "4X42B"], ["EN 407:2020", "X2XXXX"], ["EN 511:2006", "X2X"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Polyester / spandex, brushed acrylic inner"], ["Coating", "Sandy nitrile over smooth nitrile, 3/4"], ["Sizes", "7/S · 8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "2067": { desc:"ANSI A4 cut, 6-abrasion high-performance seamless thermal glove with a soft brushed acrylic terry liner and a full double-dipped sandy nitrile coating. Dual-layer construction for thermal retention and flexibility; CoreForm™ and TaskFlex™ for shape and controlled movement; CoreTherm™ insulation; LiquiBlock™ against oil and moisture; TruTouch™ fingertips.",
     tech:[["GRYX™ platform", "Mechanical-protection system behind the Nitri series."], ["CoreTherm™", "Integrated insulation layer that retains warmth without restricting mobility."], ["TaskFlex™", "Mapped flexibility system aligned to stress zones for controlled movement and reduced bunching."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."]],
     std:[["ANSI/ISEA 105", "Cut A4 · Abrasion 6 · Puncture 4"], ["EN 388:2016+A1:2018", "4X42D"], ["EN 407:2020", "X2XXXX"], ["EN 511:2006", "X2X"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "Brushed acrylic terry, dual layer"], ["Coating", "Sandy nitrile, double-dipped, full"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 144 prs / carton"]] },
 };
-const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'Eight GRYX™ mechanical gloves, pulled onto your hand one after another as you scroll. Boxes, tools, cold steel, oily parts: the everyday hazards, each with its own grip.' };
+const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'All sixteen GRYX™ mechanical gloves, pulled onto your hand one after another as you scroll, in the order of the catalogue. Boxes, tools, cold steel, oily parts: the everyday hazards, each with its own grip.' };
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
@@ -124,8 +212,9 @@ const stage = $('#stage'), scroller = $('#scroller'), hand = $('#hand'), canvas 
 const copy = $('#copy'), outro = $('#outro'), glow = $('#glow'), bignum = $('#bignum');
 const fitStatus = $('#fitStatus'), fitLabel = fitStatus.querySelector('span');
 const chips = [...document.querySelectorAll('.chip')];
+const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLORE.querySelectorAll('.explore-card')] : [];
 const techLogo = $('#techLogo');
-const TECH_LOGO = { '7020':'gryx', '6035':'gryx', '6014':'gryx', '2015':'gryx', '2050':'gryx', '2055':'gryx', '2066':'gryx', '2067':'gryx' };
+const TECH_LOGO = { '7020':'gryx', '7040':'gryx', '6035':'gryx', '1040':'gryx', '6014':'gryx', '6015':'gryx', '2015':'gryx', '2060':'gryx', '2025':'gryx', '2050':'gryx', '2055':'gryx', '2065':'gryx', '2066':'gryx', '6030':'gryx', '2075':'gryx', '2067':'gryx' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
@@ -138,8 +227,13 @@ const ready = { bare:false, glove:Array(GLOVES.length).fill(false) };
 fetch('assets/hand/extents.json').then(r => r.json()).then(j => { EXT = j; requestRender(); });
 load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; requestRender(); });
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
-loadGlove(0);
-(window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+const bgNear = ch => {                                   // series pages: bg photos carry data-src / data-src-m and load near the chapter
+  const m = window.innerWidth <= 900;
+  bgs.forEach((b, i) => { const s = m ? (b.dataset.srcM || b.dataset.src) : b.dataset.src; if (!s) return;
+    if (Math.abs(i - Math.max(0, ch)) <= 1) { if (b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } } });
+};
+const loadNear = ch => { for (let k = Math.max(0, ch - 1); k <= Math.min(N - 1, Math.max(0, ch) + 2); k++) loadGlove(k); bgNear(ch); };
+loadNear(0);
 
 /* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
    v 0.00–0.22  the mark and the words arrive (small, slow)
@@ -175,8 +269,18 @@ function size() {
   canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR);
   off = off || document.createElement('canvas'); off.width = canvas.width; off.height = canvas.height; offCtx = off.getContext('2d');
   unitPx = window.innerHeight * (window.innerWidth <= 640 ? 1.2 : window.innerWidth <= 900 ? 1.3 : 1.5);
-  layoutCallouts();
+  layoutCallouts(); fitCopy();
   requestRender(true);
+}
+// desktop: a long title (series pages) steps down until the buttons clear the dock; no-op when the copy already fits (the live page)
+function fitCopy() {
+  const c = $('#copy'), d = $('#dock'), t = $('#title'); if (!c || !d || !t) return;
+  t.style.fontSize = '';
+  if (!EXPLORE || window.innerWidth <= 900) return;                 // series pages only: the live page is never touched
+  const dr = d.getBoundingClientRect(), right = Math.max(0, ...[...$('#actions').children, ...$('#ratings').children].map(e => e.getBoundingClientRect().right));
+  if (right < dr.left) return;                                      // a short dock that clears the copy column
+  const low = () => c.getBoundingClientRect().top + (c.clientHeight + c.firstElementChild.offsetHeight) / 2 > dr.top - 16;
+  for (let fs = parseFloat(getComputedStyle(t).fontSize); low() && fs > 48; ) { fs -= 4; t.style.fontSize = fs + 'px'; }
 }
 let unitPx = 1;
 
@@ -340,6 +444,10 @@ function setChapter(seg, gp) {
     const rgb = g ? g.accent : [63,120,224];
     document.documentElement.style.setProperty('--accent-rgb', rgb.join(','));
     chips.forEach((c, i) => c.classList.toggle('on', i === ch));
+    const dock = $('#dock'), chip = chips[ch];                          // a long dock (series pages) follows the lit chip; no-op when every chip fits
+    if (dock && chip && dock.scrollWidth > dock.clientWidth + 1) dock.scrollTo({ left: chip.offsetLeft - (dock.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' });
+    loadNear(ch); cards.forEach((c, i) => c.classList.toggle('on', i === ch));
+    if (EXPLORE && !deepLinking) { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) history.replaceState(null, '', want || location.pathname + location.search); }
     bignum.textContent = String(Math.max(1, ch + 1)).padStart(2, '0');
     $('#railTop').textContent = String(Math.max(0, ch + 1)).padStart(2, '0');
     if (g) { techLogo.src = `assets/tech/${TECH_LOGO[g.code]}.webp`; techLogo.alt = `${g.platform} technology`; techLogo.classList.add('on'); }
@@ -367,6 +475,7 @@ function setChapter(seg, gp) {
     } else {
       calloutLayer.innerHTML = '';
     }
+    fitCopy();
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
@@ -523,10 +632,16 @@ $('#dClose').addEventListener('click', () => dlg.close());
 dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
-function goTo(i) {
+function goTo(i, instant) {
   const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
-  window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
+  if (i >= 0 && i < N) loadGlove(i);
+  window.scrollTo({ top: tt * unitPx, behavior: (instant || reduced.matches) ? 'instant' : 'smooth' });
+  if (instant) { target = t = clamp(tt, 0, T_END); requestRender(true); }
 }
+/* deep link: #st-7098 (or #7098) lands on that glove, opener skipped; the explore cards and the product-page buttons use it */
+const hashIndex = () => { const m = /^#(?:st-)?(\d{4})$/i.exec(location.hash || ''); return m ? GLOVES.findIndex(g => g.code === m[1]) : -1; };
+let deepLinking = false;
+window.addEventListener('hashchange', () => { const i = hashIndex(); if (i >= 0) goTo(i); });
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));
 window.addEventListener('keydown', e => {
   if (e.target !== document.body) return;
@@ -544,7 +659,9 @@ document.addEventListener('pointerleave', () => { aimX = aimY = 0; requestRender
 
 /* ---------- boot ---------- */
 window.addEventListener('scroll', onScroll, { passive:true });
-window.addEventListener('resize', () => { size(); onScroll(); });
+window.addEventListener('resize', () => { size(); onScroll(); bgNear(currentChapter); });
 reduced.addEventListener?.('change', () => requestRender(true));
-size(); onScroll(); requestRender(true);
+size();
+{ const i = hashIndex(); if (i >= 0) { deepLinking = true; if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; goTo(i, true); requestAnimationFrame(() => requestAnimationFrame(() => { deepLinking = false; })); } }
+onScroll(); requestRender(true);
 })();

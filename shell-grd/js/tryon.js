@@ -4,6 +4,20 @@
 
 /* ---------- content (ratings verified against the STEGO sell sheets, 2024-25) ---------- */
 const GLOVES = [
+  { code:"9060", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · HI-VIS",
+    title:"Knocks and scrapes.<br><em>Seen coming.</em>",
+    lead:"The entry Shell: ANSI/ISEA 138 Level 2 impact with ShockShell™ TPR over the knuckles, ImpactFlow™ geometry that sends oblique blows away, A2 cut, a sandy nitrile palm, hi-vis throughout.",
+    ratings:[["2", "Impact 138"], ["A2", "ANSI cut"], ["6", "Abrasion"], ["3", "Puncture"]],
+    standards:"EN 388:2016 4X42BP · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[240, 130, 30], cuff:{ base:"#a6c759", hem:"#433b36" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"ImpactFlow™", text:"Redirects oblique hits." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.38, y:0.42, title:"Hi-vis liner", text:"Seen in low light." } ] },
+  { code:"9065", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT",
+    title:"Blows and blades.<br><em>Thumb reinforced.</em>",
+    lead:"A5 cut under Level 2 impact: a hi-vis TEGX® TexArn™ liner, ShockShell™ TPR on the back of the hand, a reinforced thumb crotch where gloves fail first, a sandy nitrile palm.",
+    ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
+    standards:"EN 388:2016 4X43EP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[240, 160, 30], cuff:{ base:"#252519", hem:"#191715" }, url:"https://stegosafety.com/product/shell-series-st-9065/",
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ liner", text:"ANSI A5 cut." }, { x:0.33, y:0.34, title:"Reinforced thumb crotch", text:"Where gloves fail first." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
   { code:"9075", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT",
     title:"Pinch points.<br><em>Oily pipe.</em>",
     lead:"Impact Level 2 over an A6 TEGX® liner, for rig and yard work where hands sit between steel. ShockShell™ TPR on the knuckles, a LiquiBlock™ nitrile palm, hi-vis guards, touchscreen fingertips.",
@@ -28,14 +42,49 @@ const GLOVES = [
     ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 + 138 · CE Cat II",
     accent:[30, 110, 220], cuff:{ base:"#6a6760", hem:"#49372f" }, url:"https://stegosafety.com/product/shell-series-st-9070/",
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.56, y:0.26, title:"Full nitrile coat", text:"Hydrocarbons out." }, { x:0.42, y:0.11, title:"Sandy grip", text:"Holds when slick." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A7 cut underneath." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.56, y:0.2, title:"Full nitrile coat", text:"Hydrocarbons out." }, { x:0.42, y:0.11, title:"Sandy grip", text:"Holds when slick." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A7 cut underneath." } ] },
+  { code:"9081", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · OIL",
+    title:"Heavy, sharp, oily.<br><em>Phone still works.</em>",
+    lead:"A7 cut and Level 2 impact for wet mechanical work: ImpactFlow™ TPR, a double-dipped smooth-and-sandy nitrile LiquiBlock™ coat, touchscreen-compatible fingertips.",
+    ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
+    standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[40, 110, 210], cuff:{ base:"#736d65", hem:"#705342" },
+    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ liner", text:"ANSI A7 cut." }, { x:0.56, y:0.2, title:"Double-dipped nitrile", text:"Fluid repellent." }, { x:0.6, y:0.09, title:"Touchscreen tips", text:"Works a phone." } ] },
+  { code:"9082", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · COLD",
+    title:"Winter impact.<br><em>A7 under the warmth.</em>",
+    lead:"The 9081 built for the cold: CoreTherm™ insulation under the same A7 TexArn™ liner, ImpactFlow™ TPR, a double-dipped nitrile LiquiBlock™ coat that keeps the wet out.",
+    ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["X1X", "EN 511 cold"]],
+    standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · EN 511:2006 X1X · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[55, 140, 215], cuff:{ base:"#2c2623", hem:"#523225" },
+    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ liner", text:"ANSI A7 cut." }, { x:0.5, y:0.66, title:"CoreTherm™", text:"Warm in the cold." }, { x:0.56, y:0.2, title:"Double-dipped nitrile", text:"Wet stays out." } ] },
+  { code:"9045", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ANTI-VIBRATION",
+    title:"Impact tools.<br><em>Vibration damped.</em>",
+    lead:"Level 2 impact with TorqueGuard™ palm dampening for breakers and grinders: EN ISO 10819 rated, TaskCore™ coverage mapped to the exposure, an anti-slip diamond palm.",
+    ratings:[["2", "Impact 138"], ["0.62", "Vib. TRM"], ["0.55", "Vib. TRH"], ["4", "Abrasion"]],
+    standards:"EN 388:2016 4131XP · EN ISO 10819:2013 TRM 0.62 · TRH 0.55 · ANSI/ISEA 138 Level 2 · ANSI/ISEA 105 · CE Cat II",
+    accent:[205, 50, 50], cuff:{ base:"#302426", hem:"#c72525" }, url:"https://stegosafety.com/product/shell-series-st-9045/",
+    callouts:[ { x:0.55, y:0.27, title:"Multi-layer TPR", text:"Level 2 impact." }, { x:0.62, y:0.4, title:"TaskCore™", text:"Mapped to the exposure." }, { x:0.33, y:0.34, title:"TorqueGuard™ palm", text:"Damps the shock." }, { x:0.42, y:0.11, title:"Diamond palm", text:"Grip wet, dry, oily." } ] },
+  { code:"8055", name:"Shell Series", platform:"SHELL GRD™", category:"ANTI-VIBRATION · CUT",
+    title:"Pneumatic tools.<br><em>Numbness held off.</em>",
+    lead:"The anti-vibration knit: air cushion shells in chloroprene rubber over the palm and fingers, TorqueGuard™ dampening rated to EN ISO 10819, A3 cut and abrasion 4 in the liner.",
+    ratings:[["0.62", "Vib. TRM"], ["0.55", "Vib. TRH"], ["A3", "ANSI cut"], ["4", "Abrasion"]],
+    standards:"EN 388:2016 4343X · EN ISO 10819:2013 TRM 0.62 · TRH 0.55 · ANSI/ISEA 105 · CE Cat II",
+    accent:[90, 95, 105], cuff:{ base:"#34282b", hem:"#aa5e44" },
+    callouts:[ { x:0.42, y:0.11, title:"Air cushion shells", text:"Chloroprene, on the fingers." }, { x:0.33, y:0.34, title:"TorqueGuard™ palm", text:"Damps the shock." }, { x:0.62, y:0.4, title:"Reinforced liner", text:"A3 cut, abrasion 4." }, { x:0.5, y:0.73, title:"Knit cuff", text:"Snug at the wrist." } ] },
   { code:"8056", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ANTI-VIBRATION",
     title:"Breakers and grinders.<br><em>Less shake.</em>",
     lead:"The anti-vibration Shell. TorqueGuard™ rubber palm pads dampen the shock and torque from breakers, grinders and impact tools; ShockShell™ guards take the knocks; an A5 cut liner underneath.",
-    ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["E", "EN 388 cut"], ["0.86", "Vibration TRM"]],
+    ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["E", "EN 388 cut"], ["0.86", "Vib. TRM"]],
     standards:"EN 388:2016 4543EP · EN 407:2020 X1XXXX · EN ISO 10819:2013 TRM 0.86 · TRH 0.59 · ANSI/ISEA 105 + 138 · CE Cat II",
     accent:[70, 70, 80], cuff:{ base:"#201c1b", hem:"#130c09" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.24, y:0.4, title:"TorqueGuard™", text:"Pads under the palm." }, { x:0.6, y:0.14, title:"Padded fingers", text:"Shock stays in the tool." }, { x:0.62, y:0.36, title:"High-cut liner", text:"A5 underneath." } ] },
+  { code:"5045", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH · LEATHER",
+    title:"Arc flash, 44 cal.<br><em>Goatskin outside.</em>",
+    lead:"Premium grain goatskin over a TEGX® TexArn™ 360° para-aramid liner: arc-rated CAT 4 at 44 cal/cm², NFPA 70E compliant, A5 cut, SHELL™ GRD TPR across the back.",
+    ratings:[["CAT 4", "Arc rated"], ["A5", "ANSI cut"], ["4", "Abrasion"], ["4", "Puncture"]],
+    standards:"EN 388:2016 3X43E · EN 407:2020 X1XXXX · ANSI/ISEA 105 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
+    accent:[240, 140, 50], cuff:{ base:"#b2b2b2", hem:"#876149" },
+    callouts:[ { x:0.55, y:0.27, title:"SHELL™ GRD TPR", text:"Mapped back-of-hand cover." }, { x:0.62, y:0.4, title:"Para-aramid liner", text:"Arc flash, 44 cal/cm²." }, { x:0.42, y:0.11, title:"Grain goatskin", text:"Supple, durable." }, { x:0.33, y:0.34, title:"TEGX® cut layer", text:"A5 across the palm." } ] },
   { code:"9050", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH",
     title:"Arc, heat, impact.<br><em>One glove.</em>",
     lead:"Grain goatskin on a TEGX® dual layer, arc-rated CAT 4 at 44 cal/cm². FlexSpine™ TPR across the back, A5 cut, for switchgear, welding bays and heavy lifts where the hazards stack.",
@@ -43,6 +92,34 @@ const GLOVES = [
     standards:"EN 388:2016 3X43EP · EN 407:2020 X1XXXX · ANSI/ISEA 105 + 138 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
     accent:[230, 140, 30], cuff:{ base:"#7b7984", hem:"#704c36" },
     callouts:[ { x:0.63, y:0.17, title:"FlexSpine™ guards", text:"Bend with the fingers." }, { x:0.38, y:0.42, title:"Goatskin leather", text:"Heat and wear." }, { x:0.62, y:0.34, title:"TexArn™ layer", text:"A5 cut, arc rated." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
+  { code:"5046", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH · LEATHER",
+    title:"Arc flash, 44 cal.<br><em>Buffalo hide.</em>",
+    lead:"Premium buffalo leather with a water-resistant finish over a TEGX® TexArn™ 360° para-aramid liner: arc-rated CAT 4 at 44 cal/cm², A7 cut, grip that holds wet, dry and light-oily.",
+    ratings:[["CAT 4", "Arc rated"], ["A7", "ANSI cut"], ["4", "Abrasion"], ["4", "Puncture"]],
+    standards:"EN 388:2016 3X43F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
+    accent:[205, 40, 40], cuff:{ base:"#bababa", hem:"#876247" }, url:"https://stegosafety.com/product/shell-series-st-5046/",
+    callouts:[ { x:0.55, y:0.27, title:"SHELL™ GRD TPR", text:"Mapped back-of-hand cover." }, { x:0.62, y:0.4, title:"Para-aramid liner", text:"Arc flash, 44 cal/cm²." }, { x:0.42, y:0.11, title:"Buffalo leather", text:"Water-resistant finish." }, { x:0.33, y:0.34, title:"TEGX® cut layer", text:"A7 across the palm." } ] },
+  { code:"9051", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH · LEATHER",
+    title:"Three hazards.<br><em>One leather glove.</em>",
+    lead:"Level 2 impact, A7 cut and CAT 4 arc flash in water-resistant buffalo leather: ShockShell™ TPR over the knuckles, a TEGX® arc-rated liner, DryHold™ to keep the inside dry.",
+    ratings:[["2", "Impact 138"], ["CAT 4", "Arc rated"], ["A7", "ANSI cut"], ["4", "Abrasion"]],
+    standards:"EN 388:2016 3X43FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
+    accent:[215, 45, 45], cuff:{ base:"#c1c0be", hem:"#81573c" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TEGX® liner", text:"Arc flash, A7 cut." }, { x:0.42, y:0.11, title:"Buffalo leather", text:"Water-resistant grip." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
+  { code:"9040", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · MECHANIC",
+    title:"Heavy feel, light glove.<br><em>A4 inside.</em>",
+    lead:"A multi-fabric mechanic’s glove with Level 2 impact: ImpactFlow™ TPR, an aramid liner rated A4 cut, a synthetic leather palm, hi-vis TPR and touchscreen fingertips.",
+    ratings:[["2", "Impact 138"], ["A4", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"]],
+    standards:"EN 388:2016 3X42DP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[240, 110, 30], cuff:{ base:"#d83f1e", hem:"#e55221" }, url:"https://stegosafety.com/product/shell-series-st-9040/",
+    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"Aramid liner", text:"ANSI A4 cut." }, { x:0.6, y:0.09, title:"Touchscreen tips", text:"Works a phone." }, { x:0.38, y:0.42, title:"Hi-vis TPR", text:"Seen in low light." } ] },
+  { code:"9083", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · HI-VIS",
+    title:"Mechanical work, all hazards.<br><em>One glove.</em>",
+    lead:"A5 cut, Level 2 impact, abrasion 6 and Level 3 contact heat in a light hi-vis build: ShockShell™ TPR, TaskCore™ mapping, a silicone-grip synthetic leather palm with Kevlar®-stitched seams.",
+    ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
+    standards:"EN 388:2016 4X43EP · EN 407:2020 X2XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[40, 110, 215], cuff:{ base:"#111216", hem:"#6c4d38" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TaskCore™", text:"Mapped to the exposure." }, { x:0.42, y:0.11, title:"Silicone grip palm", text:"Wet and oily traction." }, { x:0.33, y:0.34, title:"Reinforced thumb crotch", text:"Where gloves fail first." } ] },
   { code:"9085", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · HI-VIS",
     title:"Wet steel.<br><em>Seen and held.</em>",
     lead:"Hi-vis Shell with an anti-slip silicone palm for wet, dry and oily grip, A7 cut, abrasion 6, puncture 5 and ShockShell™ guards. For stone, precast and steel yards after rain.",
@@ -56,9 +133,24 @@ const GLOVES = [
     ratings:[["3", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · ANSI/ISEA 105 + 138 Level 3 · CE Cat II",
     accent:[210, 220, 40], cuff:{ base:"#131313", hem:"#3d1f13" },
-    callouts:[ { x:0.55, y:0.27, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.55, y:0.27, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.42, y:0.11, title:"High-performance grip", text:"Grip and wear." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.62, y:0.4, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.42, y:0.11, title:"High-performance grip", text:"Grip and wear." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
+  { code:"9095", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · COLD",
+    title:"Frozen site.<br><em>Impact, cut, warmth.</em>",
+    lead:"The insulated Shell: 3M™ Thinsulate™ under a water- and oil-resistant membrane, ShockShell™ TPR, A7 cut, EN 511 cold rated, a silicone-grip palm with reinforced seams.",
+    ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["121", "EN 511 cold"]],
+    standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · EN 511:2006 121 · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
+    accent:[215, 40, 40], cuff:{ base:"#141313", hem:"#13110f" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"3M™ Thinsulate™", text:"Warm in the cold." }, { x:0.56, y:0.2, title:"Water-resistant membrane", text:"Wind and wet out." }, { x:0.42, y:0.11, title:"Silicone grip palm", text:"Wet and oily traction." } ] },
 ];
 const DETAILS = {
+  "9060": { desc:"Impact-resistant gloves with A2 cut protection, SHELL™ GRD, high abrasion resistance and a sandy nitrile grip. The Impact-Balanced Design dissipates impact stress while keeping flexibility, ShockShell™ compressive TPR zones absorb vertical impact energy, ImpactFlow™ angled geometry redirects oblique impacts away from vulnerable areas, and the high-visibility liner and TPR improve hand awareness in low-light work.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["ImpactFlow™", "Angled geometry that redirects oblique impacts away from vulnerable areas."], ["High-visibility TPR", "Hand awareness in low-light work."]],
+    std:[["ANSI/ISEA 105", "Cut A2 · Abrasion 6 · Puncture 3 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X42BP"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Polyester / spandex, hi-vis"], ["Coating", "Sandy nitrile palm"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9065": { desc:"Hi-vis TexArn™ cut-resistant liner with A5 cut protection, SHELL™ GRD, abrasion 6 and a sandy nitrile grip. The TEGX® high-tenacity HPPE liner gives extreme cut, puncture, abrasion and tear resistance, ShockShell™ compressive TPR zones absorb vertical impact energy, the reinforced thumb crotch adds durability in the highest-stress area, and the high-visibility TPR improves hand awareness in low light.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["TEGX® liner", "High-tenacity HPPE: extreme cut, puncture, abrasion and tear resistance."], ["Reinforced thumb crotch", "Durability in the highest-stress area."]],
+    std:[["ANSI/ISEA 105", "Cut A5 · Abrasion 6 · Puncture 5 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X43EP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "TEGX® HPPE blend, hi-vis"], ["Coating", "Sandy nitrile palm"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "9075": { desc:"Impact, cut and oil resistant: a TEGX® TexArn™ A6 liner under ShockShell™ compressive TPR zones that absorb vertical impact energy, a nitrile LiquiBlock™ coating that resists oil and fluid absorption, high-visibility TPR for hand awareness in low light, and touchscreen compatibility.",
     tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["TEGX® liner", "High-tenacity HPPE liner for extreme cut, puncture, abrasion and tear resistance."]],
     std:[["ANSI/ISEA 105", "Cut A6 · Abrasion 6 · Puncture 4 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
@@ -71,14 +163,50 @@ const DETAILS = {
     tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["TEGX® liner", "High-tenacity HPPE liner for extreme cut, puncture, abrasion and tear resistance."]],
     std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 6 · Puncture 5 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "TEGX® TexArn™ HPPE blend"], ["Coating", "Sandy nitrile, double-dipped, full"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9081": { desc:"TEGX® TexArn™ cut-resistant hi-vis liner with A7 cut protection, SHELL™ GRD, a nitrile LiquiBlock™ coating and touchscreen compatibility. The high-tenacity HPPE liner gives extreme cut, puncture, abrasion and tear resistance, ImpactFlow™ angled geometry redirects oblique impacts, Enhanced Hand Control keeps grip and precision in high-contact work, and the double-dipped smooth and sandy nitrile coating repels fluid while keeping dexterity and tactility.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ImpactFlow™", "Angled geometry that redirects oblique impacts away from vulnerable areas."], ["TEGX® liner", "High-tenacity HPPE: extreme cut, puncture, abrasion and tear resistance."], ["LiquiBlock™", "Double-dipped nitrile that resists fluid absorption while keeping grip."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 6 · Puncture 5 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "TEGX® HPPE blend, hi-vis"], ["Coating", "Sandy over smooth nitrile, double-dipped"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9082": { desc:"Hi-vis SHELL™ GRD impact winter gloves with a TEGX® TexArn™ cut-resistant liner, A7 cut, CoreTherm™ insulation and a nitrile LiquiBlock™ coating. The high-tenacity HPPE liner gives extreme cut, puncture, abrasion and tear resistance, ImpactFlow™ redirects oblique impacts, CoreTherm™ retains warmth without restricting mobility, and the double-dipped smooth and sandy nitrile coating repels fluid while keeping dexterity and tactility.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ImpactFlow™", "Angled geometry that redirects oblique impacts away from vulnerable areas."], ["CoreTherm™", "Integrated insulation layer that retains warmth without restricting mobility."], ["TEGX® liner", "High-tenacity HPPE: extreme cut, puncture, abrasion and tear resistance."], ["LiquiBlock™", "Double-dipped nitrile that resists fluid absorption while keeping grip."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 6 · Puncture 5 · Dexterity 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X1XXXX"], ["EN 511:2006", "X1X"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "TEGX® HPPE blend, insulated"], ["Coating", "Sandy over smooth nitrile, double-dipped"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9045": { desc:"Impact protection Level 2 with anti-vibration: a multi-layer impact design with TorqueGuard™ palm dampening. The build delivers heavy-duty protection against impact and vibration in multi-hazard work, TaskCore™ zone-optimised coverage aligns protection with task-specific exposure areas, the palm-based vibration dampening reduces transmitted shock and torque, and the anti-slip diamond palm gives reliable grip control on wet, dry and oily surfaces.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["TorqueGuard™", "Palm-based vibration dampening system reducing transmitted shock and torque."], ["TaskCore™", "Zone-optimised coverage aligning protection with task-specific exposure areas."], ["Diamond palm", "Anti-slip grip control across wet, dry and oily surfaces."]],
+    std:[["ANSI/ISEA 105", "Cut A1 · Abrasion 4 · Puncture 3"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4131XP"], ["EN ISO 10819:2013", "TRM 0.62 · TRH 0.55"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Shell", "Foam-laminated polyester / spandex, gel palm pads"], ["Palm", "Synthetic leather, diamond grip"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL · 12/3XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "8055": { desc:"SHELL™ GRD anti-vibration gloves with ANSI A3 cut, abrasion 4 and puncture 3, and TorqueGuard™ palm dampening technology. The reinforced liner delivers advanced protection against vibration, cut, abrasion and puncture, the Vibration Control Design absorbs and neutralises vibration to maintain control and reduce hand fatigue, and the air cushion shells in chloroprene rubber protect hands from pneumatic vibrating tools.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["TorqueGuard™", "Palm-based vibration dampening system reducing transmitted shock and torque."], ["Air cushion shells", "Chloroprene rubber cushions against pneumatic vibrating tools."], ["Reinforced liner", "Cut, abrasion and puncture resistance in the knit."]],
+    std:[["ANSI/ISEA 105", "Cut A3 · Abrasion 4 · Puncture 3"], ["EN 388:2016+A1:2018", "4343X"], ["EN ISO 10819:2013", "TRM 0.62 · TRH 0.55"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "Polyester / spandex, seamless"], ["Palm", "Chloroprene air cushion shells"], ["Sizes", "8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "8056": { desc:"Multi-hazard impact and anti-vibration gloves with TorqueGuard™ palm dampening technology. SHELL GRD™ with a high-cut liner gives tri-hazard protection against impact, vibration, cut and abrasion; ShockShell™ TPR zones absorb vertical impact; heavy-duty rubber palm pads give maximum shock and vibration protection for long shifts.",
     tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["TorqueGuard™", "Palm-based vibration dampening system reducing transmitted shock and torque."], ["Rubber palm pads", "Heavy-duty pads for shock and vibration protection."]],
     std:[["ANSI/ISEA 105", "Cut A5 · Abrasion 4 · Puncture 3"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4543EP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 10819:2013", "TRM 0.86 · TRH 0.59"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Liner", "High-cut blend"], ["Palm", "Heavy-duty rubber pads"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "5045": { desc:"Protective leather gloves with A5 cut and CAT 4 arc protection: premium goatskin with a TEGX® TexArn™ 360° para-aramid liner. The dual-layer construction withstands arc flash exposure for lasting protection and stability, premium grain goatskin balances durability, flexibility, tactile control and comfort in impact-intensive tasks, and the arc protection is engineered for high-risk electrical environments with reliable grip on dry and light-oily surfaces.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["TEGX® liner", "TexArn™ 360° para-aramid: arc flash and cut protection."], ["Premium goatskin", "Grain leather for durability, flexibility and tactile control."], ["DryHold™", "Moisture-wicking system that keeps the inside dry."]],
+    std:[["ANSI/ISEA 105", "Cut A5 · Abrasion 4 · Puncture 4"], ["Arc rating", "NFPA 70E · CAT 4 · ATPV 44 cal/cm²"], ["EN 388:2016+A1:2018", "3X43E"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Premium grain goatskin"], ["Liner", "TEGX® TexArn™ 360° para-aramid"], ["Sizes", "8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "9050": { desc:"Multi-hazard protection: Impact Level 2, A5 cut and arc-rated CAT 4 at an ATPV of 44 cal/cm², NFPA 70E compliant. TEGX® dual-layer construction withstands arc flash; FlexSpine™ segmented TPR supports natural articulation with continuous impact coverage; a TexArn™ blended yarn gives 360° cut, heat, tear and abrasion resistance; premium grain goatskin balances durability, flexibility and tactile control.",
     tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["FlexSpine™", "Segmented TPR structure supporting natural articulation with continuous impact coverage."], ["TexArn™", "Blended yarn with high tensile strength and 360° cut, heat, tear and abrasion resistance."], ["Grain goatskin", "Durability, flexibility and tactile control in impact-intensive tasks."], ["DryHold™", "Moisture-wicking system that keeps the inside dry."]],
     std:[["ANSI/ISEA 105", "Cut A5 · Abrasion 4 · Puncture 4"], ["ANSI/ISEA 138", "Impact Level 2"], ["Arc rating", "NFPA 70E · CAT 4 · ATPV 44 cal/cm²"], ["EN 388:2016+A1:2018", "3X43EP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
     meta:[["Shell", "Premium grain goatskin"], ["Liner", "TEGX® TexArn™ dual layer"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "5046": { desc:"Protective leather gloves with A7 cut and CAT 4 arc protection: premium buffalo leather with a TEGX® TexArn™ 360° para-aramid liner. The dual-layer construction withstands arc flash exposure for lasting protection and stability, premium grain buffalo skin gives durability, abrasion resistance and reliable grip, the arc protection is engineered for high-risk electrical environments, and the water-resistant finish keeps a steady grip in wet, dry and light-oily conditions.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["TEGX® liner", "TexArn™ 360° para-aramid: arc flash and cut protection."], ["Premium buffalo leather", "Grain leather with a water-resistant finish."], ["DryHold™", "Moisture-wicking system that keeps the inside dry."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 4 · Puncture 4"], ["Arc rating", "NFPA 70E · CAT 4 · ATPV 44 cal/cm²"], ["EN 388:2016+A1:2018", "3X43F"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Premium buffalo leather, water-resistant"], ["Liner", "TEGX® TexArn™ 360° para-aramid"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9051": { desc:"Multi-hazard protection gloves: impact Level 2, A7 cut and arc CAT 4 in premium buffalo leather with SHELL™ GRD. The TEGX® engineered liner withstands arc flash exposure for long-lasting protection and stability, the water-resistant buffalo skin preserves grip in wet, dry and light-oily conditions during impact-intensive tasks, ShockShell™ compressive TPR zones absorb vertical impact energy, and DryHold™ keeps the inside dry and reduces slippage.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["TEGX® liner", "Arc-rated cut liner: extreme cut, puncture, abrasion and tear resistance."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 4 · Puncture 4"], ["ANSI/ISEA 138", "Impact Level 2"], ["Arc rating", "NFPA 70E · CAT 4 · ATPV 44 cal/cm²"], ["EN 388:2016+A1:2018", "3X43FP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category III"]],
+    meta:[["Shell", "Premium buffalo leather, water-resistant"], ["Liner", "TEGX® arc-rated cut liner"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9040": { desc:"Multi-layer impact gloves with impact protection Level 2, ANSI A4 cut and abrasion 5, a synthetic leather palm and touchscreen compatibility. Multi-fabric layering delivers heavyweight performance with a lightweight feel, ImpactFlow™ angled geometry redirects oblique impacts away from vulnerable areas, the aramid liner gives cut, abrasion and puncture resistance with tactile comfort, and the high-visibility TPR improves hand awareness in low light.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ImpactFlow™", "Angled geometry that redirects oblique impacts away from vulnerable areas."], ["Aramid liner", "Cut, abrasion and puncture resistance with tactile comfort."], ["TruTouch™", "Fingertip zones for precise handling and touchscreen use."], ["DryHold™", "Moisture-wicking system that keeps the inside dry."]],
+    std:[["ANSI/ISEA 105", "Cut A4 · Abrasion 5 · Puncture 3"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "3X42DP"], ["EN 407:2020", "X1XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Shell", "Foam-laminated polyester / spandex, PVC palm, synthetic leather"], ["Liner", "Aramid"], ["Sizes", "8/M · 9/L · 10/XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9083": { desc:"SHELL™ GRD impact-protection gloves with A5 cut, hi-vis construction, TPR impact absorption, a synthetic leather palm and silicone grip. Built for demanding mechanical applications, ST-9083 combines A5 cut, Level 2 impact, abrasion 6 and Level 3 conductive-heat protection in a lightweight, flexible design; the TPR absorbs and disperses impact across the knuckles and fingers, the silicone grip gives wet and oily traction, and the water-repellent construction supports durability and extended service life.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["TaskCore™", "Zone-optimised coverage aligning protection with task-specific exposure areas."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."]],
+    std:[["ANSI/ISEA 105", "Cut A5 · Abrasion 6 · Puncture 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X43EP"], ["EN 407:2020", "X2XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "HPPE blend, hi-vis"], ["Palm", "Synthetic leather, silicone grip, Kevlar®-stitched"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
   "9085": { desc:"Hi-vis impact protection gloves with an engineered high-performance silicone grip: Impact Level 2, A7 cut, 6 abrasion, 5 puncture. Advanced glove architecture keeps dexterity and tactile precision; ShockShell™ TPR zones absorb vertical impact; LiquiBlock™ resists oil and fluid; the anti-slip silicone palm grips in wet, dry and oily conditions.",
     tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."], ["Silicone palm", "Anti-slip grip control in wet, dry and oily conditions."]],
     std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 6 · Puncture 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X2XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
@@ -87,8 +215,12 @@ const DETAILS = {
     tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["Level 3 TPR", "Knuckle, finger and back-of-hand protection to ANSI/ISEA 138 Level 3."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["DryHold™", "Moisture-wicking system that keeps the inside dry and reduces slippage."], ["LiquiBlock™", "Surface-bonded liquid-repellent coating that resists oil and fluid absorption while keeping grip."]],
     std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 6 · Puncture 5"], ["ANSI/ISEA 138", "Impact Level 3"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X2XXXX"], ["EN ISO 21420:2020", "CE · Category II"]],
     meta:[["Back", "Level 3 TPR"], ["Palm", "High-performance grip, LiquiBlock™"], ["Sizes", "7/S · 8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
+  "9095": { desc:"Insulated impact gloves with impact, cut and cold protection: 3M™ Thinsulate™, a water- and oil-resistant membrane and SHELL™ GRD. The Winter High-Cut Impact Design integrates a water- and oil-proof membrane for warmth, control and mechanical protection in extreme conditions, ShockShell™ compressive TPR zones absorb vertical impact energy, the thermal fleece membrane retains warmth, resists wind and keeps hands dry, and the anti-slip silicone palm with reinforced seams grips in wet, dry and oily conditions.",
+    tech:[["SHELL GRD™ platform", "Impact-protection system of the Shell series."], ["ShockShell™", "Compressive TPR zones that absorb vertical impact energy."], ["3M™ Thinsulate™", "Insulation that retains warmth without bulk."], ["Thermal membrane", "Water- and oil-resistant fleece membrane: wind out, hands dry."], ["TaskCore™", "Zone-optimised coverage aligning protection with task-specific exposure areas."]],
+    std:[["ANSI/ISEA 105", "Cut A7 · Abrasion 6 · Puncture 5"], ["ANSI/ISEA 138", "Impact Level 2"], ["EN 388:2016+A1:2018", "4X44FP"], ["EN 407:2020", "X2XXXX"], ["EN 511:2006", "121"], ["EN ISO 21420:2020", "CE · Category II"]],
+    meta:[["Liner", "3M™ Thinsulate™, HPPE blend"], ["Palm", "Silicone grip, reinforced seams"], ["Sizes", "8/M · 9/L · 10/XL · 11/2XL"], ["Packing", "1 pr / polybag · 60 prs / carton"]] },
 };
-const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'Seven SHELL GRD™ impact gloves, pulled onto your hand one after another as you scroll. Pinch points, dropped loads, vibration, arc flash: the knuckles are covered, the fingers still work.' };
+const INTRO = { title:'Engineered by hazard.<br>Designed for precision.', lead:'All nineteen SHELL GRD™ impact gloves, pulled onto your hand one after another as you scroll, in the order of the catalogue. Hammers, pipe, falling steel, arc flash, vibration: the blow lands on the glove.' };
 
 /* ---------- timeline ---------- */
 // t units: [0,1) intro · [1,1+N) chapters · [1+N,1+N+0.8) outro, N = GLOVES.length (4 on the live page)
@@ -113,8 +245,9 @@ const stage = $('#stage'), scroller = $('#scroller'), hand = $('#hand'), canvas 
 const copy = $('#copy'), outro = $('#outro'), glow = $('#glow'), bignum = $('#bignum');
 const fitStatus = $('#fitStatus'), fitLabel = fitStatus.querySelector('span');
 const chips = [...document.querySelectorAll('.chip')];
+const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLORE.querySelectorAll('.explore-card')] : [];
 const techLogo = $('#techLogo');
-const TECH_LOGO = { '9075':'shell-grd', '9080':'shell-grd', '9070':'shell-grd', '8056':'shell-grd', '9050':'shell-grd', '9085':'shell-grd', '9086':'shell-grd' };
+const TECH_LOGO = { '9060':'shell-grd', '9065':'shell-grd', '9075':'shell-grd', '9080':'shell-grd', '9070':'shell-grd', '9081':'shell-grd', '9082':'shell-grd', '9045':'shell-grd', '8055':'shell-grd', '8056':'shell-grd', '5045':'shell-grd', '9050':'shell-grd', '5046':'shell-grd', '9051':'shell-grd', '9040':'shell-grd', '9083':'shell-grd', '9085':'shell-grd', '9086':'shell-grd', '9095':'shell-grd' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
@@ -127,8 +260,13 @@ const ready = { bare:false, glove:Array(GLOVES.length).fill(false) };
 fetch('assets/hand/extents.json').then(r => r.json()).then(j => { EXT = j; requestRender(); });
 load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; requestRender(); });
 const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
-loadGlove(0);
-(window.requestIdleCallback || (f => setTimeout(f, 800)))(() => { for (let k = 1; k < GLOVES.length; k++) loadGlove(k); });
+const bgNear = ch => {                                   // series pages: bg photos carry data-src / data-src-m and load near the chapter
+  const m = window.innerWidth <= 900;
+  bgs.forEach((b, i) => { const s = m ? (b.dataset.srcM || b.dataset.src) : b.dataset.src; if (!s) return;
+    if (Math.abs(i - Math.max(0, ch)) <= 1) { if (b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } } });
+};
+const loadNear = ch => { for (let k = Math.max(0, ch - 1); k <= Math.min(N - 1, Math.max(0, ch) + 2); k++) loadGlove(k); bgNear(ch); };
+loadNear(0);
 
 /* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
    v 0.00–0.22  the mark and the words arrive (small, slow)
@@ -164,8 +302,18 @@ function size() {
   canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR);
   off = off || document.createElement('canvas'); off.width = canvas.width; off.height = canvas.height; offCtx = off.getContext('2d');
   unitPx = window.innerHeight * (window.innerWidth <= 640 ? 1.2 : window.innerWidth <= 900 ? 1.3 : 1.5);
-  layoutCallouts();
+  layoutCallouts(); fitCopy();
   requestRender(true);
+}
+// desktop: a long title (series pages) steps down until the buttons clear the dock; no-op when the copy already fits (the live page)
+function fitCopy() {
+  const c = $('#copy'), d = $('#dock'), t = $('#title'); if (!c || !d || !t) return;
+  t.style.fontSize = '';
+  if (!EXPLORE || window.innerWidth <= 900) return;                 // series pages only: the live page is never touched
+  const dr = d.getBoundingClientRect(), right = Math.max(0, ...[...$('#actions').children, ...$('#ratings').children].map(e => e.getBoundingClientRect().right));
+  if (right < dr.left) return;                                      // a short dock that clears the copy column
+  const low = () => c.getBoundingClientRect().top + (c.clientHeight + c.firstElementChild.offsetHeight) / 2 > dr.top - 16;
+  for (let fs = parseFloat(getComputedStyle(t).fontSize); low() && fs > 48; ) { fs -= 4; t.style.fontSize = fs + 'px'; }
 }
 let unitPx = 1;
 
@@ -329,6 +477,10 @@ function setChapter(seg, gp) {
     const rgb = g ? g.accent : [63,120,224];
     document.documentElement.style.setProperty('--accent-rgb', rgb.join(','));
     chips.forEach((c, i) => c.classList.toggle('on', i === ch));
+    const dock = $('#dock'), chip = chips[ch];                          // a long dock (series pages) follows the lit chip; no-op when every chip fits
+    if (dock && chip && dock.scrollWidth > dock.clientWidth + 1) dock.scrollTo({ left: chip.offsetLeft - (dock.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' });
+    loadNear(ch); cards.forEach((c, i) => c.classList.toggle('on', i === ch));
+    if (EXPLORE && !deepLinking) { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) history.replaceState(null, '', want || location.pathname + location.search); }
     bignum.textContent = String(Math.max(1, ch + 1)).padStart(2, '0');
     $('#railTop').textContent = String(Math.max(0, ch + 1)).padStart(2, '0');
     if (g) { techLogo.src = `assets/tech/${TECH_LOGO[g.code]}.webp`; techLogo.alt = `${g.platform} technology`; techLogo.classList.add('on'); }
@@ -356,6 +508,7 @@ function setChapter(seg, gp) {
     } else {
       calloutLayer.innerHTML = '';
     }
+    fitCopy();
   }
   // copy entrance / exit, driven by scroll so it is deterministic (no CSS transitions)
   let cp = 0;
@@ -512,10 +665,16 @@ $('#dClose').addEventListener('click', () => dlg.close());
 dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
 /* ---------- navigation ---------- */
-function goTo(i) {
+function goTo(i, instant) {
   const tt = i < 0 ? 0 : i >= N ? T_OUT + 0.45 : I0 + i + 0.42;
-  window.scrollTo({ top: tt * unitPx, behavior: reduced.matches ? 'instant' : 'smooth' });
+  if (i >= 0 && i < N) loadGlove(i);
+  window.scrollTo({ top: tt * unitPx, behavior: (instant || reduced.matches) ? 'instant' : 'smooth' });
+  if (instant) { target = t = clamp(tt, 0, T_END); requestRender(true); }
 }
+/* deep link: #st-7098 (or #7098) lands on that glove, opener skipped; the explore cards and the product-page buttons use it */
+const hashIndex = () => { const m = /^#(?:st-)?(\d{4})$/i.exec(location.hash || ''); return m ? GLOVES.findIndex(g => g.code === m[1]) : -1; };
+let deepLinking = false;
+window.addEventListener('hashchange', () => { const i = hashIndex(); if (i >= 0) goTo(i); });
 chips.forEach(c => c.addEventListener('click', () => goTo(Number(c.dataset.i))));
 window.addEventListener('keydown', e => {
   if (e.target !== document.body) return;
@@ -533,7 +692,9 @@ document.addEventListener('pointerleave', () => { aimX = aimY = 0; requestRender
 
 /* ---------- boot ---------- */
 window.addEventListener('scroll', onScroll, { passive:true });
-window.addEventListener('resize', () => { size(); onScroll(); });
+window.addEventListener('resize', () => { size(); onScroll(); bgNear(currentChapter); });
 reduced.addEventListener?.('change', () => requestRender(true));
-size(); onScroll(); requestRender(true);
+size();
+{ const i = hashIndex(); if (i >= 0) { deepLinking = true; if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; goTo(i, true); requestAnimationFrame(() => requestAnimationFrame(() => { deepLinking = false; })); } }
+onScroll(); requestRender(true);
 })();
