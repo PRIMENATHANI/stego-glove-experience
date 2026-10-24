@@ -345,6 +345,10 @@ function render() {
   const seg = segment(t);
   const gi = seg.phase === 'chapter' ? seg.i : -1;
   const gp = gi >= 0 ? gloveProgress(seg.u) : { p:0, dir:'bare' };
+  if (gi !== enteredGi) { enteredGi = gi; enteredAt = performance.now(); }
+  const af = arrival(gi);
+  // series pages: while this chapter's glove is still on its way the hand is not shown at all (never a bare hand under a glove's copy); it fades in as the glove lands
+  const handVis = (EXPLORE && gi >= 0) ? (ready.glove[gi] ? (af >= 1 ? 1 : Math.min(1, af * 2.5)) : 0) : 1;
   const iu = seg.phase === 'intro' ? (REVEAL ? seg.u - 1 : seg.u) : 1;          // the hazard intro's own clock; negative while the opener runs
   const introLift = seg.phase === 'intro' ? (1 - easeOut(clamp(iu / 0.55))) : 0;
   if (REVEAL) renderReveal(seg);
@@ -354,7 +358,7 @@ function render() {
   const floatY = reduced.matches ? 0 : Math.sin(idle * 0.9) * 3;
   const lift = introLift * window.innerHeight * 0.42 + outroDrop * window.innerHeight * 0.55;
   hand.style.transform = `translate(calc(-50% + ${px * -10}px), ${lift + floatY + py * -6}px)`;
-  hand.style.opacity = String((1 - outroDrop * 0.6) * (REVEAL ? clamp((iu + 0.12) / 0.14) : 1));   // hidden under the opener
+  hand.style.opacity = String((1 - outroDrop * 0.6) * (REVEAL ? clamp((iu + 0.12) / 0.14) : 1) * handVis);   // hidden under the opener
 
   // background parallax: slow drift with t, pointer counter-move
   const drift = t * 1.1;
@@ -367,8 +371,6 @@ function render() {
   bignum.style.transform = `translate3d(${px * -18}px, ${(-(t % 1) * 60) + py * -8}px, 0)`;
 
   // canvas
-  if (gi !== enteredGi) { enteredGi = gi; enteredAt = performance.now(); }
-  const af = arrival(gi);
   const gpd = af >= 1 ? gp : { p: gp.p * af, dir: 'on' };
   drawHand(gi, gpd);
 
@@ -527,7 +529,8 @@ function setChapter(seg, gp, af = 1) {
   // fit status + glow
   let label = 'YOUR HAND', cls = '';
   if (seg.phase === 'chapter') {
-    if (gp.dir === 'on' || af < 1) { label = 'PULLING ON'; cls = 'fitting'; }
+    if (EXPLORE && !ready.glove[seg.i]) { label = `LOADING ST-${GLOVES[seg.i].code}`; cls = 'fitting'; }
+    else if (gp.dir === 'on' || af < 1) { label = 'PULLING ON'; cls = 'fitting'; }
     else if (gp.dir === 'hold') { label = `ST-${GLOVES[seg.i].code} FITTED`; cls = 'done'; }
     else { label = 'TAKING OFF'; cls = 'fitting'; }
   } else if (seg.phase === 'outro') label = 'TRIAL PAIRS AVAILABLE';
