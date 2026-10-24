@@ -28,7 +28,8 @@
   function size() { DPR = Math.min(window.devicePixelRatio || 1, 2); W = window.innerWidth; H = window.innerHeight; canvas.width = Math.round(W * DPR); canvas.height = Math.round(H * DPR); draw(); }
   var btn = document.createElement("button"); btn.className = "stego-ink-btn"; btn.type = "button"; btn.setAttribute("aria-label", "Throw: tap, then tap anywhere to throw a glove");
   btn.innerHTML = "<span class=\"mark\">" + ICON + "</span><span class=\"drop\">" + ICON_WASH + "</span>";
-  GLOVES.forEach(function (g) { var im = new Image(); im.src = g.src; g.img = im; });
+  var pending = []; var loaded = 0;
+  GLOVES.forEach(function (g) { var im = new Image(); im.onload = function () { if (++loaded === GLOVES.length) { pending.forEach(function (q) { throwGlove(q[0], q[1]); }); pending = []; } }; im.src = g.src; g.img = im; });
 
   var items = [], flights = [], gi = 0, on = false, raf = 0, wash = null, rivulets = null, quake = null;
   function rnd(a, b) { return a + Math.random() * (b - a); }
@@ -44,6 +45,7 @@
   }
   function rim(s, t) { var r = 1; for (var h = 0; h < s.harm.length; h++) r += s.harm[h].a * Math.sin(s.harm[h].n * t + s.harm[h].p); for (var f = 0; f < s.bulges.length; f++) { var d = Math.atan2(Math.sin(t - s.bulges[f].a), Math.cos(t - s.bulges[f].a)); r += s.bulges[f].l * Math.exp(-(d * d) / (2 * s.bulges[f].w * s.bulges[f].w)); } return r; }
   function throwGlove(x, y) {
+    if (loaded < GLOVES.length) { pending.push([x, y]); return; }                 // a throw before the gloves are in waits for them
     var g = GLOVES[gi++ % GLOVES.length];
     var land = Math.min(W, H) * rnd(0.34, 0.40);                      // glove height on landing
     var it = { g: g, x: x, y: y, h: land, rot: rnd(-0.55, 0.55), born: performance.now(), landed: reduce ? performance.now() : 0, alpha: 1, drip: 0, smear: 0, leak: null };
