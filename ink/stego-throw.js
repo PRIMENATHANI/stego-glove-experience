@@ -1,4 +1,4 @@
-/*! STEGO Throw v0.2.0 — gloves instead of paint: the easter egg for the stegosafety.com homepage. One script, no markup, no dependencies.
+/*! STEGO Throw v1.0.0 — gloves instead of paint: the easter egg for the stegosafety.com homepage. One script, no markup, no dependencies.
     The PAINT mark (bottom right) switches throw mode on; the mark becomes WASH. Every tap then throws a glove at the screen, one category
     per throw in turn (TEGX, GRYX, SHELL GRD, ChemBlock): it comes at the screen big and out of focus, slaps on with a squash, a little
     paint in its colour seeps out from under its edges with a drip, and the page shakes. Gloves and paint stay on the screen while the page
@@ -135,5 +135,5 @@
   window.addEventListener("resize", size);
   function mount() { document.documentElement.appendChild(canvas); document.documentElement.appendChild(btn); size(); }
   if (document.body) mount(); else document.addEventListener("DOMContentLoaded", mount);
-  window.StegoThrow = { on: function () { setOn(true); }, off: function () { setOn(false); }, throw: throwGlove, wash: rinse, get active() { return on; }, version: "0.2.0" };
+  window.StegoThrow = { on: function () { setOn(true); }, off: function () { setOn(false); }, throw: throwGlove, wash: rinse, get active() { return on; }, version: "1.0.0" };
 })();
