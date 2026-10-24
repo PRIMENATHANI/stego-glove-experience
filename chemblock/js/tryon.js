@@ -12,19 +12,19 @@ const GLOVES = [
     accent:[220, 50, 30], cuff:{ base:"#d3291f", hem:"#c92e20" }, url:"https://stegosafety.com/product/chem-armor-st-1070/",
     callouts:[ { x:0.42, y:0.11, title:"Sandblast finish", text:"Grip, wet or oily." }, { x:0.56, y:0.28, title:"Double-dipped PVC", text:"Liquids stay out." }, { x:0.34, y:0.55, title:"SealTrace™ seams", text:"No micro-pathways." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"1080", name:"Optichem Grip", platform:"ChemBlock™", category:"CHEMICAL · PVC",
-    title:"Acids and caustics.<br><em>Grip kept.</em>",
+    title:"Acids and caustics.<br><em>Soft PVC, grip kept.</em>",
     lead:"Triple-dipped soft PVC on an interlock lining: EN ISO 374-1 Type B, SealTrace™ seams against ingress, a textured non-slip finish that holds in oils, greases, acids and caustics.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["AJK", "Chemicals"], ["4", "Abrasion"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type B AJK · EN 374-5 · EN 388 4121A · ANSI/ISEA 105 · CE Cat III",
-    accent:[80, 75, 200], cuff:{ base:"#465eb0", hem:"#455eb0" },
-    callouts:[ { x:0.56, y:0.28, title:"Soft PVC barrier", text:"Stays supple under chemicals." }, { x:0.62, y:0.4, title:"SealTrace™ seams", text:"No ingress at the joins." }, { x:0.42, y:0.11, title:"Textured finish", text:"Grip in oils and acids." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
+    accent:[98, 93, 206], cuff:{ base:"#465eb0", hem:"#455eb0" },
+    callouts:[ { x:0.56, y:0.28, title:"Soft PVC surface", text:"Triple-dipped barrier." }, { x:0.42, y:0.11, title:"Textured fingers", text:"Grip in oils and acids." }, { x:0.62, y:0.44, title:"Dipped seams", text:"SealTrace™: no ingress." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"1085", name:"Optichem Thermo", platform:"ChemBlock™", category:"CHEMICAL · PVC · COLD",
     title:"Chemicals in the cold.<br><em>Insulated PVC.</em>",
-    lead:"The Optichem with a dual thermal lining: triple-dipped soft PVC, EN ISO 374-1 Type B, CoreTherm™ warmth to EN 511, SealTrace™ seams and a textured finish for wet grip.",
+    lead:"Chemical work in the cold. A dual thermal lining under triple-dipped soft PVC: EN ISO 374-1 Type B, CoreTherm™ warmth to EN 511, SealTrace™ seams, a textured finish for wet grip.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["AJK", "Chemicals"], ["121", "EN 511 cold"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type B AJK · EN 374-5 · EN 388 4121A · EN 511:2006 121 · ANSI/ISEA 105 · CE Cat III",
     accent:[45, 125, 225], cuff:{ base:"#2682a9", hem:"#e7b60b" }, url:"https://stegosafety.com/product/optichem-thermo-st-1085/",
-    callouts:[ { x:0.56, y:0.28, title:"Insulated PVC barrier", text:"Chemicals and cold." }, { x:0.62, y:0.4, title:"CoreTherm™ lining", text:"Warm inside." }, { x:0.42, y:0.11, title:"Textured finish", text:"Wet grip." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
+    callouts:[ { x:0.56, y:0.28, title:"Insulated PVC surface", text:"Chemicals and cold." }, { x:0.42, y:0.11, title:"Textured fingers", text:"Wet grip." }, { x:0.5, y:0.66, title:"Thermal lining inside", text:"CoreTherm™ warmth." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"2018", name:"N'Flock", platform:"ChemBlock™", category:"CHEMICAL · FOOD SAFE",
     title:"Lab bench, wash bay.<br><em>Food safe.</em>",
     lead:"Specialised flock-lined nitrile, EN ISO 374-1 Type A and approved for food contact. CoreResist™ holds the barrier through repeated chemical contact; a raised diamond palm keeps control in wet work.",
@@ -37,7 +37,7 @@ const GLOVES = [
     lead:"Smooth double-coated nitrile on an anti-microbial cotton liner, EN ISO 374-1 Type A. CoreResist™ keeps the barrier stable through repeated contact; a rough-textured palm keeps the grip in sludge.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["4", "Abrasion"], ["AJKLMO", "Chemicals"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AJKLMO · EN 374-5 · EN 388 4121X · CE Cat III",
-    accent:[40, 110, 70], cuff:{ base:"#2f312e", hem:"#292926" },
+    accent:[51, 117, 79], cuff:{ base:"#2f312e", hem:"#292926" },
     callouts:[ { x:0.42, y:0.11, title:"Rough-textured finish", text:"Grip in sludge." }, { x:0.56, y:0.28, title:"Double nitrile coat", text:"Liquids stay out." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"8089", name:"Chem Shield", platform:"ChemBlock™", category:"CHEMICAL · NEOPRENE",
     title:"Acids and caustics.<br><em>Two layers.</em>",
@@ -47,12 +47,12 @@ const GLOVES = [
     accent:[40, 130, 220], cuff:{ base:"#cfd414", hem:"#c9cd1c" },
     callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Neoprene over latex", text:"Acids and caustics." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Quick-entry cuff", text:"Fast on and off." } ] },
   { code:"2021", name:"Barix Grip", platform:"ChemBlock™", category:"CHEMICAL · NITRILE",
-    title:"Solvents, repeatedly.<br><em>Grip every time.</em>",
+    title:"Solvents, repeatedly.<br><em>Double nitrile.</em>",
     lead:"Fully double-coated nitrile on a nylon knit: EN ISO 374-1 Type A across nine chemical groups, CoreResist™ against degradation through repeated contact, a sandy finish for grip in wet and oil.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["9", "Chemicals"], ["4", "Abrasion"], ["A1", "ANSI cut"]],
     standards:"EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 · EN 388 4121A · EN 407 X1XXXX · ANSI/ISEA 105 · CE Cat III",
     accent:[40, 110, 210], cuff:{ base:"#055aa6", hem:"#6c5d5d" },
-    callouts:[ { x:0.56, y:0.28, title:"Double nitrile coat", text:"Sealed over the knit." }, { x:0.62, y:0.4, title:"CoreResist™", text:"No degradation on repeat." }, { x:0.42, y:0.11, title:"Sandy finish", text:"Grip wet, dry, oily." }, { x:0.5, y:0.73, title:"Blue gauntlet cuff", text:"Past the wrist." } ] },
+    callouts:[ { x:0.56, y:0.28, title:"Double nitrile coat", text:"Sealed over the knit." }, { x:0.42, y:0.11, title:"Sandy fingertips", text:"Grip wet, dry, oily." }, { x:0.62, y:0.44, title:"CoreResist™", text:"No breakdown on repeat contact." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"2022", name:"Barix Armor", platform:"ChemBlock™", category:"CHEMICAL & CUT",
     title:"Chemical and cut.<br><em>In one hand.</em>",
     lead:"ChemBlock™ and TEGX® together: a sandy nitrile barrier, EN ISO 374-1 Type A, over an A4 cut liner. CoreResist™ for the chemistry, DryHold™ inside, a dual-coated palm for wet or dry work.",
@@ -79,33 +79,33 @@ const GLOVES = [
     accent:[230, 180, 30], cuff:{ base:"#272525", hem:"#2c2523" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.42, y:0.11, title:"Sandy nitrile", text:"Grip, wet or oily." }, { x:0.34, y:0.55, title:"Type A barrier", text:"Chemicals out." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A6 cut underneath." } ] },
   { code:"7500", name:"Vynox Neo", platform:"ChemBlock™", category:"CHEMICAL · BUTYL",
-    title:"Ketones, esters, aldehydes.<br><em>Anti-static butyl.</em>",
+    title:"Aldehydes, ketones.<br><em>Anti-static butyl.</em>",
     lead:"Robust butyl for the chemicals that attack nitrile: EN ISO 374-1 Type A, virus rated, anti-static to EN 16350, Permex™ slowing permeation through the glove, FlexFit™ in the hand.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["AKLMNP", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AKLMNP · EN 374-5 Virus · EN 16350:2014 · EN 388 2111X · CE Cat III",
-    accent:[60, 60, 70], cuff:{ base:"#242422", hem:"#9c684a" }, url:"https://stegosafety.com/product/vynox-neo-st-7500/",
-    callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"Permex™", text:"Slows permeation." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
+    accent:[233, 185, 42], cuff:{ base:"#252624", hem:"#1c1b19" }, url:"https://stegosafety.com/product/vynox-neo-st-7500/",
+    callouts:[ { x:0.56, y:0.28, title:"Butyl surface", text:"Ketones and esters." }, { x:0.42, y:0.11, title:"Smooth fingertips", text:"Permex™: slow permeation." }, { x:0.34, y:0.55, title:"Anti-static compound", text:"No spark." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"7505", name:"Vynox Evo", platform:"ChemBlock™", category:"CHEMICAL · BUTYL",
     title:"Ketones, esters.<br><em>No spark.</em>",
     lead:"Heavy-duty butyl for the solvents that eat other gloves, EN ISO 374-1 Type A and anti-static to EN 16350. SolvLock™ keeps the barrier stable under aggressive exposure; FlexFit™ keeps the hand working.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["ABILST", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A ABILST · EN 374-5 · EN 16350:2014 · EN 388 2111X · CE Cat III",
-    accent:[45, 45, 50], cuff:{ base:"#d18e65", hem:"#cc8961" },
+    accent:[233, 185, 42], cuff:{ base:"#d18e65", hem:"#cc8961" },
     callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Moves with the hand." } ] },
   { code:"7510", name:"Vynox Ultra", platform:"ChemBlock™", category:"CHEMICAL · VITON® OVER BUTYL",
-    title:"Hydrocarbons, strong acids.<br><em>Viton® outside.</em>",
+    title:"Hydrocarbons, acids.<br><em>Viton® over butyl.</em>",
     lead:"Viton® over butyl for the hardest exposures: maximum resistance to hydrocarbons and concentrated mineral acids, CoreResist™ against breakdown, a seamless immersion-built barrier, 14 inches long.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["DFL", "Chemicals"], ["VIRUS", "EN 374-5"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type B DFL · EN 374-5 Virus · EN 388 1010X · CE Cat III",
-    accent:[50, 50, 60], cuff:{ base:"#28272a", hem:"#322d28" },
-    callouts:[ { x:0.56, y:0.28, title:"Viton® over butyl", text:"Hydrocarbons and acids." }, { x:0.62, y:0.4, title:"CoreResist™", text:"No breakdown on repeat." }, { x:0.42, y:0.11, title:"Immersion built", text:"Seamless barrier." }, { x:0.5, y:0.73, title:"14-inch gauntlet", text:"Forearm covered." } ] },
+    accent:[233, 185, 42], cuff:{ base:"#28272a", hem:"#322d28" },
+    callouts:[ { x:0.56, y:0.28, title:"Viton® outer layer", text:"Hydrocarbons and acids." }, { x:0.42, y:0.11, title:"Seamless fingers", text:"Immersion built." }, { x:0.62, y:0.44, title:"Butyl under the Viton®", text:"Two barriers." }, { x:0.5, y:0.73, title:"14-inch gauntlet", text:"Forearm covered." } ] },
   { code:"5530", name:"Vynox Shield", platform:"ChemBlock™", category:"CHEMICAL · NEOPRENE",
-    title:"Acids, caustics, solvents.<br><em>Diamond grip.</em>",
+    title:"Acids, caustics, solvents.<br><em>Neoprene, diamond grip.</em>",
     lead:"Enhanced neoprene, flock lined, with a diamond grip: EN ISO 374-1 Type A across six groups, virus rated, SealTrace™ seams and a supple build that stays flexible through repeated handling.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["BKLOPT", "Chemicals"], ["VIRUS", "EN 374-5"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A BKLOPT · EN 374-5 Virus · EN 388 2111X · CE Cat III",
-    accent:[70, 70, 80], cuff:{ base:"#1e1e1e", hem:"#1c1c1c" }, url:"https://stegosafety.com/product/vynox-shield-st-5530/",
-    callouts:[ { x:0.56, y:0.28, title:"Neoprene shield", text:"Acids, caustics, solvents." }, { x:0.62, y:0.4, title:"SealTrace™ seams", text:"No ingress at the joins." }, { x:0.42, y:0.11, title:"Diamond grip", text:"Holds when wet." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
+    accent:[233, 185, 42], cuff:{ base:"#212120", hem:"#312f2b" }, url:"https://stegosafety.com/product/vynox-shield-st-5530/",
+    callouts:[ { x:0.56, y:0.28, title:"Neoprene surface", text:"Acids, caustics, solvents." }, { x:0.42, y:0.11, title:"Diamond-grip fingers", text:"Holds when wet." }, { x:0.62, y:0.44, title:"Dipped seams", text:"SealTrace™: no ingress." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
 ];
 const DETAILS = {
   "1070": { desc:"Chemical resistant gloves, double-dipped in premium PVC on an interlock lining, EN ISO 374-1 Type B. The PVC limits absorption and migration of hazardous liquids during active use; SealTrace™ seam integrity blocks micro-pathways at transition zones; DryHold™ keeps the inside dry; the sandblast finish keeps control in wet, dry and oily chemical environments.",
@@ -194,6 +194,7 @@ const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLOR
 const techLogo = $('#techLogo');
 const TECH_LOGO = { '1070':'chemblock', '1080':'chemblock', '1085':'chemblock', '2018':'chemblock', '2020':'chemblock', '8089':'chemblock', '2021':'chemblock', '2022':'chemblock', '2023':'chemblock', '2024':'chemblock', '7500':'chemblock', '7505':'chemblock', '7510':'chemblock', '5530':'chemblock' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
+const AV = '?v=2.1.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
 
@@ -202,16 +203,34 @@ const IMG = { bare:null, glove:[null,null,null,null] };
 let EXT = null;
 const load = src => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.decoding = 'async'; i.src = src; });
 const ready = { bare:false, glove:Array(GLOVES.length).fill(false) };
-fetch('assets/hand/extents.json').then(r => r.json()).then(j => { EXT = j; requestRender(); });
+/* a glove that arrives after its chapter has started is pulled on when it lands (0.45 s), never shown as a bare hand with that glove's callouts */
+const arriveAt = Array(GLOVES.length).fill(0); let enteredGi = -1, enteredAt = 0;
+const arrival = gi => { if (gi < 0) return 1; if (!ready.glove[gi]) return 0; if (arriveAt[gi] <= enteredAt) return 1;
+  const k = clamp((performance.now() - arriveAt[gi]) / 450); if (k < 1) requestRender(true); return k >= 1 ? 1 : easeOut(k); };
+fetch('assets/hand/extents.json' + AV, AV ? { credentials:'same-origin', mode:'cors' } : undefined).then(r => r.json()).then(j => { EXT = j; requestRender(); });
 load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; requestRender(); });
-const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
-const bgNear = ch => {                                   // series pages: bg photos carry data-src / data-src-m and load near the chapter
-  const m = window.innerWidth <= 900;
-  bgs.forEach((b, i) => { const s = m ? (b.dataset.srcM || b.dataset.src) : b.dataset.src; if (!s) return;
-    if (Math.abs(i - Math.max(0, ch)) <= 1) { if (b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } } });
+const loadGlove = i => { if (i < 0 || i >= N || IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp` + AV).then(img => (img.decode ? img.decode().catch(() => {}).then(() => img) : img)).then(img => { IMG.glove[i] = img; ready.glove[i] = true; arriveAt[i] = performance.now(); requestRender(); }).catch(() => { delete loadGlove.pending[i]; }); };
+/* series pages: bg photos carry data-src / data-src-m. Each is fetched and decoded once (bgReady), then applied; the near chapters
+   go first, then the whole page in order, so a fast scroll never meets an empty backdrop or a bare hand where a glove belongs. */
+const bgSrc = b => (window.innerWidth <= 900 ? (b.dataset.srcM || b.dataset.src) : b.dataset.src) || '';
+const bgReady = {};
+const ensureBg = i => { const b = bgs[i]; if (!b) return Promise.resolve(); const s = bgSrc(b); if (!s) return Promise.resolve();
+  if (bgReady[s]) return bgReady[s];
+  return bgReady[s] = load(s).then(img => (img.decode ? img.decode().catch(() => {}) : Promise.resolve())).then(() => { if (bgSrc(b) === s && b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } }).catch(() => { delete bgReady[s]; });
 };
+const bgNear = ch => { const c = Math.max(0, Math.min(N - 1, ch));
+  bgs.forEach((b, i) => { if (!b.dataset.src) return; const near = Math.abs(i - c) <= 1; b.style.display = near ? '' : 'none'; if (near) ensureBg(i); }); };
+const warmBg = i => new Promise(res => { const b = bgs[i]; const s = b && bgSrc(b); if (!s || bgReady[s]) return res(); const im = new Image(); im.onload = im.onerror = () => res(); im.src = s; });   // HTTP cache only, nothing held decoded
 const loadNear = ch => { for (let k = Math.max(0, ch - 1); k <= Math.min(N - 1, Math.max(0, ch) + 2); k++) loadGlove(k); bgNear(ch); };
 loadNear(0);
+let preloadStarted = false;
+const preloadAll = () => {                              // the rest of the page, in order, one at a time, after the first glove is on screen
+  if (preloadStarted) return; preloadStarted = true;
+  let k = 0; const order = []; for (let i = Math.max(0, currentChapter); i < N; i++) order.push(i); for (let i = 0; i < Math.max(0, currentChapter); i++) order.push(i);
+  const step = () => { if (k >= order.length) return; const i = order[k++]; loadGlove(i); warmBg(i).then(() => setTimeout(step, 40)); };
+  step();
+};
+(window.requestIdleCallback || (f => setTimeout(f, 1200)))(preloadAll);
 
 /* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
    v 0.00–0.22  the mark and the words arrive (small, slow)
@@ -266,6 +285,7 @@ let unitPx = 1;
 let target = 0, t = 0, raf = 0, lastKey = '';
 let aimX = 0, aimY = 0, px = 0, py = 0, lastTime = 0, idle = 0, lastDt = 16;
 let currentChapter = -2;          // -1 intro, 0..N-1 gloves, N outro
+let hashTimer = 0;
 let copyProgress = -1, outroProgress = -1;
 const copyChildren = [...copy.querySelectorAll('.copy-inner > *')];
 const outroChildren = [...outro.querySelectorAll('.outro-inner > *')];
@@ -317,6 +337,7 @@ function render() {
   // background parallax: slow drift with t, pointer counter-move
   const drift = t * 1.1;
   bgs.forEach((b, i) => {
+    if (b.style.display === 'none') return;        // series pages: a far backdrop, out of the layer tree
     const local = t - 1 - i;                       // -1..1 around the chapter
     b.style.transform = `translate3d(${px * 14}px, ${(-drift * 1.6 + local * 2.5) + py * 10}px, 0) scale(${1.06 + Math.abs(local) * 0.02})`;
     b.classList.toggle('on', gi === i);
@@ -324,11 +345,14 @@ function render() {
   bignum.style.transform = `translate3d(${px * -18}px, ${(-(t % 1) * 60) + py * -8}px, 0)`;
 
   // canvas
-  drawHand(gi, gp);
+  if (gi !== enteredGi) { enteredGi = gi; enteredAt = performance.now(); }
+  const af = arrival(gi);
+  const gpd = af >= 1 ? gp : { p: gp.p * af, dir: 'on' };
+  drawHand(gi, gpd);
 
   // chapter DOM updates
-  setChapter(seg, gp);
-  updateCallouts(seg);
+  setChapter(seg, gp, af);
+  updateCallouts(seg, af);
 
   // rail
   const fill = clamp((t - I0) / N);
@@ -414,7 +438,7 @@ function drawHand(gi, gp) {
 }
 
 /* ---------- DOM: chapter copy, accent, status ---------- */
-function setChapter(seg, gp) {
+function setChapter(seg, gp, af = 1) {
   const ch = seg.phase === 'intro' ? -1 : seg.phase === 'outro' ? N : seg.i;
   if (ch !== currentChapter) {
     currentChapter = ch;
@@ -425,7 +449,7 @@ function setChapter(seg, gp) {
     const dock = $('#dock'), chip = chips[ch];                          // a long dock (series pages) follows the lit chip; no-op when every chip fits
     if (dock && chip && dock.scrollWidth > dock.clientWidth + 1) dock.scrollTo({ left: chip.offsetLeft - (dock.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' });
     loadNear(ch); cards.forEach((c, i) => c.classList.toggle('on', i === ch));
-    if (EXPLORE && !deepLinking) { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) history.replaceState(null, '', want || location.pathname + location.search); }
+    if (EXPLORE && !deepLinking) { clearTimeout(hashTimer); hashTimer = setTimeout(() => { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) { try { history.replaceState(null, '', want || location.pathname + location.search); } catch (e) {} } }, 700); }
     bignum.textContent = String(Math.max(1, ch + 1)).padStart(2, '0');
     $('#railTop').textContent = String(Math.max(0, ch + 1)).padStart(2, '0');
     if (g) { techLogo.src = `assets/tech/${TECH_LOGO[g.code]}.webp`; techLogo.alt = `${g.platform} technology`; techLogo.classList.add('on'); }
@@ -437,7 +461,7 @@ function setChapter(seg, gp) {
       $('#lead').textContent = g.lead;
       $('#ratings').innerHTML = g.ratings.map(([v, l]) => `<div class="rating"><b>${v}</b><span>${l}</span></div>`).join('');
       $('#standards').textContent = g.standards;
-      const si = $('#stdIcons'); si.src = `assets/std/st-${g.code}.webp`; si.alt = g.standards; si.style.display = '';
+      const si = $('#stdIcons'); si.src = `assets/std/st-${g.code}.webp` + AV; si.alt = g.standards; si.style.display = '';
       $('#actions').innerHTML = `<button class="btn btn-primary btn-tiny" type="button" data-details="${ch}">Glove details</button><a class="btn btn-ghost btn-tiny" href="https://stegosafety.com/product/st-${g.code}/" target="_blank" rel="noopener">Visit ST-${g.code}</a>`;
       $('#announce').textContent = `${g.name}, ST-${g.code}. ${g.category.toLowerCase()}. ${g.lead}`;
       buildCallouts(g);
@@ -481,7 +505,7 @@ function setChapter(seg, gp) {
   // fit status + glow
   let label = 'YOUR HAND', cls = '';
   if (seg.phase === 'chapter') {
-    if (gp.dir === 'on') { label = 'PULLING ON'; cls = 'fitting'; }
+    if (gp.dir === 'on' || af < 1) { label = 'PULLING ON'; cls = 'fitting'; }
     else if (gp.dir === 'hold') { label = `ST-${GLOVES[seg.i].code} FITTED`; cls = 'done'; }
     else { label = 'TAKING OFF'; cls = 'fitting'; }
   } else if (seg.phase === 'outro') label = 'TRIAL PAIRS AVAILABLE';
@@ -569,7 +593,7 @@ function layoutCallouts() {
     });
   });
 }
-function updateCallouts(seg) {
+function updateCallouts(seg, af = 1) {
   if (!calloutNodes.length) return;
   calloutNodes.forEach((n, i) => {
     const start = CO_START + i * CO_STEP;
@@ -577,7 +601,7 @@ function updateCallouts(seg) {
     if (seg.phase === 'chapter') {
       const inA = easeOut(clamp((seg.u - start) / CO_FADE));
       const outA = 1 - clamp((seg.u - (OFF_START - 0.06)) / 0.05);
-      a = Math.min(inA, outA);
+      a = Math.min(inA, outA, af >= 1 ? 1 : 0);
     }
     if (n.a === a) return; n.a = a;
     n.grp.style.opacity = String(a);
@@ -593,11 +617,11 @@ function updateCallouts(seg) {
 const dlg = $('#details');
 function openDetails(i) {
   const g = GLOVES[i], d = DETAILS[g.code];
-  $('#dImage').src = `assets/pack/st-${g.code}.webp`; $('#dImage').alt = `STEGO ST-${g.code} ${g.name}`;
+  $('#dImage').src = `assets/pack/st-${g.code}.webp` + AV; $('#dImage').alt = `STEGO ST-${g.code} ${g.name}`;
   $('#dNo').textContent = String(i + 1).padStart(2, '0'); $('#dPlatform').textContent = `${g.platform}  ·  ${g.category}`;
   $('#dTitle').innerHTML = `ST-${g.code}<br>${g.name}`; $('#dDesc').textContent = d.desc;
   $('#dTech').innerHTML = d.tech.map(([t, x]) => `<li><b>${t}</b> — ${x}</li>`).join('');
-  $('#dStdImg').src = `assets/std/st-${g.code}.webp`; $('#dStdImg').alt = g.standards;
+  $('#dStdImg').src = `assets/std/st-${g.code}.webp` + AV; $('#dStdImg').alt = g.standards;
   $('#dStd').innerHTML = d.std.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
   $('#dMeta').innerHTML = d.meta.map(([k, v]) => `<span>${k}: <b>${v}</b></span>`).join('');
   $('#dLink').href = g.url || `https://stegosafety.com/product/st-${g.code}/`;

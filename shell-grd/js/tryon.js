@@ -5,19 +5,19 @@
 /* ---------- content (ratings verified against the STEGO sell sheets, 2024-25) ---------- */
 const GLOVES = [
   { code:"9060", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · HI-VIS",
-    title:"Knocks and scrapes.<br><em>Seen coming.</em>",
-    lead:"The entry Shell: ANSI/ISEA 138 Level 2 impact with ShockShell™ TPR over the knuckles, ImpactFlow™ geometry that sends oblique blows away, A2 cut, a sandy nitrile palm, hi-vis throughout.",
+    title:"Knocks and scrapes.<br><em>Level 2 impact, hi-vis.</em>",
+    lead:"Pipe, tools, falling parts. ANSI/ISEA 138 Level 2 impact with ShockShell™ TPR over the knuckles and fingers, A2 cut, a sandy nitrile palm, hi-vis throughout.",
     ratings:[["2", "Impact 138"], ["A2", "ANSI cut"], ["6", "Abrasion"], ["3", "Puncture"]],
     standards:"EN 388:2016 4X42BP · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
-    accent:[240, 130, 30], cuff:{ base:"#a6c759", hem:"#433b36" },
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"ImpactFlow™", text:"Redirects oblique hits." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." }, { x:0.38, y:0.42, title:"Hi-vis liner", text:"Seen in low light." } ] },
+    accent:[240, 130, 30], cuff:{ base:"#4d5046", hem:"#a87551" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.6, y:0.12, title:"Finger guards", text:"Angled: ImpactFlow™." }, { x:0.42, y:0.11, title:"Sandy nitrile palm", text:"Grip, wet or dry." }, { x:0.38, y:0.42, title:"Hi-vis knit", text:"Seen in low light." } ] },
   { code:"9065", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT",
-    title:"Blows and blades.<br><em>Thumb reinforced.</em>",
-    lead:"A5 cut under Level 2 impact: a hi-vis TEGX® TexArn™ liner, ShockShell™ TPR on the back of the hand, a reinforced thumb crotch where gloves fail first, a sandy nitrile palm.",
+    title:"Blows and blades.<br><em>Level 2 impact, A5 cut.</em>",
+    lead:"Heavy handling with sharp edges. A hi-vis TEGX® TexArn™ knit rated A5 cut under ShockShell™ TPR, a reinforced thumb crotch, a sandy nitrile palm.",
     ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X43EP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
     accent:[240, 160, 30], cuff:{ base:"#252519", hem:"#191715" }, url:"https://stegosafety.com/product/shell-series-st-9065/",
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ liner", text:"ANSI A5 cut." }, { x:0.33, y:0.34, title:"Reinforced thumb crotch", text:"Where gloves fail first." }, { x:0.42, y:0.11, title:"Sandy nitrile coating", text:"Wraps the fingertips." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ knit", text:"ANSI A5 cut." }, { x:0.33, y:0.34, title:"Reinforced thumb crotch", text:"Where gloves fail first." }, { x:0.5, y:0.73, title:"Hook-and-loop cuff", text:"Stays put." } ] },
   { code:"9075", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT",
     title:"Pinch points.<br><em>Oily pipe.</em>",
     lead:"Impact Level 2 over an A6 TEGX® liner, for rig and yard work where hands sit between steel. ShockShell™ TPR on the knuckles, a LiquiBlock™ nitrile palm, hi-vis guards, touchscreen fingertips.",
@@ -44,47 +44,47 @@ const GLOVES = [
     accent:[30, 110, 220], cuff:{ base:"#6a6760", hem:"#49372f" }, url:"https://stegosafety.com/product/shell-series-st-9070/",
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.56, y:0.2, title:"Full nitrile coat", text:"Hydrocarbons out." }, { x:0.42, y:0.11, title:"Sandy grip", text:"Holds when slick." }, { x:0.62, y:0.36, title:"TEGX® liner", text:"A7 cut underneath." } ] },
   { code:"9081", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · OIL",
-    title:"Heavy, sharp, oily.<br><em>Phone still works.</em>",
-    lead:"A7 cut and Level 2 impact for wet mechanical work: ImpactFlow™ TPR, a double-dipped smooth-and-sandy nitrile LiquiBlock™ coat, touchscreen-compatible fingertips.",
+    title:"Heavy, sharp and oily.<br><em>A7 under the TPR.</em>",
+    lead:"Wet mechanical work with impact risk. ANSI A7 cut and Level 2 impact, ImpactFlow™ TPR, a double-dipped smooth-and-sandy nitrile coat, touchscreen fingertips.",
     ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
     accent:[40, 110, 210], cuff:{ base:"#736d65", hem:"#705342" },
-    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ liner", text:"ANSI A7 cut." }, { x:0.56, y:0.2, title:"Double-dipped nitrile", text:"Fluid repellent." }, { x:0.6, y:0.09, title:"Touchscreen tips", text:"Works a phone." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ knit", text:"ANSI A7 cut." }, { x:0.56, y:0.2, title:"Double-dipped nitrile", text:"Fluid repellent." }, { x:0.6, y:0.09, title:"Touchscreen tips", text:"Works a phone." } ] },
   { code:"9082", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · COLD",
-    title:"Winter impact.<br><em>A7 under the warmth.</em>",
-    lead:"The 9081 built for the cold: CoreTherm™ insulation under the same A7 TexArn™ liner, ImpactFlow™ TPR, a double-dipped nitrile LiquiBlock™ coat that keeps the wet out.",
+    title:"Winter impact work.<br><em>A7, insulated.</em>",
+    lead:"Cold, wet, heavy handling. CoreTherm™ insulation under an A7 TexArn™ knit, ImpactFlow™ TPR over the back, a double-dipped nitrile coat that keeps the wet out.",
     ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["X1X", "EN 511 cold"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X1XXXX · EN 511:2006 X1X · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
     accent:[55, 140, 215], cuff:{ base:"#2c2623", hem:"#523225" },
-    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ liner", text:"ANSI A7 cut." }, { x:0.5, y:0.66, title:"CoreTherm™", text:"Warm in the cold." }, { x:0.56, y:0.2, title:"Double-dipped nitrile", text:"Wet stays out." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"TEGX® TexArn™ knit", text:"ANSI A7 cut." }, { x:0.56, y:0.2, title:"Double-dipped nitrile", text:"Wet stays out." }, { x:0.5, y:0.73, title:"Insulated cuff", text:"CoreTherm™ warmth." } ] },
   { code:"9045", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ANTI-VIBRATION",
-    title:"Impact tools.<br><em>Vibration damped.</em>",
-    lead:"Level 2 impact with TorqueGuard™ palm dampening for breakers and grinders: EN ISO 10819 rated, TaskCore™ coverage mapped to the exposure, an anti-slip diamond palm.",
+    title:"Breakers and grinders.<br><em>Impact and vibration.</em>",
+    lead:"Impact tools in the hand for hours. Level 2 impact with TorqueGuard™ palm dampening rated to EN ISO 10819, coverage mapped to the exposure, an anti-slip diamond palm.",
     ratings:[["2", "Impact 138"], ["0.62", "Vib. TRM"], ["0.55", "Vib. TRH"], ["4", "Abrasion"]],
     standards:"EN 388:2016 4131XP · EN ISO 10819:2013 TRM 0.62 · TRH 0.55 · ANSI/ISEA 138 Level 2 · ANSI/ISEA 105 · CE Cat II",
     accent:[205, 50, 50], cuff:{ base:"#302426", hem:"#c72525" }, url:"https://stegosafety.com/product/shell-series-st-9045/",
-    callouts:[ { x:0.55, y:0.27, title:"Multi-layer TPR", text:"Level 2 impact." }, { x:0.62, y:0.4, title:"TaskCore™", text:"Mapped to the exposure." }, { x:0.33, y:0.34, title:"TorqueGuard™ palm", text:"Damps the shock." }, { x:0.42, y:0.11, title:"Diamond palm", text:"Grip wet, dry, oily." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"Multi-layer TPR", text:"Level 2 impact." }, { x:0.62, y:0.4, title:"Padded back", text:"TaskCore™ coverage." }, { x:0.33, y:0.34, title:"Thumb and palm pads", text:"TorqueGuard™ damping." }, { x:0.5, y:0.73, title:"Hook-and-loop cuff", text:"Stays put." } ] },
   { code:"8055", name:"Shell Series", platform:"SHELL GRD™", category:"ANTI-VIBRATION · CUT",
-    title:"Pneumatic tools.<br><em>Numbness held off.</em>",
-    lead:"The anti-vibration knit: air cushion shells in chloroprene rubber over the palm and fingers, TorqueGuard™ dampening rated to EN ISO 10819, A3 cut and abrasion 4 in the liner.",
+    title:"Pneumatic tools.<br><em>Vibration damped.</em>",
+    lead:"Drills, breakers, grinders. Air cushion shells in chloroprene rubber over palm and fingers, TorqueGuard™ dampening rated to EN ISO 10819, A3 cut and abrasion 4 in the knit.",
     ratings:[["0.62", "Vib. TRM"], ["0.55", "Vib. TRH"], ["A3", "ANSI cut"], ["4", "Abrasion"]],
     standards:"EN 388:2016 4343X · EN ISO 10819:2013 TRM 0.62 · TRH 0.55 · ANSI/ISEA 105 · CE Cat II",
-    accent:[90, 95, 105], cuff:{ base:"#34282b", hem:"#aa5e44" },
-    callouts:[ { x:0.42, y:0.11, title:"Air cushion shells", text:"Chloroprene, on the fingers." }, { x:0.33, y:0.34, title:"TorqueGuard™ palm", text:"Damps the shock." }, { x:0.62, y:0.4, title:"Reinforced liner", text:"A3 cut, abrasion 4." }, { x:0.5, y:0.73, title:"Knit cuff", text:"Snug at the wrist." } ] },
+    accent:[227, 49, 47], cuff:{ base:"#34282b", hem:"#aa5e44" },
+    callouts:[ { x:0.42, y:0.11, title:"Cushioned fingers", text:"Chloroprene air shells." }, { x:0.33, y:0.34, title:"Palm pads", text:"TorqueGuard™ damping." }, { x:0.62, y:0.4, title:"Reinforced knit", text:"A3 cut, abrasion 4." }, { x:0.38, y:0.42, title:"Vibration control design", text:"Less hand fatigue." } ] },
   { code:"8056", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ANTI-VIBRATION",
     title:"Breakers and grinders.<br><em>Less shake.</em>",
     lead:"The anti-vibration Shell. TorqueGuard™ rubber palm pads dampen the shock and torque from breakers, grinders and impact tools; ShockShell™ guards take the knocks; an A5 cut liner underneath.",
     ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["E", "EN 388 cut"], ["0.86", "Vib. TRM"]],
     standards:"EN 388:2016 4543EP · EN 407:2020 X1XXXX · EN ISO 10819:2013 TRM 0.86 · TRH 0.59 · ANSI/ISEA 105 + 138 · CE Cat II",
-    accent:[70, 70, 80], cuff:{ base:"#201c1b", hem:"#130c09" },
+    accent:[227, 49, 47], cuff:{ base:"#201c1b", hem:"#130c09" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ guards", text:"Absorb the hit." }, { x:0.24, y:0.4, title:"TorqueGuard™", text:"Pads under the palm." }, { x:0.6, y:0.14, title:"Padded fingers", text:"Shock stays in the tool." }, { x:0.62, y:0.36, title:"High-cut liner", text:"A5 underneath." } ] },
   { code:"5045", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH · LEATHER",
-    title:"Arc flash, 44 cal.<br><em>Goatskin outside.</em>",
-    lead:"Premium grain goatskin over a TEGX® TexArn™ 360° para-aramid liner: arc-rated CAT 4 at 44 cal/cm², NFPA 70E compliant, A5 cut, SHELL™ GRD TPR across the back.",
+    title:"Arc flash, 44 cal/cm².<br><em>Goatskin, A5 cut.</em>",
+    lead:"Live electrical work in heat and sparks. Premium grain goatskin over a TEGX® TexArn™ para-aramid liner: arc-rated CAT 4, NFPA 70E compliant, SHELL™ GRD TPR across the back.",
     ratings:[["CAT 4", "Arc rated"], ["A5", "ANSI cut"], ["4", "Abrasion"], ["4", "Puncture"]],
     standards:"EN 388:2016 3X43E · EN 407:2020 X1XXXX · ANSI/ISEA 105 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
-    accent:[240, 140, 50], cuff:{ base:"#b2b2b2", hem:"#876149" },
-    callouts:[ { x:0.55, y:0.27, title:"SHELL™ GRD TPR", text:"Mapped back-of-hand cover." }, { x:0.62, y:0.4, title:"Para-aramid liner", text:"Arc flash, 44 cal/cm²." }, { x:0.42, y:0.11, title:"Grain goatskin", text:"Supple, durable." }, { x:0.33, y:0.34, title:"TEGX® cut layer", text:"A5 across the palm." } ] },
+    accent:[240, 140, 50], cuff:{ base:"#bababa", hem:"#906d55" },
+    callouts:[ { x:0.55, y:0.27, title:"SHELL™ GRD TPR", text:"Mapped back-of-hand cover." }, { x:0.62, y:0.4, title:"Grain goatskin", text:"Supple, heat stable." }, { x:0.33, y:0.34, title:"Para-aramid liner", text:"Arc flash, 44 cal/cm²." }, { x:0.42, y:0.11, title:"Enhanced grip control", text:"Dry and light-oily surfaces." } ] },
   { code:"9050", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH",
     title:"Arc, heat, impact.<br><em>One glove.</em>",
     lead:"Grain goatskin on a TEGX® dual layer, arc-rated CAT 4 at 44 cal/cm². FlexSpine™ TPR across the back, A5 cut, for switchgear, welding bays and heavy lifts where the hazards stack.",
@@ -93,33 +93,33 @@ const GLOVES = [
     accent:[230, 140, 30], cuff:{ base:"#7b7984", hem:"#704c36" },
     callouts:[ { x:0.63, y:0.17, title:"FlexSpine™ guards", text:"Bend with the fingers." }, { x:0.38, y:0.42, title:"Goatskin leather", text:"Heat and wear." }, { x:0.62, y:0.34, title:"TexArn™ layer", text:"A5 cut, arc rated." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"5046", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH · LEATHER",
-    title:"Arc flash, 44 cal.<br><em>Buffalo hide.</em>",
-    lead:"Premium buffalo leather with a water-resistant finish over a TEGX® TexArn™ 360° para-aramid liner: arc-rated CAT 4 at 44 cal/cm², A7 cut, grip that holds wet, dry and light-oily.",
+    title:"Arc flash, 44 cal/cm².<br><em>Buffalo hide, A7 cut.</em>",
+    lead:"Live electrical work in the wet. Premium buffalo leather with a water-resistant finish over a TEGX® para-aramid liner: arc-rated CAT 4, A7 cut, grip that holds wet, dry and light-oily.",
     ratings:[["CAT 4", "Arc rated"], ["A7", "ANSI cut"], ["4", "Abrasion"], ["4", "Puncture"]],
     standards:"EN 388:2016 3X43F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
-    accent:[205, 40, 40], cuff:{ base:"#bababa", hem:"#876247" }, url:"https://stegosafety.com/product/shell-series-st-5046/",
-    callouts:[ { x:0.55, y:0.27, title:"SHELL™ GRD TPR", text:"Mapped back-of-hand cover." }, { x:0.62, y:0.4, title:"Para-aramid liner", text:"Arc flash, 44 cal/cm²." }, { x:0.42, y:0.11, title:"Buffalo leather", text:"Water-resistant finish." }, { x:0.33, y:0.34, title:"TEGX® cut layer", text:"A7 across the palm." } ] },
+    accent:[205, 40, 40], cuff:{ base:"#bdbdbd", hem:"#a8918b" }, url:"https://stegosafety.com/product/shell-series-st-5046/",
+    callouts:[ { x:0.55, y:0.27, title:"SHELL™ GRD TPR", text:"Mapped back-of-hand cover." }, { x:0.62, y:0.4, title:"Buffalo leather", text:"Durable, abrasion resistant." }, { x:0.33, y:0.34, title:"Para-aramid liner", text:"Arc flash, 44 cal/cm²." }, { x:0.42, y:0.11, title:"Water-resistant finish", text:"Grip wet, dry, light oil." } ] },
   { code:"9051", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ARC FLASH · LEATHER",
-    title:"Three hazards.<br><em>One leather glove.</em>",
-    lead:"Level 2 impact, A7 cut and CAT 4 arc flash in water-resistant buffalo leather: ShockShell™ TPR over the knuckles, a TEGX® arc-rated liner, DryHold™ to keep the inside dry.",
+    title:"Impact, cut and arc flash.<br><em>One leather glove.</em>",
+    lead:"Heavy electrical and mechanical work together. Level 2 impact, A7 cut and CAT 4 arc flash in water-resistant buffalo leather, ShockShell™ TPR over the knuckles.",
     ratings:[["2", "Impact 138"], ["CAT 4", "Arc rated"], ["A7", "ANSI cut"], ["4", "Abrasion"]],
     standards:"EN 388:2016 3X43FP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · NFPA 70E · ATPV 44 cal/cm² · CE Cat III",
-    accent:[215, 45, 45], cuff:{ base:"#c1c0be", hem:"#81573c" },
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TEGX® liner", text:"Arc flash, A7 cut." }, { x:0.42, y:0.11, title:"Buffalo leather", text:"Water-resistant grip." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
+    accent:[215, 45, 45], cuff:{ base:"#c8c4c3", hem:"#845a40" },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"Buffalo leather", text:"Water-resistant grip." }, { x:0.33, y:0.34, title:"TEGX® liner inside", text:"Arc flash, A7 cut." }, { x:0.3, y:0.2, title:"DryHold™", text:"Dry inside, less slip." } ] },
   { code:"9040", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · MECHANIC",
-    title:"Heavy feel, light glove.<br><em>A4 inside.</em>",
-    lead:"A multi-fabric mechanic’s glove with Level 2 impact: ImpactFlow™ TPR, an aramid liner rated A4 cut, a synthetic leather palm, hi-vis TPR and touchscreen fingertips.",
+    title:"Mechanic’s work, impact risk.<br><em>A4 inside.</em>",
+    lead:"Tools, pipe, heavy parts. A multi-fabric mechanic’s glove with Level 2 impact: ImpactFlow™ TPR, an aramid liner rated A4 cut, a synthetic leather palm, touchscreen fingertips.",
     ratings:[["2", "Impact 138"], ["A4", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"]],
     standards:"EN 388:2016 3X42DP · EN 407:2020 X1XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
     accent:[240, 110, 30], cuff:{ base:"#d83f1e", hem:"#e55221" }, url:"https://stegosafety.com/product/shell-series-st-9040/",
-    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"Aramid liner", text:"ANSI A4 cut." }, { x:0.6, y:0.09, title:"Touchscreen tips", text:"Works a phone." }, { x:0.38, y:0.42, title:"Hi-vis TPR", text:"Seen in low light." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ImpactFlow™ TPR", text:"Redirects oblique hits." }, { x:0.62, y:0.4, title:"Multi-fabric back", text:"Aramid liner, A4 cut." }, { x:0.6, y:0.09, title:"Touchscreen tips", text:"Works a phone." }, { x:0.5, y:0.73, title:"Hook-and-loop cuff", text:"Stays put." } ] },
   { code:"9083", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · HI-VIS",
-    title:"Mechanical work, all hazards.<br><em>One glove.</em>",
-    lead:"A5 cut, Level 2 impact, abrasion 6 and Level 3 contact heat in a light hi-vis build: ShockShell™ TPR, TaskCore™ mapping, a silicone-grip synthetic leather palm with Kevlar®-stitched seams.",
+    title:"Impact, cut, heat and oil.<br><em>A5, Level 2.</em>",
+    lead:"Demanding mechanical work. A5 cut, Level 2 impact and abrasion 6 in a light hi-vis build: ShockShell™ TPR, a silicone-grip synthetic leather palm with Kevlar®-stitched seams.",
     ratings:[["2", "Impact 138"], ["A5", "ANSI cut"], ["6", "Abrasion"], ["5", "Puncture"]],
     standards:"EN 388:2016 4X43EP · EN 407:2020 X2XXXX · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
     accent:[40, 110, 215], cuff:{ base:"#111216", hem:"#6c4d38" },
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"TaskCore™", text:"Mapped to the exposure." }, { x:0.42, y:0.11, title:"Silicone grip palm", text:"Wet and oily traction." }, { x:0.33, y:0.34, title:"Reinforced thumb crotch", text:"Where gloves fail first." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"Hi-vis back", text:"Seen in low light." }, { x:0.33, y:0.34, title:"Reinforced thumb crotch", text:"Where gloves fail first." }, { x:0.5, y:0.73, title:"Hook-and-loop cuff", text:"Stays put." } ] },
   { code:"9085", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · HI-VIS",
     title:"Wet steel.<br><em>Seen and held.</em>",
     lead:"Hi-vis Shell with an anti-slip silicone palm for wet, dry and oily grip, A7 cut, abrasion 6, puncture 5 and ShockShell™ guards. For stone, precast and steel yards after rain.",
@@ -135,12 +135,12 @@ const GLOVES = [
     accent:[210, 220, 40], cuff:{ base:"#131313", hem:"#3d1f13" },
     callouts:[ { x:0.55, y:0.27, title:"Level 3 TPR", text:"Heaviest hits." }, { x:0.62, y:0.4, title:"ShockShell™ zones", text:"Absorb the energy." }, { x:0.42, y:0.11, title:"High-performance grip", text:"Grip and wear." }, { x:0.5, y:0.66, title:"DryHold™", text:"Dry inside." } ] },
   { code:"9095", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT · COLD",
-    title:"Frozen site.<br><em>Impact, cut, warmth.</em>",
+    title:"Frozen site, heavy work.<br><em>Impact, cut, warmth.</em>",
     lead:"The insulated Shell: 3M™ Thinsulate™ under a water- and oil-resistant membrane, ShockShell™ TPR, A7 cut, EN 511 cold rated, a silicone-grip palm with reinforced seams.",
     ratings:[["2", "Impact 138"], ["A7", "ANSI cut"], ["6", "Abrasion"], ["121", "EN 511 cold"]],
     standards:"EN 388:2016 4X44FP · EN 407:2020 X2XXXX · EN 511:2006 121 · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
     accent:[215, 40, 40], cuff:{ base:"#141313", hem:"#13110f" },
-    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"3M™ Thinsulate™", text:"Warm in the cold." }, { x:0.56, y:0.2, title:"Water-resistant membrane", text:"Wind and wet out." }, { x:0.42, y:0.11, title:"Silicone grip palm", text:"Wet and oily traction." } ] },
+    callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.62, y:0.4, title:"Insulated back", text:"3M™ Thinsulate™." }, { x:0.56, y:0.2, title:"Water-resistant shell", text:"Wind and wet out." }, { x:0.5, y:0.73, title:"Hook-and-loop cuff", text:"Stays put." } ] },
 ];
 const DETAILS = {
   "9060": { desc:"Impact-resistant gloves with A2 cut protection, SHELL™ GRD, high abrasion resistance and a sandy nitrile grip. The Impact-Balanced Design dissipates impact stress while keeping flexibility, ShockShell™ compressive TPR zones absorb vertical impact energy, ImpactFlow™ angled geometry redirects oblique impacts away from vulnerable areas, and the high-visibility liner and TPR improve hand awareness in low-light work.",
@@ -249,6 +249,7 @@ const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLOR
 const techLogo = $('#techLogo');
 const TECH_LOGO = { '9060':'shell-grd', '9065':'shell-grd', '9075':'shell-grd', '9080':'shell-grd', '9070':'shell-grd', '9081':'shell-grd', '9082':'shell-grd', '9045':'shell-grd', '8055':'shell-grd', '8056':'shell-grd', '5045':'shell-grd', '9050':'shell-grd', '5046':'shell-grd', '9051':'shell-grd', '9040':'shell-grd', '9083':'shell-grd', '9085':'shell-grd', '9086':'shell-grd', '9095':'shell-grd' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
+const AV = '?v=2.1.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
 
@@ -257,16 +258,34 @@ const IMG = { bare:null, glove:[null,null,null,null] };
 let EXT = null;
 const load = src => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.decoding = 'async'; i.src = src; });
 const ready = { bare:false, glove:Array(GLOVES.length).fill(false) };
-fetch('assets/hand/extents.json').then(r => r.json()).then(j => { EXT = j; requestRender(); });
+/* a glove that arrives after its chapter has started is pulled on when it lands (0.45 s), never shown as a bare hand with that glove's callouts */
+const arriveAt = Array(GLOVES.length).fill(0); let enteredGi = -1, enteredAt = 0;
+const arrival = gi => { if (gi < 0) return 1; if (!ready.glove[gi]) return 0; if (arriveAt[gi] <= enteredAt) return 1;
+  const k = clamp((performance.now() - arriveAt[gi]) / 450); if (k < 1) requestRender(true); return k >= 1 ? 1 : easeOut(k); };
+fetch('assets/hand/extents.json' + AV, AV ? { credentials:'same-origin', mode:'cors' } : undefined).then(r => r.json()).then(j => { EXT = j; requestRender(); });
 load('assets/hand/bare.webp').then(i => { IMG.bare = i; ready.bare = true; requestRender(); });
-const loadGlove = i => { if (IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp`).then(img => { IMG.glove[i] = img; ready.glove[i] = true; requestRender(); }); };
-const bgNear = ch => {                                   // series pages: bg photos carry data-src / data-src-m and load near the chapter
-  const m = window.innerWidth <= 900;
-  bgs.forEach((b, i) => { const s = m ? (b.dataset.srcM || b.dataset.src) : b.dataset.src; if (!s) return;
-    if (Math.abs(i - Math.max(0, ch)) <= 1) { if (b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } } });
+const loadGlove = i => { if (i < 0 || i >= N || IMG.glove[i] || loadGlove.pending?.[i]) return; (loadGlove.pending ||= {})[i] = true; load(`assets/hand/st-${GLOVES[i].code}.webp` + AV).then(img => (img.decode ? img.decode().catch(() => {}).then(() => img) : img)).then(img => { IMG.glove[i] = img; ready.glove[i] = true; arriveAt[i] = performance.now(); requestRender(); }).catch(() => { delete loadGlove.pending[i]; }); };
+/* series pages: bg photos carry data-src / data-src-m. Each is fetched and decoded once (bgReady), then applied; the near chapters
+   go first, then the whole page in order, so a fast scroll never meets an empty backdrop or a bare hand where a glove belongs. */
+const bgSrc = b => (window.innerWidth <= 900 ? (b.dataset.srcM || b.dataset.src) : b.dataset.src) || '';
+const bgReady = {};
+const ensureBg = i => { const b = bgs[i]; if (!b) return Promise.resolve(); const s = bgSrc(b); if (!s) return Promise.resolve();
+  if (bgReady[s]) return bgReady[s];
+  return bgReady[s] = load(s).then(img => (img.decode ? img.decode().catch(() => {}) : Promise.resolve())).then(() => { if (bgSrc(b) === s && b.dataset.on !== s) { b.dataset.on = s; b.style.backgroundImage = `url(${s})`; } }).catch(() => { delete bgReady[s]; });
 };
+const bgNear = ch => { const c = Math.max(0, Math.min(N - 1, ch));
+  bgs.forEach((b, i) => { if (!b.dataset.src) return; const near = Math.abs(i - c) <= 1; b.style.display = near ? '' : 'none'; if (near) ensureBg(i); }); };
+const warmBg = i => new Promise(res => { const b = bgs[i]; const s = b && bgSrc(b); if (!s || bgReady[s]) return res(); const im = new Image(); im.onload = im.onerror = () => res(); im.src = s; });   // HTTP cache only, nothing held decoded
 const loadNear = ch => { for (let k = Math.max(0, ch - 1); k <= Math.min(N - 1, Math.max(0, ch) + 2); k++) loadGlove(k); bgNear(ch); };
 loadNear(0);
+let preloadStarted = false;
+const preloadAll = () => {                              // the rest of the page, in order, one at a time, after the first glove is on screen
+  if (preloadStarted) return; preloadStarted = true;
+  let k = 0; const order = []; for (let i = Math.max(0, currentChapter); i < N; i++) order.push(i); for (let i = 0; i < Math.max(0, currentChapter); i++) order.push(i);
+  const step = () => { if (k >= order.length) return; const i = order[k++]; loadGlove(i); warmBg(i).then(() => setTimeout(step, 40)); };
+  step();
+};
+(window.requestIdleCallback || (f => setTimeout(f, 1200)))(preloadAll);
 
 /* ---------- category reveal: Netflix-style crash zoom (series pages; second intro unit) ----------
    v 0.00–0.22  the mark and the words arrive (small, slow)
@@ -321,6 +340,7 @@ let unitPx = 1;
 let target = 0, t = 0, raf = 0, lastKey = '';
 let aimX = 0, aimY = 0, px = 0, py = 0, lastTime = 0, idle = 0, lastDt = 16;
 let currentChapter = -2;          // -1 intro, 0..N-1 gloves, N outro
+let hashTimer = 0;
 let copyProgress = -1, outroProgress = -1;
 const copyChildren = [...copy.querySelectorAll('.copy-inner > *')];
 const outroChildren = [...outro.querySelectorAll('.outro-inner > *')];
@@ -372,6 +392,7 @@ function render() {
   // background parallax: slow drift with t, pointer counter-move
   const drift = t * 1.1;
   bgs.forEach((b, i) => {
+    if (b.style.display === 'none') return;        // series pages: a far backdrop, out of the layer tree
     const local = t - 1 - i;                       // -1..1 around the chapter
     b.style.transform = `translate3d(${px * 14}px, ${(-drift * 1.6 + local * 2.5) + py * 10}px, 0) scale(${1.06 + Math.abs(local) * 0.02})`;
     b.classList.toggle('on', gi === i);
@@ -379,11 +400,14 @@ function render() {
   bignum.style.transform = `translate3d(${px * -18}px, ${(-(t % 1) * 60) + py * -8}px, 0)`;
 
   // canvas
-  drawHand(gi, gp);
+  if (gi !== enteredGi) { enteredGi = gi; enteredAt = performance.now(); }
+  const af = arrival(gi);
+  const gpd = af >= 1 ? gp : { p: gp.p * af, dir: 'on' };
+  drawHand(gi, gpd);
 
   // chapter DOM updates
-  setChapter(seg, gp);
-  updateCallouts(seg);
+  setChapter(seg, gp, af);
+  updateCallouts(seg, af);
 
   // rail
   const fill = clamp((t - I0) / N);
@@ -469,7 +493,7 @@ function drawHand(gi, gp) {
 }
 
 /* ---------- DOM: chapter copy, accent, status ---------- */
-function setChapter(seg, gp) {
+function setChapter(seg, gp, af = 1) {
   const ch = seg.phase === 'intro' ? -1 : seg.phase === 'outro' ? N : seg.i;
   if (ch !== currentChapter) {
     currentChapter = ch;
@@ -480,7 +504,7 @@ function setChapter(seg, gp) {
     const dock = $('#dock'), chip = chips[ch];                          // a long dock (series pages) follows the lit chip; no-op when every chip fits
     if (dock && chip && dock.scrollWidth > dock.clientWidth + 1) dock.scrollTo({ left: chip.offsetLeft - (dock.clientWidth - chip.offsetWidth) / 2, behavior: 'smooth' });
     loadNear(ch); cards.forEach((c, i) => c.classList.toggle('on', i === ch));
-    if (EXPLORE && !deepLinking) { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) history.replaceState(null, '', want || location.pathname + location.search); }
+    if (EXPLORE && !deepLinking) { clearTimeout(hashTimer); hashTimer = setTimeout(() => { const want = g ? `#st-${g.code}` : ''; if (location.hash !== want) { try { history.replaceState(null, '', want || location.pathname + location.search); } catch (e) {} } }, 700); }
     bignum.textContent = String(Math.max(1, ch + 1)).padStart(2, '0');
     $('#railTop').textContent = String(Math.max(0, ch + 1)).padStart(2, '0');
     if (g) { techLogo.src = `assets/tech/${TECH_LOGO[g.code]}.webp`; techLogo.alt = `${g.platform} technology`; techLogo.classList.add('on'); }
@@ -492,7 +516,7 @@ function setChapter(seg, gp) {
       $('#lead').textContent = g.lead;
       $('#ratings').innerHTML = g.ratings.map(([v, l]) => `<div class="rating"><b>${v}</b><span>${l}</span></div>`).join('');
       $('#standards').textContent = g.standards;
-      const si = $('#stdIcons'); si.src = `assets/std/st-${g.code}.webp`; si.alt = g.standards; si.style.display = '';
+      const si = $('#stdIcons'); si.src = `assets/std/st-${g.code}.webp` + AV; si.alt = g.standards; si.style.display = '';
       $('#actions').innerHTML = `<button class="btn btn-primary btn-tiny" type="button" data-details="${ch}">Glove details</button><a class="btn btn-ghost btn-tiny" href="https://stegosafety.com/product/st-${g.code}/" target="_blank" rel="noopener">Visit ST-${g.code}</a>`;
       $('#announce').textContent = `${g.name}, ST-${g.code}. ${g.category.toLowerCase()}. ${g.lead}`;
       buildCallouts(g);
@@ -536,7 +560,7 @@ function setChapter(seg, gp) {
   // fit status + glow
   let label = 'YOUR HAND', cls = '';
   if (seg.phase === 'chapter') {
-    if (gp.dir === 'on') { label = 'PULLING ON'; cls = 'fitting'; }
+    if (gp.dir === 'on' || af < 1) { label = 'PULLING ON'; cls = 'fitting'; }
     else if (gp.dir === 'hold') { label = `ST-${GLOVES[seg.i].code} FITTED`; cls = 'done'; }
     else { label = 'TAKING OFF'; cls = 'fitting'; }
   } else if (seg.phase === 'outro') label = 'TRIAL PAIRS AVAILABLE';
@@ -624,7 +648,7 @@ function layoutCallouts() {
     });
   });
 }
-function updateCallouts(seg) {
+function updateCallouts(seg, af = 1) {
   if (!calloutNodes.length) return;
   calloutNodes.forEach((n, i) => {
     const start = CO_START + i * CO_STEP;
@@ -632,7 +656,7 @@ function updateCallouts(seg) {
     if (seg.phase === 'chapter') {
       const inA = easeOut(clamp((seg.u - start) / CO_FADE));
       const outA = 1 - clamp((seg.u - (OFF_START - 0.06)) / 0.05);
-      a = Math.min(inA, outA);
+      a = Math.min(inA, outA, af >= 1 ? 1 : 0);
     }
     if (n.a === a) return; n.a = a;
     n.grp.style.opacity = String(a);
@@ -648,11 +672,11 @@ function updateCallouts(seg) {
 const dlg = $('#details');
 function openDetails(i) {
   const g = GLOVES[i], d = DETAILS[g.code];
-  $('#dImage').src = `assets/pack/st-${g.code}.webp`; $('#dImage').alt = `STEGO ST-${g.code} ${g.name}`;
+  $('#dImage').src = `assets/pack/st-${g.code}.webp` + AV; $('#dImage').alt = `STEGO ST-${g.code} ${g.name}`;
   $('#dNo').textContent = String(i + 1).padStart(2, '0'); $('#dPlatform').textContent = `${g.platform}  ·  ${g.category}`;
   $('#dTitle').innerHTML = `ST-${g.code}<br>${g.name}`; $('#dDesc').textContent = d.desc;
   $('#dTech').innerHTML = d.tech.map(([t, x]) => `<li><b>${t}</b> — ${x}</li>`).join('');
-  $('#dStdImg').src = `assets/std/st-${g.code}.webp`; $('#dStdImg').alt = g.standards;
+  $('#dStdImg').src = `assets/std/st-${g.code}.webp` + AV; $('#dStdImg').alt = g.standards;
   $('#dStd').innerHTML = d.std.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
   $('#dMeta').innerHTML = d.meta.map(([k, v]) => `<span>${k}: <b>${v}</b></span>`).join('');
   $('#dLink').href = g.url || `https://stegosafety.com/product/st-${g.code}/`;
