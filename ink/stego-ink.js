@@ -1,5 +1,5 @@
-/*! STEGO Ink v1.2.0 — a paintball easter egg for the stegosafety.com homepage. One script, no markup, no dependencies.
-    The PAINT mark (bottom right) switches ink on. Every tap then fires a paintball from the mark that bursts where you tapped,
+/*! STEGO Ink v1.3.0 — a paintball easter egg for the stegosafety.com homepage. One script, no markup, no dependencies.
+    The PAINT mark (bottom right) switches ink on. Every tap then throws a paintball at the screen that bursts where you tapped,
     in the STEGO technology colours (TEGX, GRYX, SHELL GRD, ChemBlock, KYNO). The ink stays on the screen while the page scrolls;
     the water drop washes it off. Esc washes too. Reduced motion: instant splats, instant wash.
     Options on the script tag: data-colors="#hex,#hex,…". API: window.StegoInk.{on,off,splat(x,y),wash,active}. */
@@ -59,31 +59,26 @@
     for (var i = 0; i <= steps; i++) { var t = i / steps * 6.2832; var r = s.base * k * rim(s, t + s.rot); var px = s.x + Math.cos(t) * r, py = s.y + s.drip + Math.sin(t) * r; i ? ctx.lineTo(px, py) : ctx.moveTo(px, py); }
     ctx.closePath();
   }
-  // a paintball: fired from the mark, lands at the tap, then the splat is born
+  // a paintball: comes at the screen from the viewer, over the tap: big and soft up close, shrinking fast as it travels in, then it bursts
   function fire(x, y) {
     var color = COLORS[colorIndex++ % COLORS.length];
     if (reduce) { splats.push(makeSplat(x, y, color)); kick(); return; }
-    var r = btn.getBoundingClientRect(); var sx = r.left + r.width * 0.5, sy = r.top + r.height * 0.5;
-    var dist = Math.hypot(x - sx, y - sy); var dur = Math.min(0.32, 0.12 + dist / 2600);
-    balls.push({ sx: sx, sy: sy, x: x, y: y, color: color, born: performance.now(), dur: dur, arc: Math.min(90, dist * 0.18) });
+    balls.push({ x: x, y: y, color: color, born: performance.now(), dur: 0.22, r0: Math.min(W, H) * rnd(0.30, 0.38), r1: Math.min(W, H) * 0.035, wob: rnd(0, 6.28) });
     kick();
   }
   function draw() {
     ctx.setTransform(DPR, 0, 0, DPR, 0, 0); ctx.clearRect(0, 0, W, H);
     var now = performance.now(), live = false, front = -1;
-    // paintballs in flight
+    // paintballs coming in
     for (var b = balls.length - 1; b >= 0; b--) {
       var bl = balls[b]; var t = (now - bl.born) / 1000 / bl.dur;
       if (t >= 1) { balls.splice(b, 1); var s = makeSplat(bl.x, bl.y, bl.color); splats.push(s); if (splats.length > 80) splats.shift(); continue; }
-      live = true; var e = easeIn(t) * 0.35 + t * 0.65;
-      var px = bl.sx + (bl.x - bl.sx) * e, py = bl.sy + (bl.y - bl.sy) * e - Math.sin(t * Math.PI) * bl.arc;
-      var vx = (bl.x - bl.sx), vy = (bl.y - bl.sy) - Math.cos(t * Math.PI) * Math.PI * bl.arc; var ang = Math.atan2(vy, vx);
-      var rad = Math.min(W, H) * 0.022 * (0.7 + 0.3 * t);
-      ctx.save(); ctx.translate(px, py); ctx.rotate(ang); ctx.fillStyle = bl.color; ctx.globalAlpha = 1;
-      ctx.beginPath(); ctx.ellipse(0, 0, rad * 1.45, rad * 0.9, 0, 0, 6.2832); ctx.fill();                      // stretched by speed
-      ctx.globalAlpha = 0.35; ctx.beginPath(); ctx.ellipse(-rad * 1.6, 0, rad * 1.3, rad * 0.5, 0, 0, 6.2832); ctx.fill();   // motion trail
-      ctx.globalAlpha = 0.5; ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.ellipse(-rad * 0.2, -rad * 0.35, rad * 0.45, rad * 0.22, -0.4, 0, 6.2832); ctx.fill();
-      ctx.restore();
+      live = true; var e = easeIn(t) * 0.55 + t * 0.45;                                   // accelerates as it nears the screen
+      var rad = bl.r0 + (bl.r1 - bl.r0) * e; var soft = (1 - e) * rad * 0.35;                 // out of focus while it is close to the camera
+      var ox = Math.sin(bl.wob) * (1 - e) * rad * 0.12, oy = Math.cos(bl.wob) * (1 - e) * rad * 0.12;
+      var grd = ctx.createRadialGradient(bl.x + ox - rad * 0.25, bl.y + oy - rad * 0.3, rad * 0.1, bl.x + ox, bl.y + oy, rad + soft);
+      grd.addColorStop(0, "rgba(255,255,255,0.55)"); grd.addColorStop(0.18, bl.color); grd.addColorStop(Math.max(0.19, 1 - soft / (rad + soft) * 1.6), bl.color); grd.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.globalAlpha = 0.92 + 0.08 * e; ctx.fillStyle = grd; ctx.beginPath(); ctx.arc(bl.x + ox, bl.y + oy, rad + soft, 0, 6.2832); ctx.fill();
     }
     // the wash
     if (wash) {
@@ -138,5 +133,5 @@
   window.addEventListener("resize", size);
   function mount() { document.body.appendChild(canvas); document.body.appendChild(btn); size(); }
   if (document.body) mount(); else document.addEventListener("DOMContentLoaded", mount);
-  window.StegoInk = { on: function () { setOn(true); }, off: function () { setOn(false); }, splat: fire, wash: rinse, get active() { return on; }, version: "1.2.0" };
+  window.StegoInk = { on: function () { setOn(true); }, off: function () { setOn(false); }, splat: fire, wash: rinse, get active() { return on; }, version: "1.3.0" };
 })();
