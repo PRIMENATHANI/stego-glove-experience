@@ -62,14 +62,14 @@ const GLOVES = [
     lead:"Sharp edges handled with fine feel. An ultra-fine 18-gauge FlexSkin™ knit rated ANSI A7, AirWeave™ breathing through the back, a foam nitrile palm that outlasts the task.",
     ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[120, 195, 60], cuff:{ base:"#3a3324", hem:"#3e291f" },
+    accent:[120, 195, 60], cuff:{ base:"#4b442f", hem:"#462e21" },
     callouts:[ { x:0.42, y:0.11, title:"Foam nitrile palm", text:"Grip, long service." }, { x:0.62, y:0.34, title:"18-gauge knit", text:"ANSI A7 cut." }, { x:0.33, y:0.34, title:"Thumb crotch patch", text:"Where gloves wear first." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." } ] },
   { code:"2092", name:"Xyron Ultra", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Razor edges.<br><em>A7 at the fingertips.</em>",
     lead:"Razor-edge contact, all shift. Ultra NanoArn™ on an 18-gauge knit rated ANSI A7, TruTouch™ fingertips for the screen, a sandy nitrile palm, a fit that recovers after every stretch.",
     ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[200, 55, 50], cuff:{ base:"#533129", hem:"#563b2c" },
+    accent:[200, 55, 50], cuff:{ base:"#472c34", hem:"#3c2a26" },
     callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.62, y:0.34, title:"Ultra NanoArn™ knit", text:"ANSI A7 cut." }, { x:0.33, y:0.34, title:"Thumb crotch patch", text:"Where gloves wear first." }, { x:0.42, y:0.11, title:"Sandy nitrile palm", text:"Grip, wet or dry." } ] },
   { code:"2093", name:"Praxor Neo", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Sharp edges, all day.<br><em>A6, skin-like.</em>",
@@ -111,7 +111,7 @@ const GLOVES = [
     lead:"Oily sharp parts handled all shift. An 18-gauge high-mobility carbon knit rated ANSI A7 under a 3/4 dual nitrile coat, TruTouch™ tips, a sandy palm for wet and oily grip.",
     ratings:[["A7", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[174, 70, 70], cuff:{ base:"#522c28", hem:"#694531" },
+    accent:[174, 70, 70], cuff:{ base:"#5d3432", hem:"#523223" },
     callouts:[ { x:0.56, y:0.26, title:"3/4 dual nitrile coat", text:"Liquid off the knuckles." }, { x:0.62, y:0.34, title:"18-gauge carbon knit", text:"ANSI A7 cut." }, { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.33, y:0.34, title:"Thumb crotch patch", text:"Where gloves wear first." } ] },
   { code:"6050", name:"Super Cut", platform:"TEGX®", category:"CUT & PUNCTURE",
     title:"Sharp and hot.<br><em>A7 aramid, crinkle grip.</em>",
@@ -132,7 +132,7 @@ const GLOVES = [
     lead:"Relentless handling of aggressive sharp materials. The highest cut rating in the range on a fine-gauge NanoArn™ CutCage™ knit, a sandy nitrile palm, a fit that still moves like a glove.",
     ratings:[["A9", "ANSI cut"], ["5", "Abrasion"], ["3", "Puncture"], ["F", "EN 388 cut"]],
     standards:"EN 388:2016 4X42F · EN 407:2020 X1XXXX · ANSI/ISEA 105 · CE Cat II",
-    accent:[230, 115, 40], cuff:{ base:"#583727", hem:"#492c1e" },
+    accent:[230, 115, 40], cuff:{ base:"#653f2d", hem:"#523022" },
     callouts:[ { x:0.42, y:0.11, title:"Sandy nitrile palm", text:"Grip, wet or dry." }, { x:0.62, y:0.34, title:"NanoArn™ knit", text:"ANSI A9 cut." }, { x:0.33, y:0.34, title:"CutCage™ zone", text:"Reinforced where blades hit." }, { x:0.38, y:0.42, title:"FlexSkin™ liner", text:"Airflow, all-day comfort." } ] },
   { code:"5588", name:"Pyron Arc", platform:"TEGX®", category:"CUT · ARC FLASH",
     title:"Arc flash.<br><em>Cut, too.</em>",
@@ -160,7 +160,7 @@ const GLOVES = [
     lead:"Winter cut work in the wet. A TexArn™ hybrid knit rated ANSI A6 over brushed acrylic terry, CoreTherm™ warmth, a 3/4 sandy nitrile coat, hi-vis so the hand is seen.",
     ratings:[["A6", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["121", "EN 511 cold"]],
     standards:"EN 388:2016 4X44F · EN 407:2020 X2XXXX · EN 511:2006 121 · ANSI/ISEA 105 · CE Cat II",
-    accent:[40, 125, 210], cuff:{ base:"#7e6d59", hem:"#724f37" },
+    accent:[40, 125, 210], cuff:{ base:"#8f806b", hem:"#69492f" },
     callouts:[ { x:0.56, y:0.26, title:"3/4 sandy nitrile coat", text:"Wet and oil out." }, { x:0.62, y:0.34, title:"TexArn™ hybrid knit", text:"ANSI A6 cut." }, { x:0.5, y:0.66, title:"Terry lining inside", text:"CoreTherm™ warmth." }, { x:0.38, y:0.42, title:"Hi-vis knit", text:"Seen in low light." } ] },
 ];
 const DETAILS = {
@@ -282,7 +282,7 @@ const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLOR
 const techLogo = $('#techLogo');
 const TECH_LOGO = { '7095':'tegx', '7096':'tegx', '7097':'tegx', '7098':'tegx', '2085':'tegx', '2095':'tegx', '2080':'tegx', '2091':'tegx', '2092':'tegx', '2093':'tegx', '2078':'tegx', '2094':'tegx', '2086':'tegx', '2096':'tegx', '2097':'tegx', '6050':'tegx', '2098':'tegx', '2099':'tegx', '5588':'tegx', '5589':'tegx', '4510':'tegx', '6075':'tegx' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
-const AV = '?v=2.1.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
+const AV = '?v=2.2.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
 

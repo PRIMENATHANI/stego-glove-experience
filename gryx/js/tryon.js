@@ -9,7 +9,7 @@ const GLOVES = [
     lead:"The workshop glove. A seamless knit liner with a smooth PU palm for dry handling, CoreForm™ structure that keeps its shape and a FlexFit™ contour that moves with the hand.",
     ratings:[["4", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 4131A · ANSI/ISEA 105 · CE Cat II",
-    accent:[120, 125, 135], cuff:{ base:"#5a5c58", hem:"#70645b" },
+    accent:[120, 125, 135], cuff:{ base:"#3f3d39", hem:"#7f7064" },
     callouts:[ { x:0.42, y:0.11, title:"Smooth PU coating", text:"Dry grip, fine feel." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Moves with the hand." }, { x:0.5, y:0.73, title:"EdgeLock™ cuff", text:"Stays put." } ] },
   { code:"7040", name:"Optimax Carbon", platform:"GRYX™", category:"MECHANICAL · ESD",
     title:"Static-sensitive parts.<br><em>Clean, dry grip.</em>",
@@ -30,14 +30,14 @@ const GLOVES = [
     lead:"Packing and light assembly where lint is a problem. A lint-free seamless knit, PVC dots on the palm for grip and control, a knit wrist that keeps debris out.",
     ratings:[["A1", "ANSI cut"], ["2", "Abrasion"], ["4", "Tear"], ["5", "Dexterity"]],
     standards:"EN 388:2016 214XX · ANSI/ISEA 105 · CE Cat II",
-    accent:[62, 98, 196], cuff:{ base:"#d6333b", hem:"#8a4e33" }, url:"https://stegosafety.com/product/optilite-core-grip-st-1040/",
+    accent:[62, 98, 196], cuff:{ base:"#dfced1", hem:"#923e2b" }, url:"https://stegosafety.com/product/optilite-core-grip-st-1040/",
     callouts:[ { x:0.42, y:0.11, title:"PVC dot palm", text:"Grip and control." }, { x:0.62, y:0.34, title:"Lint-free knit", text:"Clean packaging." }, { x:0.55, y:0.28, title:"Seamless back", text:"Follows the hand." }, { x:0.5, y:0.73, title:"Red-hem knit wrist", text:"Keeps debris out." } ] },
   { code:"6014", name:"Flexilite", platform:"GRYX™", category:"MECHANICAL & MULTI-PURPOSE",
     title:"Rough work.<br><em>Light glove.</em>",
     lead:"Crinkle latex over a light seamless knit: the glove for bricks, blocks and general handling where grip matters more than finesse. CoreForm™ keeps the shape, FlexFit™ keeps the fit.",
     ratings:[["3", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["5", "Dexterity"]],
     standards:"EN 388:2016 3131X · ANSI/ISEA 105 · CE Cat II",
-    accent:[200, 60, 50], cuff:{ base:"#c5241e", hem:"#75271e" },
+    accent:[200, 60, 50], cuff:{ base:"#c7322c", hem:"#672c19" },
     callouts:[ { x:0.42, y:0.11, title:"Crinkle latex coating", text:"Grip on rough surfaces." }, { x:0.62, y:0.34, title:"Lightweight knit", text:"No bulk." }, { x:0.55, y:0.28, title:"CoreForm™", text:"Keeps its shape." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Follows the hand." } ] },
   { code:"6015", name:"Flexi-Viz", platform:"GRYX™", category:"MECHANICAL · HI-VIS",
     title:"Rough materials on site.<br><em>Seen, and held.</em>",
@@ -90,14 +90,14 @@ const GLOVES = [
     lead:"Double-dipped 3/4 nitrile for greasy components: LiquiBlock™ keeps oil and hydrocarbons out, a sandy palm grips, AirWeave™ breathes, and the build is ESD-safe.",
     ratings:[["6", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
-    accent:[50, 125, 225], cuff:{ base:"#5e5e5e", hem:"#1f1c1b" },
+    accent:[50, 125, 225], cuff:{ base:"#5a575d", hem:"#6c4834" },
     callouts:[ { x:0.56, y:0.26, title:"3/4 double-dipped coat", text:"Liquid off the knuckles." }, { x:0.42, y:0.11, title:"Sandy nitrile palm", text:"Grip on greasy parts." }, { x:0.3, y:0.2, title:"LiquiBlock™ coating", text:"Oil stays out." }, { x:0.38, y:0.42, title:"AirWeave™ knit", text:"Cool all shift." } ] },
   { code:"2066", name:"Nitri-Max", platform:"GRYX™", category:"MECHANICAL · FULLY COATED",
     title:"Wet, oily,<br><em>fully sealed.</em>",
     lead:"Fully coated sandy nitrile for wet and oily mechanical work: abrasion 6, ESD-safe, LiquiBlock™ to keep fluid out and TaskFlex™ mapping so a full coat still bends where the hand does.",
     ratings:[["6", "Abrasion"], ["2", "Puncture"], ["A1", "ANSI cut"], ["ESD", "EN 16350"]],
     standards:"EN 388:2016 4131A · EN 407:2020 X1XXXX · EN 16350:2014 · ANSI/ISEA 105 · CE Cat II",
-    accent:[30, 120, 220], cuff:{ base:"#3e3d3d", hem:"#a87a5a" },
+    accent:[30, 120, 220], cuff:{ base:"#5c5b5f", hem:"#46291a" },
     callouts:[ { x:0.56, y:0.26, title:"Full nitrile coat", text:"Sealed to the cuff." }, { x:0.42, y:0.11, title:"Sandy finish", text:"Grip in fluid." }, { x:0.33, y:0.34, title:"TaskFlex™", text:"Bends at the stress zones." }, { x:0.3, y:0.2, title:"LiquiBlock™", text:"Oil stays out." } ] },
   { code:"6030", name:"Flexi-Viz Thermo", platform:"GRYX™", category:"MECHANICAL · COLD · HI-VIS",
     title:"Cold yard, wet timber.<br><em>Warm grip, hi-vis.</em>",
@@ -111,14 +111,14 @@ const GLOVES = [
     lead:"A hi-vis thermal glove for cold, wet mechanical work: brushed acrylic terry inside, a 3/4 sandy nitrile coat with LiquiBlock™ outside, abrasion 6, A3 cut, TaskFlex™ where it bends.",
     ratings:[["A3", "ANSI cut"], ["6", "Abrasion"], ["3", "Puncture"], ["X2X", "EN 511 cold"]],
     standards:"EN 388:2016 4X42B · EN 407:2020 X2XXXX · EN 511:2006 X2X · ANSI/ISEA 105 · CE Cat II",
-    accent:[195, 235, 40], cuff:{ base:"#b8e720", hem:"#613e28" },
+    accent:[195, 235, 40], cuff:{ base:"#b9d95a", hem:"#7b563d" },
     callouts:[ { x:0.56, y:0.26, title:"3/4 sandy nitrile coat", text:"Wet and oil out." }, { x:0.62, y:0.34, title:"Brushed terry knit", text:"Warm inside." }, { x:0.38, y:0.42, title:"Hi-vis lime back", text:"Seen in low light." }, { x:0.55, y:0.28, title:"TaskFlex™", text:"Bends at the stress zones." } ] },
   { code:"2067", name:"Nitri-Max Thermo", platform:"GRYX™", category:"MECHANICAL · COLD",
     title:"Cold store, oily steel.<br><em>Warm hands.</em>",
     lead:"Winter and cold-store mechanical work: a brushed acrylic terry liner under a full double-dipped sandy nitrile coat, A4 cut, abrasion 6, CoreTherm™ warmth and LiquiBlock™ against oil and water.",
     ratings:[["A4", "ANSI cut"], ["6", "Abrasion"], ["4", "Puncture"], ["X2X", "EN 511 cold"]],
     standards:"EN 388:2016 4X42D · EN 407:2020 X2XXXX · EN 511:2006 X2X · ANSI/ISEA 105 · CE Cat II",
-    accent:[20, 100, 210], cuff:{ base:"#161615", hem:"#563420" }, url:"https://stegosafety.com/product/nitri-max-thermo-st-2067/",
+    accent:[20, 100, 210], cuff:{ base:"#1a1b1f", hem:"#54686f" }, url:"https://stegosafety.com/product/nitri-max-thermo-st-2067/",
     callouts:[ { x:0.6, y:0.09, title:"TruTouch™ fingertips", text:"Works a touchscreen." }, { x:0.56, y:0.26, title:"Double-dipped nitrile", text:"Oil and water out." }, { x:0.62, y:0.34, title:"CoreTherm™ liner", text:"Warm in the cold." }, { x:0.33, y:0.34, title:"TaskFlex™", text:"Bends where you do." } ] },
 ];
 const DETAILS = {
@@ -216,7 +216,7 @@ const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLOR
 const techLogo = $('#techLogo');
 const TECH_LOGO = { '7020':'gryx', '7040':'gryx', '6035':'gryx', '1040':'gryx', '6014':'gryx', '6015':'gryx', '2015':'gryx', '2060':'gryx', '2025':'gryx', '2050':'gryx', '2055':'gryx', '2065':'gryx', '2066':'gryx', '6030':'gryx', '2075':'gryx', '2067':'gryx' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
-const AV = '?v=2.1.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
+const AV = '?v=2.2.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
 

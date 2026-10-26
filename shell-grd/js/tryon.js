@@ -9,7 +9,7 @@ const GLOVES = [
     lead:"Pipe, tools, falling parts. ANSI/ISEA 138 Level 2 impact with ShockShell™ TPR over the knuckles and fingers, A2 cut, a sandy nitrile palm, hi-vis throughout.",
     ratings:[["2", "Impact 138"], ["A2", "ANSI cut"], ["6", "Abrasion"], ["3", "Puncture"]],
     standards:"EN 388:2016 4X42BP · ANSI/ISEA 105 · ANSI/ISEA 138 Level 2 · CE Cat II",
-    accent:[240, 130, 30], cuff:{ base:"#595c54", hem:"#5d3f39" },
+    accent:[240, 130, 30], cuff:{ base:"#a9c472", hem:"#5a453f" },
     callouts:[ { x:0.55, y:0.27, title:"ShockShell™ TPR", text:"Absorbs the blow." }, { x:0.6, y:0.12, title:"Finger guards", text:"Angled: ImpactFlow™." }, { x:0.42, y:0.11, title:"Sandy nitrile palm", text:"Grip, wet or dry." }, { x:0.38, y:0.42, title:"Hi-vis knit", text:"Seen in low light." } ] },
   { code:"9065", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT & CUT",
     title:"Blows and blades.<br><em>Level 2 impact, A5 cut.</em>",
@@ -69,7 +69,7 @@ const GLOVES = [
     lead:"Drills, breakers, grinders. Air cushion shells in chloroprene rubber over palm and fingers, TorqueGuard™ dampening rated to EN ISO 10819, A3 cut and abrasion 4 in the knit.",
     ratings:[["0.62", "Vib. TRM"], ["0.55", "Vib. TRH"], ["A3", "ANSI cut"], ["4", "Abrasion"]],
     standards:"EN 388:2016 4343X · EN ISO 10819:2013 TRM 0.62 · TRH 0.55 · ANSI/ISEA 105 · CE Cat II",
-    accent:[227, 49, 47], cuff:{ base:"#261f22", hem:"#893a2c" },
+    accent:[227, 49, 47], cuff:{ base:"#281f20", hem:"#7e3022" },
     callouts:[ { x:0.42, y:0.11, title:"Cushioned fingers", text:"Chloroprene air shells." }, { x:0.33, y:0.34, title:"Palm pads", text:"TorqueGuard™ damping." }, { x:0.62, y:0.4, title:"Reinforced knit", text:"A3 cut, abrasion 4." }, { x:0.38, y:0.42, title:"Vibration control design", text:"Less hand fatigue." } ] },
   { code:"8056", name:"Shell Series", platform:"SHELL GRD™", category:"IMPACT · ANTI-VIBRATION",
     title:"Breakers and grinders.<br><em>Less shake.</em>",
@@ -249,7 +249,7 @@ const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLOR
 const techLogo = $('#techLogo');
 const TECH_LOGO = { '9060':'shell-grd', '9065':'shell-grd', '9075':'shell-grd', '9080':'shell-grd', '9070':'shell-grd', '9081':'shell-grd', '9082':'shell-grd', '9045':'shell-grd', '8055':'shell-grd', '8056':'shell-grd', '5045':'shell-grd', '9050':'shell-grd', '5046':'shell-grd', '9051':'shell-grd', '9040':'shell-grd', '9083':'shell-grd', '9085':'shell-grd', '9086':'shell-grd', '9095':'shell-grd' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
-const AV = '?v=2.1.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
+const AV = '?v=2.2.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
 

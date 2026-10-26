@@ -16,14 +16,14 @@ const GLOVES = [
     lead:"Triple-dipped soft PVC on an interlock lining: EN ISO 374-1 Type B, SealTrace™ seams against ingress, a textured non-slip finish that holds in oils, greases, acids and caustics.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["AJK", "Chemicals"], ["4", "Abrasion"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type B AJK · EN 374-5 · EN 388 4121A · ANSI/ISEA 105 · CE Cat III",
-    accent:[98, 93, 206], cuff:{ base:"#4458ae", hem:"#5a4f61" },
+    accent:[98, 93, 206], cuff:{ base:"#4e5eac", hem:"#5e5f82" },
     callouts:[ { x:0.56, y:0.28, title:"Soft PVC surface", text:"Triple-dipped barrier." }, { x:0.42, y:0.11, title:"Textured fingers", text:"Grip in oils and acids." }, { x:0.62, y:0.44, title:"Dipped seams", text:"SealTrace™: no ingress." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"1085", name:"Optichem Thermo", platform:"ChemBlock™", category:"CHEMICAL · PVC · COLD",
     title:"Chemicals in the cold.<br><em>Insulated PVC.</em>",
     lead:"Chemical work in the cold. A dual thermal lining under triple-dipped soft PVC: EN ISO 374-1 Type B, CoreTherm™ warmth to EN 511, SealTrace™ seams, a textured finish for wet grip.",
     ratings:[["TYPE B", "EN ISO 374-1"], ["AJK", "Chemicals"], ["121", "EN 511 cold"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type B AJK · EN 374-5 · EN 388 4121A · EN 511:2006 121 · ANSI/ISEA 105 · CE Cat III",
-    accent:[45, 125, 225], cuff:{ base:"#2784ad", hem:"#ecb90c" }, url:"https://stegosafety.com/product/optichem-thermo-st-1085/",
+    accent:[45, 125, 225], cuff:{ base:"#2a5473", hem:"#623f1a" }, url:"https://stegosafety.com/product/optichem-thermo-st-1085/",
     callouts:[ { x:0.56, y:0.28, title:"Insulated PVC surface", text:"Chemicals and cold." }, { x:0.42, y:0.11, title:"Textured fingers", text:"Wet grip." }, { x:0.5, y:0.66, title:"Thermal lining inside", text:"CoreTherm™ warmth." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"2018", name:"N'Flock", platform:"ChemBlock™", category:"CHEMICAL · FOOD SAFE",
     title:"Lab bench, wash bay.<br><em>Food safe.</em>",
@@ -44,14 +44,14 @@ const GLOVES = [
     lead:"Neoprene over latex, flock lined, EN ISO 374-1 Type A with virus protection. CoreResist™ for repeated splashes and contact, a quick-entry cuff for fast on and off, a raised diamond palm.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["VIRUS", "EN 374-5"], ["AKLNPT", "Chemicals"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A AKLNPT · EN 374-5 Virus · EN 388 3111X · CE Cat III",
-    accent:[40, 130, 220], cuff:{ base:"#e2d321", hem:"#8e5e2a" },
+    accent:[40, 130, 220], cuff:{ base:"#dec944", hem:"#ceb648" },
     callouts:[ { x:0.42, y:0.11, title:"Diamond grip", text:"Control when wet." }, { x:0.56, y:0.28, title:"Neoprene over latex", text:"Acids and caustics." }, { x:0.62, y:0.36, title:"CoreResist™", text:"Barrier holds." }, { x:0.5, y:0.8, title:"Quick-entry cuff", text:"Fast on and off." } ] },
   { code:"2021", name:"Barix Grip", platform:"ChemBlock™", category:"CHEMICAL · NITRILE",
     title:"Solvents, repeatedly.<br><em>Double nitrile.</em>",
     lead:"Fully double-coated nitrile on a nylon knit: EN ISO 374-1 Type A across nine chemical groups, CoreResist™ against degradation through repeated contact, a sandy finish for grip in wet and oil.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["9", "Chemicals"], ["4", "Abrasion"], ["A1", "ANSI cut"]],
     standards:"EN ISO 374-1 Type A AJKLMNOPT · EN 374-5 · EN 388 4121A · EN 407 X1XXXX · ANSI/ISEA 105 · CE Cat III",
-    accent:[40, 110, 210], cuff:{ base:"#0162b0", hem:"#334a50" },
+    accent:[40, 110, 210], cuff:{ base:"#336ba1", hem:"#43668f" },
     callouts:[ { x:0.56, y:0.28, title:"Double nitrile coat", text:"Sealed over the knit." }, { x:0.42, y:0.11, title:"Sandy fingertips", text:"Grip wet, dry, oily." }, { x:0.62, y:0.44, title:"CoreResist™", text:"No breakdown on repeat contact." }, { x:0.5, y:0.73, title:"Gauntlet cuff", text:"Past the wrist." } ] },
   { code:"2022", name:"Barix Armor", platform:"ChemBlock™", category:"CHEMICAL & CUT",
     title:"Chemical and cut.<br><em>In one hand.</em>",
@@ -90,7 +90,7 @@ const GLOVES = [
     lead:"Heavy-duty butyl for the solvents that eat other gloves, EN ISO 374-1 Type A and anti-static to EN 16350. SolvLock™ keeps the barrier stable under aggressive exposure; FlexFit™ keeps the hand working.",
     ratings:[["TYPE A", "EN ISO 374-1"], ["ABILST", "Chemicals"], ["ESD", "EN 16350"], ["5", "Dexterity"]],
     standards:"EN ISO 374-1 Type A ABILST · EN 374-5 · EN 16350:2014 · EN 388 2111X · CE Cat III",
-    accent:[233, 185, 42], cuff:{ base:"#303134", hem:"#5d3d2b" },
+    accent:[233, 185, 42], cuff:{ base:"#151516", hem:"#573723" },
     callouts:[ { x:0.56, y:0.28, title:"Butyl barrier", text:"Ketones and esters." }, { x:0.62, y:0.4, title:"SolvLock™", text:"Stable in solvents." }, { x:0.34, y:0.55, title:"Anti-static", text:"No spark." }, { x:0.33, y:0.34, title:"FlexFit™", text:"Moves with the hand." } ] },
   { code:"7510", name:"Vynox Ultra", platform:"ChemBlock™", category:"CHEMICAL · VITON® OVER BUTYL",
     title:"Hydrocarbons, acids.<br><em>Viton® over butyl.</em>",
@@ -194,7 +194,7 @@ const EXPLORE = document.getElementById('explore'), cards = EXPLORE ? [...EXPLOR
 const techLogo = $('#techLogo');
 const TECH_LOGO = { '1070':'chemblock', '1080':'chemblock', '1085':'chemblock', '2018':'chemblock', '2020':'chemblock', '8089':'chemblock', '2021':'chemblock', '2022':'chemblock', '2023':'chemblock', '2024':'chemblock', '7500':'chemblock', '7505':'chemblock', '7510':'chemblock', '5530':'chemblock' };
 const bgs = [...document.querySelectorAll('.bg-photo')];
-const AV = '?v=2.1.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
+const AV = '?v=2.2.0';                                   // asset version query, set by the series builder (cache-busting after a re-render)
 const calloutLayer = $('#callouts');
 const ctx = canvas.getContext('2d', { alpha:true });
 
